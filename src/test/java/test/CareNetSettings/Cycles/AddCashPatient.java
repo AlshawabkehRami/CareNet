@@ -1,11 +1,9 @@
 package test.CareNetSettings.Cycles;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
@@ -31,7 +29,7 @@ public class AddCashPatient extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
- /*   @Test(priority = 1)
+    @Test(priority = 1)
     public void registerNewPatient() throws InterruptedException {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
@@ -78,7 +76,7 @@ public class AddCashPatient extends BasePage {
         SecondMobileNo.sendKeys("0799114433", Keys.TAB);
 
 
-        autocompleteField("img[id*='sggNationality']", "div[id*='dvSuggestions']", OpenDriver);
+        autoSuggest("img[id*='sggNationality']", "div[id*='dvSuggestions']", OpenDriver);
         Select IdentityType = new Select(OpenDriver.findElement(By.name("ctl00$ContentPlaceHolder1$ucPatientRegistration$ddlIdentityType")));
         IdentityType.selectByVisibleText("Birth Certificate");
         Thread.sleep(1000);
@@ -114,7 +112,7 @@ public class AddCashPatient extends BasePage {
         Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
 
 
-    }*/
+    }
 
     @Test(priority = 2)
     public void addNewVisit() throws InterruptedException {
