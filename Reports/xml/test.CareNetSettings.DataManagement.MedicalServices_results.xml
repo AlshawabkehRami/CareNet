@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DataManagement"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.391">
+  <properties />
+  
+  
+            <testcase name="navigateToMedicalServicesPage" time="14.391" classname="test.CareNetSettings.DataManagement.MedicalServices" />
+      
+</testsuite>

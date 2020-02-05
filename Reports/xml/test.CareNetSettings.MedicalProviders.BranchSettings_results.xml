@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Medical Providers"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.796">
+  <properties />
+  
+  
+            <testcase name="navigateToBranchSettings" time="14.796" classname="test.CareNetSettings.MedicalProviders.BranchSettings" />
+      
+</testsuite>

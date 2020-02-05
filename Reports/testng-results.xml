@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Screenshot Capture in TestNG Results Started]]>
+    </line>
+    <line>
+      <![CDATA[ChromeDriver is Opened And Maximized ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate To The Url]]>
+    </line>
+    <line>
+      <![CDATA[Enter User Name ]]>
+    </line>
+    <line>
+      <![CDATA[Enter Password]]>
+    </line>
+    <line>
+      <![CDATA[Click on Login Button ]]>
+    </line>
+    <line>
+      <![CDATA[Click on CareNet Link]]>
+    </line>
+    <line>
+      <![CDATA[Click on Patient and Visits Link]]>
+    </line>
+    <line>
+      <![CDATA[Click on Reception Link]]>
+    </line>
+    <line>
+      <![CDATA[Click on Patient management Link]]>
+    </line>
+    <line>
+      <![CDATA[Clear First Name data if exist]]>
+    </line>
+    <line>
+      <![CDATA[Fill First Name filed with name the patient]]>
+    </line>
+    <line>
+      <![CDATA[Click on Search button]]>
+    </line>
+    <line>
+      <![CDATA[Click on File Number from the Grid Table]]>
+    </line>
+    <line>
+      <![CDATA[Click on New Visit button ]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="38547" started-at="2020-02-03T14:31:28 EET" finished-at="2020-02-03T14:32:07 EET">
+    <groups>
+    </groups>
+    <test name="Demo Cycle" duration-ms="38547" started-at="2020-02-03T14:31:28 EET" finished-at="2020-02-03T14:32:07 EET">
+      <class name="test.CareNetSettings.Cycles.AddCashPatient">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@4b4523f8]" name="setUp" is-config="true" duration-ms="12574" started-at="2020-02-03T14:31:28 EET" finished-at="2020-02-03T14:31:41 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot Capture in TestNG Results Started]]>
+            </line>
+            <line>
+              <![CDATA[ChromeDriver is Opened And Maximized ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addNewVisit()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@4b4523f8]" name="addNewVisit" duration-ms="25909" started-at="2020-02-03T14:31:41 EET" finished-at="2020-02-03T14:32:07 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate To The Url]]>
+            </line>
+            <line>
+              <![CDATA[Enter User Name ]]>
+            </line>
+            <line>
+              <![CDATA[Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[Click on Login Button ]]>
+            </line>
+            <line>
+              <![CDATA[Click on CareNet Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on Patient and Visits Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on Reception Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on Patient management Link]]>
+            </line>
+            <line>
+              <![CDATA[Clear First Name data if exist]]>
+            </line>
+            <line>
+              <![CDATA[Fill First Name filed with name the patient]]>
+            </line>
+            <line>
+              <![CDATA[Click on Search button]]>
+            </line>
+            <line>
+              <![CDATA[Click on File Number from the Grid Table]]>
+            </line>
+            <line>
+              <![CDATA[Click on New Visit button ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addNewVisit -->
+      </class> <!-- test.CareNetSettings.Cycles.AddCashPatient -->
+    </test> <!-- Demo Cycle -->
+  </suite> <!-- Suite -->
+</testng-results>

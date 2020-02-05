@@ -1,0 +1,12 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CareNet Settings" verbose="1" >
+    <test name="Data Management"   >
+        <classes>
+         
+            <class name="test.CareNetSettings.DataManagement.Symptoms"></class>
+
+        </classes>
+    </test>
+</suite>

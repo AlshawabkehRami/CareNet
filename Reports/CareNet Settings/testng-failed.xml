@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CareNet Settings]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Insurance(failed)">
+    <classes>
+      <class name="test.CareNetSettings.Insurance.ClaimsFileManager">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="navigateToClaimsFileManagerPage"/>
+        </methods>
+      </class> <!-- test.CareNetSettings.Insurance.ClaimsFileManager -->
+    </classes>
+  </test> <!-- Insurance(failed) -->
+  <test thread-count="5" name="Integration Settings(failed)">
+    <classes>
+      <class name="test.CareNetSettings.IntegrationSettings.FinancialProviderSettings">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="navigateToFinancialProviderSettingsPage"/>
+        </methods>
+      </class> <!-- test.CareNetSettings.IntegrationSettings.FinancialProviderSettings -->
+    </classes>
+  </test> <!-- Integration Settings(failed) -->
+</suite> <!-- Failed suite [CareNet Settings] -->

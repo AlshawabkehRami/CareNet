@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Communication"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="15.098">
+  <properties />
+  
+  
+            <testcase name="navigateToAnnouncementpage" time="15.098" classname="test.CareNetSettings.Communication.Announcementpage" />
+      
+</testsuite>

@@ -1,0 +1,375 @@
+package Driver;
+
+import com.google.inject.internal.util.$Lists;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+import java.io.File;
+import java.io.IOException;
+import java.rmi.server.ExportException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+
+public class BasePage {
+    private static final java.util.UUID UUID = null;
+    public static WebDriverWait Wait;
+    public static WebDriver driver;
+    String Url = "http://webserver/CarenetApps/QA/4.3/MySql/GlobalLanding/Login/GUI/FrmLogin.aspx";
+
+
+    public static WebDriver driverType(WebDriver driver, String browser) {
+        browser = browser.toLowerCase();
+        switch (browser) {
+            case "chrome":
+                Reporter.log("Screenshot Capture in TestNG Results Started");
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+                driver.manage().window().maximize();
+                Reporter.log("ChromeDriver is Opened And Maximized ");
+                break;
+
+
+        }
+        return driver;
+    }
+
+    public static void quit(WebDriver driver) {
+
+        driver.quit();
+        System.out.println("Closing the browser.");
+        Reporter.log("Closing The Browser");
+    }
+
+    public static WebElement senKeys(String locatorType, String locator, String Value, WebDriver driver) {
+        Wait = new WebDriverWait(driver, 10);
+
+        WebElement elem = null;
+        locatorType = locatorType.toLowerCase();
+        switch (locatorType) {
+            case "id":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator))).sendKeys(Value);
+                break;
+            case "name":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator))).sendKeys(Value);
+                break;
+            case "xpath":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).sendKeys(Value);
+                break;
+            case "class":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator))).sendKeys(Value);
+                break;
+            case "linktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(locator))).sendKeys(Value);
+                break;
+            case "partiallinktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(locator))).sendKeys(Value);
+                break;
+            case "cssselector":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator))).sendKeys(Value);
+            default:
+                break;
+        }
+        return elem;
+    }
+
+
+    public static WebElement click(String locatorType, String locator, WebDriver driver) {
+        Wait = new WebDriverWait(driver, 10);
+
+        WebElement elem = null;
+        locatorType = locatorType.toLowerCase();
+        switch (locatorType) {
+            case "id":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator))).click();
+                break;
+            case "name":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator))).click();
+                break;
+            case "xpath":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).click();
+                break;
+            case "class":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator))).click();
+                break;
+            case "linktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(locator))).click();
+                break;
+            case "partiallinktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(locator))).click();
+                break;
+            case "cssselector":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator))).click();
+            default:
+                break;
+        }
+        return elem;
+    }
+
+    public void waitVisibility(By by) {
+        Wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
+
+
+    public void navigateToUrl(WebDriver driver) {
+
+        driver.get(Url);
+        Reporter.log("Navigate To The Url");
+
+    }
+
+    public void LoginWithAdminUser(WebDriver driver) throws InterruptedException {
+
+        click("id", "txtUserName", driver);
+        senKeys("id", "txtUserName", "admin", driver);
+        Reporter.log("Enter User Name ");
+        click("id", "txtPassword", driver);
+        Thread.sleep(2000);
+        senKeys("id", "txtPassword", "369963", driver);
+        Reporter.log("Enter Password");
+        click("id", "btnLogin", driver);
+        Reporter.log("Click on Login Button ");
+    }
+
+    public void NavigateToDataManagmentLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", DataManagmentLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToCommunicationLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String CommunicationLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", CommunicationLinkLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToIntegrationSettingsLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String IntegrationSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", IntegrationSettingsLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToQualityControlLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String QualityControlLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", QualityControlLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToInsuranceLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String InsurancelLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", InsurancelLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToRoomsManagementLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String RoomsManagementLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", RoomsManagementLocator, driver);
+        Reporter.log("Click on Data Management Locator");
+    }
+
+    public void NavigateToMedicalProvidersLink(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String MedicalProvidersLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", MedicalProvidersLocator, driver);
+        Reporter.log("Click on Medical Providers Locator");
+    }
+
+    public void NavigateToAgreements(WebDriver driver) {
+        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+        String AgreementsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_lblfontMod";
+        click("id", ESKACareNetLocator, driver);
+        Reporter.log("Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver);
+        Reporter.log("Click on CareNet Settings Locator");
+        click("id", AgreementsLocator, driver);
+        Reporter.log("Click on Medical Providers Locator");
+    }
+
+    public void screenShot(WebDriver driver, ITestResult result, String methodName) {
+        final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
+        String methodNameString = methodName.toString();
+        methodNameString = result.getName();
+
+        try {
+
+            System.setProperty(ESCAPE_PROPERTY, "true");
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+            String ImageName = methodNameString + "_"
+                    + new SimpleDateFormat("yyyyMMddHHmmss").format(new Date())
+                    + ".png";
+            File failureImageFileName = new File(System.getProperty("user.dir")
+                    + File.separator
+                    + "TakesScreenshot" + File.separator + ImageName);
+            FileUtils.copyFile(scrFile, failureImageFileName);
+            Reporter.setCurrentTestResult(result);
+            Reporter.log("########################################");
+            Reporter.log("Test Case " + methodName + " Executed with status = Failed  ");
+            Reporter.log("The screenshot has been Captured Correctly with name :: " + ImageName);
+            Reporter.log("########################################");
+
+
+            // Reporter.log("<br><img src='" + failureImageFileName + "' height='300' width='300'/><br>");
+            // Reporter.log("<a href='" + failureImageFileName + "'>DiscountManagement_screenshot</a>");
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+    }
+
+    public static String generateString() {
+        String uuid = UUID.randomUUID().toString();
+        uuid = uuid.substring(0, Math.min(uuid.length(), 5));
+        System.err.println(uuid);
+        return uuid;
+    }
+
+    public static WebElement Clear(String locatorType, String locator, WebDriver driver) {
+        Wait = new WebDriverWait(driver, 10);
+
+        WebElement elem = null;
+        locatorType = locatorType.toLowerCase();
+        switch (locatorType) {
+            case "id":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator))).clear();
+                break;
+            case "name":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator))).clear();
+                break;
+            case "xpath":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).clear();
+                break;
+            case "class":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator))).clear();
+                break;
+            case "linktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(locator))).clear();
+                break;
+            case "partiallinktext":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(locator))).clear();
+                break;
+            case "cssselector":
+                Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator))).clear();
+            default:
+                break;
+        }
+        return elem;
+    }
+
+    public static WebElement autoSuggest(String imgSearch, String dvSuggestions, WebDriver driver) throws InterruptedException {
+        try {
+            driver.findElement(By.cssSelector(imgSearch)).click();
+
+        } catch (Exception e) {
+            Thread.sleep(1000);
+            driver.findElement(By.cssSelector(imgSearch)).click();
+
+        }
+        WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
+
+        if (dvSuggestionsWait.isDisplayed()) {
+            WebElement Table = driver.findElement(By.cssSelector(dvSuggestions));
+            List<WebElement> Rows = Table.findElements(By.tagName("tr"));
+            for (int i = 1; i < Rows.size(); i++) {
+                Rows.get(i).click();
+                break;
+            }
+        }
+
+
+        return null;
+    }
+
+    public static WebElement DDL(String DDLLocaterByName, String Value, WebDriver driver) {
+
+        Select DDL = new Select(driver.findElement(By.name(DDLLocaterByName)));
+        DDL.selectByVisibleText(Value);
+
+        return null;
+    }
+
+    public static WebElement TodayDate(String CalendarLocator, String TodayDateLocator, WebDriver driver) {
+
+        click("cssselector", CalendarLocator, driver);
+        click("cssselector", TodayDateLocator, driver);
+
+        return null;
+    }
+
+
+    public static WebElement autocomplete(String AutoCompleteTextLocator, String ValueToSearch, WebDriver driver) throws InterruptedException {
+            WebElement AutoCompleteTextLocatorWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(AutoCompleteTextLocator)));
+            if (AutoCompleteTextLocatorWait.isDisplayed()) {
+                AutoCompleteTextLocatorWait.click();
+                AutoCompleteTextLocatorWait.sendKeys(ValueToSearch);
+                Thread.sleep(2000);
+                Actions action = new Actions(driver);
+                action.sendKeys(AutoCompleteTextLocatorWait, Keys.ARROW_DOWN).perform();
+                action.sendKeys(AutoCompleteTextLocatorWait, Keys.RETURN).perform();
+            }
+
+        return null;
+    }
+}
+
+
+
+
+
+
+
+
