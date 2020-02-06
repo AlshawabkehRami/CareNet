@@ -10,6 +10,8 @@
       <class name="test.CareNetSettings.Cycles.AddCashPatient">
         <methods>
           <include name="registerNewPatient"/>
+          <include name="addNewVisit"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- test.CareNetSettings.Cycles.AddCashPatient -->

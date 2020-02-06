@@ -88,7 +88,7 @@ public class AddCashPatient extends BasePage {
         DDL("ctl00$ContentPlaceHolder1$ucPatientRegistration$ddlMaritalStatus", "Widower", OpenDriver);
         DDL("ctl00$ContentPlaceHolder1$ucPatientRegistration$ddlBloodGroup", "AB+", OpenDriver);
         autoSuggest("img[id*='SggReferredBy_imgSearch']", "div[id*='SggReferredBy_dvSuggestions']", OpenDriver);
-        click("id", "ctl00_ContentPlaceHolder1_ucPatientRegistration_rdbLstPatientType_0", OpenDriver, "Select Cash Patient");
+        //click("id", "ctl00_ContentPlaceHolder1_ucPatientRegistration_rdbLstPatientType_0", OpenDriver, "Select Cash Patient");
         DDL("ctl00$ContentPlaceHolder1$ucPatientRegistration$ddlOccupation", "Labor", OpenDriver);
         senKeys("id", "ctl00_ContentPlaceHolder1_ucPatientRegistration_txtExternalNo", "External No", OpenDriver, "Enter External No.");
         senKeys("id", "ctl00_ContentPlaceHolder1_ucPatientRegistration_UcMemberEnrollementAddress_txtAddressLine1", "Address Line 1", OpenDriver, "Enter Address Line 1");
@@ -109,7 +109,7 @@ public class AddCashPatient extends BasePage {
     }
 
     @Test(priority = 2)
-    public void addNewVisit() throws InterruptedException {
+    public void addNewVisitWithChargeMaster() throws InterruptedException {
 
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
@@ -121,8 +121,8 @@ public class AddCashPatient extends BasePage {
         String ExpectedResult = "Patients Management";
         Assert.assertEquals(ActualResult, ExpectedResult, "Patients Management not opened");
         Clear("ID", "ctl00_ContentPlaceHolder1_ucPatientRegistration_txtFirstNameSearch", OpenDriver, "Clear First Name data if exist");
-        //senKeys("cssselector", "input[id*='FirstNameSearch']", FirstName2, OpenDriver,"Enter the First name");
-        senKeys("cssselector", "input[id*='FirstNameSearch']", "Rami55556", OpenDriver, "Enter the First name");
+        senKeys("cssselector", "input[id*='FirstNameSearch']", FirstName2, OpenDriver,"Enter the First name");
+        //senKeys("cssselector", "input[id*='FirstNameSearch']", "Rami55556", OpenDriver, "Enter the First name");
         click("cssselector", "input[id*='btnSearchPatient']", OpenDriver, "Click on Search button");
         click("cssselector", "span[id*='lblFileNoOrExternalNo']", OpenDriver, "Click on File Number from the Grid Table");
         click("cssselector", "input[id*='btnNewVisit']", OpenDriver, "Click on New Visit button ");

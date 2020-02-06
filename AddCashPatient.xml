@@ -8,6 +8,7 @@
 
           <classes>
               <class name="test.CareNetSettings.Cycles.AddCashPatient"/>
+              <class name="test.CareNetSettings.Cycles.AddCashPatient"/>
           </classes>
         </test>
 </suite>

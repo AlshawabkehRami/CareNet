@@ -137,9 +137,6 @@
       <![CDATA[Select the First Option from the autoSuggest Field]]>
     </line>
     <line>
-      <![CDATA[Select Cash Patient]]>
-    </line>
-    <line>
       <![CDATA[Select Labor From the DDL]]>
     </line>
     <line>
@@ -281,12 +278,12 @@
       <![CDATA[Closing The Browser]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="175271" started-at="2020-02-06T16:55:42 EET" finished-at="2020-02-06T16:58:37 EET">
+  <suite name="Suite" duration-ms="189827" started-at="2020-02-06T17:03:23 EET" finished-at="2020-02-06T17:06:32 EET">
     <groups>
     </groups>
-    <test name="Demo Cycle" duration-ms="175271" started-at="2020-02-06T16:55:42 EET" finished-at="2020-02-06T16:58:37 EET">
+    <test name="Demo Cycle" duration-ms="189827" started-at="2020-02-06T17:03:23 EET" finished-at="2020-02-06T17:06:32 EET">
       <class name="test.CareNetSettings.Cycles.AddCashPatient">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="12895" started-at="2020-02-06T16:55:42 EET" finished-at="2020-02-06T16:55:55 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="12469" started-at="2020-02-06T17:03:23 EET" finished-at="2020-02-06T17:03:35 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -296,7 +293,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="registerNewPatient" duration-ms="46744" started-at="2020-02-06T16:55:55 EET" finished-at="2020-02-06T16:56:42 EET">
+        <test-method status="PASS" signature="registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="registerNewPatient" duration-ms="57445" started-at="2020-02-06T17:03:35 EET" finished-at="2020-02-06T17:04:33 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -428,9 +425,6 @@
               <![CDATA[Select the First Option from the autoSuggest Field]]>
             </line>
             <line>
-              <![CDATA[Select Cash Patient]]>
-            </line>
-            <line>
               <![CDATA[Select Labor From the DDL]]>
             </line>
             <line>
@@ -465,7 +459,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- registerNewPatient -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1121" started-at="2020-02-06T16:56:42 EET" finished-at="2020-02-06T16:56:43 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1385" started-at="2020-02-06T17:04:33 EET" finished-at="2020-02-06T17:04:34 EET">
           <params>
             <param index="0">
               <value>
@@ -484,7 +478,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="9916" started-at="2020-02-06T16:56:43 EET" finished-at="2020-02-06T16:56:53 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="10322" started-at="2020-02-06T17:04:34 EET" finished-at="2020-02-06T17:04:44 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -494,7 +488,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewVisit()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="addNewVisit" duration-ms="103370" started-at="2020-02-06T16:56:53 EET" finished-at="2020-02-06T16:58:36 EET">
+        <test-method status="PASS" signature="addNewVisit()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="addNewVisit" duration-ms="106909" started-at="2020-02-06T17:04:44 EET" finished-at="2020-02-06T17:06:31 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -594,7 +588,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addNewVisit -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1141" started-at="2020-02-06T16:58:36 EET" finished-at="2020-02-06T16:58:37 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1214" started-at="2020-02-06T17:06:31 EET" finished-at="2020-02-06T17:06:32 EET">
           <params>
             <param index="0">
               <value>
