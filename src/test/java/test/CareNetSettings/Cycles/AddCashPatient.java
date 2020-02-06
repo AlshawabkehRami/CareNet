@@ -100,11 +100,14 @@ public class AddCashPatient extends BasePage {
         senKeys("cssselector", "input[id*='txtContactMobileNo']", "0799661144", OpenDriver, "Enter Emergency Mobile No. ");
         click("cssselector", "input[id*='btnSaveContact']", OpenDriver, "Click on Add Emergency Contact button");
         OpenDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Thread.sleep(5000);
         click("name", "ctl00$ContentPlaceHolder1$ucPatientRegistration$btnEnrolNewMember", OpenDriver, "Click on Save Button ");
         String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
         String ExpectedResult1 = "x\n" +
                 "Operation Done Successfully .";
         Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+
+        Thread.sleep(5000);
 
     }
 
@@ -121,7 +124,7 @@ public class AddCashPatient extends BasePage {
         String ExpectedResult = "Patients Management";
         Assert.assertEquals(ActualResult, ExpectedResult, "Patients Management not opened");
         Clear("ID", "ctl00_ContentPlaceHolder1_ucPatientRegistration_txtFirstNameSearch", OpenDriver, "Clear First Name data if exist");
-        senKeys("cssselector", "input[id*='FirstNameSearch']", FirstName2, OpenDriver,"Enter the First name");
+        senKeys("cssselector", "input[id*='FirstNameSearch']", FirstName2, OpenDriver, "Enter the First name");
         //senKeys("cssselector", "input[id*='FirstNameSearch']", "Rami55556", OpenDriver, "Enter the First name");
         click("cssselector", "input[id*='btnSearchPatient']", OpenDriver, "Click on Search button");
         click("cssselector", "span[id*='lblFileNoOrExternalNo']", OpenDriver, "Click on File Number from the Grid Table");
@@ -178,6 +181,8 @@ public class AddCashPatient extends BasePage {
         String ActualResultVisitNoChargeMaster = VisitNoChargeMaster.getText();
         String ExpectedResultVisitNoChargeMaster = VisitNo;
         Assert.assertEquals(ActualResultVisitNoChargeMaster, ExpectedResultVisitNoChargeMaster, "Visit Card for the patient not opened in charge master page");
+
+        Thread.sleep(5000);
     }
 
     @AfterMethod
