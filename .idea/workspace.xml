@@ -2,23 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/registerNewPatient_20200206172147.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/CareNet Settings/Agreements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/CareNet Settings/Agreements.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/CareNet Settings/Data Management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/CareNet Settings/Data Management.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/bullet_point.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/collapseall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/failed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/reportng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/reportng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/sorttable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/suite1_test1_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/suites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/jquery-1.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.Cycles.AddCashPatient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.Symptoms.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/navigator-bullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/Data Management.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/CareNet Settings/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/Demo Cycle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/passed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/skipped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.Cycles.AddCashPatient_results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddCashPatient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AddCashPatient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Suite/Demo Cycle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Suite/Demo Cycle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/html/suite1_test1_results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.Cycles.AddCashPatient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.Cycles.AddCashPatient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/old/Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/old/Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/old/Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.Cycles.AddCashPatient_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.Cycles.AddCashPatient_results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Cycles/AddCashPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Cycles/AddCashPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Cycles/AddCashPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Cycles/AddCashPatient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addNewVisit_20200206170227.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TakesScreenshot/registerNewPatient_20200206170142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TakesScreenshot/registerNewPatient_20200206172147.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581001695218</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rami">
+      <created>1581003050369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581003050369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -402,18 +449,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="373" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/AddCashPatient.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580984825263" />
-    <state x="377" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" timestamp="1580984846979">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-989" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" timestamp="1581003502023">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-989" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1579791038388" />
+    <state x="-989" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003502023" />
     <state x="377" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580984846979" />
     <state x="372" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/NewTestRami.xml" timestamp="1580979517392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/NewTestRami.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580979517392" />
-    <state x="361" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" timestamp="1580984837293">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1005" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" timestamp="1581003512501">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
+    <state x="-1005" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003512501" />
     <state x="361" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580984837293" />
     <state x="392" y="11" key="#Login" timestamp="1575379466714">
       <screen x="0" y="0" width="1366" height="728" />
@@ -427,10 +475,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="164" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1575896584207" />
-    <state x="137" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580984803664">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581003493381">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1579791933898" />
+    <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003493381" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580984803664" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575896347887" />
     <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1580633866496">
@@ -459,10 +507,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1581003011534">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1581003045554">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003011534" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003045554" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001169872" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
       <screen x="0" y="0" width="1366" height="728" />
@@ -482,40 +530,40 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1581002981537">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1581004369783">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581002981537" />
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581004369783" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580658339941" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001400922" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576509473718" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1581002981536">
+    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1581004369782">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581002981536" />
+    <state width="1323" height="163" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581004369782" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="143" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580658339941" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001400922" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576509473718" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1581002981536">
+    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1581004369782">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581002981536" />
+    <state width="1323" height="163" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581004369782" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="143" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580658339940" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001400922" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576509473718" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1581002981537">
+    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1581004369782">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581002981537" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581004369782" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="143" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580658339941" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />

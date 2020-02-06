@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo Cycle"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="168.449">
+  <properties />
+  
+  
+            <testcase name="addNewVisitWithChargeMaster" time="112.493" classname="test.CareNetSettings.Cycles.AddCashPatient" />
+                <testcase name="registerNewPatient" time="55.956" classname="test.CareNetSettings.Cycles.AddCashPatient" />
+      
+</testsuite>
