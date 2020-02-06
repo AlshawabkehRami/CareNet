@@ -22,7 +22,7 @@ public class Diseases extends BasePage {
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl01_lblfontFrm";
 
     @BeforeMethod
-    public void setUp() throws InterruptedException {
+    public void setUp(){
         OpenDriver = driverType(driver, "chrome");
     }
 
@@ -31,8 +31,7 @@ public class Diseases extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Diseases page link");
+        click("id", PageLinkLocator, OpenDriver,"Click on Diseases page link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();

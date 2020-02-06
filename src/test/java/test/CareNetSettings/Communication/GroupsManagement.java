@@ -33,8 +33,7 @@ public class GroupsManagement extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Groups Management  Page link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Groups Management  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

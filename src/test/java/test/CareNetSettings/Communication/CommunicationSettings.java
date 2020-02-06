@@ -33,8 +33,7 @@ public class CommunicationSettings extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Communication Settings  Page link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Communication Settings  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

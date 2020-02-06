@@ -35,8 +35,7 @@ public class PayersNetworks extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on  Payers Networks Page Link");
+        click("id", PageLinkLocator, OpenDriver,"Click on  Payers Networks Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

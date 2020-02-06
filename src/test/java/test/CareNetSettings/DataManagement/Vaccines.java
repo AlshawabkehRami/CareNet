@@ -30,8 +30,8 @@ public class Vaccines extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Vaccines Link Page");
+        click("id", PageLinkLocator, OpenDriver,"Click on Vaccines Link Page");
+
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();

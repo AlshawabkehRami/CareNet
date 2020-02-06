@@ -35,8 +35,7 @@ public class ProviderServices extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Provider Services Page Link");
+        click("id", PageLinkLocator, OpenDriver,"Click on Provider Services Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

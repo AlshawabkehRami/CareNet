@@ -32,8 +32,7 @@ public class MangeProviders extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Mange Providers page link");
+        click("id", PageLinkLocator, OpenDriver,"Click on Mange Providers page link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_Label1"))).getText();

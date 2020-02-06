@@ -33,8 +33,7 @@ public class DefinalizationConfirmation extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToQualityControlLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Definalization Confirmation Page  link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Definalization Confirmation Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

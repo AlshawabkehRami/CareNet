@@ -30,8 +30,7 @@ public class InventoryManagementUnits extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Navigate To Inventory Management Units Page");
+        click("id", PageLinkLocator, OpenDriver,"Navigate To Inventory Management Units Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();

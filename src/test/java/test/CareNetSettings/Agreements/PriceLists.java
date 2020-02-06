@@ -36,8 +36,7 @@ public class PriceLists extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on  Price Lists Page Link");
+        click("id", PageLinkLocator, OpenDriver,"Click on  Price Lists Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

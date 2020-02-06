@@ -33,8 +33,7 @@ public class FinancialProviderSettings extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToIntegrationSettingsLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Financial Provider Settings Page  link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Financial Provider Settings Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

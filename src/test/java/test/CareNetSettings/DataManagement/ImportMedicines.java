@@ -30,8 +30,7 @@ public class ImportMedicines extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Import Medicines Page");
+        click("id", PageLinkLocator, OpenDriver,"Click on Import Medicines Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblImportMedicinesHeader"))).getText();

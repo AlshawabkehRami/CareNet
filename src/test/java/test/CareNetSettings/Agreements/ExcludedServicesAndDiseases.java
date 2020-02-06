@@ -36,8 +36,7 @@ public class ExcludedServicesAndDiseases extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on  ExcludedServicesAndDiseases Page Link");
+        click("id", PageLinkLocator, OpenDriver,"Click on  Excluded Services And Diseases Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

@@ -33,8 +33,8 @@ public class SpecialtyServices extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Specialty Services Page Link");
+        click("id", PageLinkLocator, OpenDriver,"Click on Specialty Services Page Link");
+
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSpecialtySearch"))).getText();

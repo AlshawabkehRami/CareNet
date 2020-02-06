@@ -27,12 +27,11 @@ public class DiscountManagement extends BasePage {
     }
 
     @Test
-    public void navigateToDiscountManagementPage() throws InterruptedException, IOException {
+    public void navigateToDiscountManagementPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Navigate To Discount Management Page");
+        click("id", PageLinkLocator, OpenDriver,"Navigate To Discount Management Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblDiscountAuthorization"))).getText();

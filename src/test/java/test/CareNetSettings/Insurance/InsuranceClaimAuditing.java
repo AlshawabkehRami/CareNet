@@ -33,8 +33,7 @@ public class InsuranceClaimAuditing extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Insurance Claim Auditing   Page  link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Insurance Claim Auditing   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();

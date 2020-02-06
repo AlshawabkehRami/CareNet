@@ -34,8 +34,8 @@ public class MembersQuestionsPage extends BasePage {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver);
-        Reporter.log("Click on Members Questions Page  link ");
+        click("id", PageLinkLocator, OpenDriver,"Click on Members Questions Page  link ");
+
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();
