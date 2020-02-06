@@ -1,6 +1,5 @@
 package Driver;
 
-import com.google.inject.internal.util.$Lists;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.apache.commons.io.FileUtils;
@@ -16,12 +15,9 @@ import org.testng.Reporter;
 
 import java.io.File;
 import java.io.IOException;
-import java.rmi.server.ExportException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 
 
 public class BasePage {
@@ -62,7 +58,7 @@ public class BasePage {
         Reporter.log("Closing The Browser");
     }
 
-    public static WebElement senKeys(String locatorType, String locator, String Value, WebDriver driver) {
+    public static WebElement senKeys(String locatorType, String locator, String Value, WebDriver driver, String StepDescription) {
         Wait = new WebDriverWait(driver, 10);
 
         WebElement elem = null;
@@ -70,24 +66,37 @@ public class BasePage {
         switch (locatorType) {
             case "id":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
                 break;
             case "name":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
                 break;
             case "xpath":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
                 break;
             case "class":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
                 break;
             case "linktext":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
                 break;
             case "partiallinktext":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
                 break;
             case "cssselector":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator))).sendKeys(Value);
+                Reporter.log(StepDescription);
+
             default:
                 break;
         }
@@ -95,7 +104,7 @@ public class BasePage {
     }
 
 
-    public static WebElement click(String locatorType, String locator, WebDriver driver,String StepDescription) {
+    public static WebElement click(String locatorType, String locator, WebDriver driver, String StepDescription) {
         Wait = new WebDriverWait(driver, 10);
 
         WebElement elem = null;
@@ -134,8 +143,9 @@ public class BasePage {
         return elem;
     }
 
-    public void waitVisibility(By by) {
+    public WebElement waitVisibility(By by) {
         Wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        return null;
     }
 
 
@@ -148,86 +158,84 @@ public class BasePage {
 
     public void LoginWithAdminUser(WebDriver driver) throws InterruptedException {
 
-        click("id", "txtUserName", driver,"Click on the user name Filed");
-        senKeys("id", "txtUserName", "admin", driver);
-        Reporter.log("Enter User Name ");
-        click("id", "txtPassword", driver,"Click on The Password Filed ");
+        click("id", "txtUserName", driver, "Click on the user name Field");
+        senKeys("id", "txtUserName", "admin", driver, "Enter User Name ");
+        click("id", "txtPassword", driver, "Click on The Password Field ");
         Thread.sleep(2000);
-        senKeys("id", "txtPassword", "369963", driver);
-        Reporter.log("Enter Password");
-        click("id", "btnLogin", driver,"Click on Login Button");
-        Reporter.log("Click on Login Button ");
+        senKeys("id", "txtPassword", "369963", driver, "Enter Password");
+        click("id", "btnLogin", driver, "Click on Login Button");
     }
 
     public void NavigateToDataManagmentLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
-        click("id", ESKACareNetLocator, driver,"Click on CareNet Link");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings");
-        click("id", DataManagmentLocator, driver,"Click on Data Management's Link");
+        click("id", ESKACareNetLocator, driver, "Click on CareNet Link");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings");
+        click("id", DataManagmentLocator, driver, "Click on Data Management's Link");
     }
+
     public void NavigateToCommunicationLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String CommunicationLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", CommunicationLinkLocator, driver,"Click on Data Management Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", CommunicationLinkLocator, driver, "Click on Data Management Locator");
     }
 
     public void NavigateToIntegrationSettingsLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String IntegrationSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", IntegrationSettingsLocator, driver,"Click on Data Management Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", IntegrationSettingsLocator, driver, "Click on Data Management Locator");
     }
 
     public void NavigateToQualityControlLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String QualityControlLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", QualityControlLocator, driver,"Click on Data Management Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", QualityControlLocator, driver, "Click on Data Management Locator");
     }
 
     public void NavigateToInsuranceLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String InsurancelLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", InsurancelLocator, driver,"Click on Data Management Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", InsurancelLocator, driver, "Click on Data Management Locator");
     }
 
     public void NavigateToRoomsManagementLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String RoomsManagementLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", RoomsManagementLocator, driver,"Click on Data Management Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", RoomsManagementLocator, driver, "Click on Data Management Locator");
     }
 
     public void NavigateToMedicalProvidersLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String MedicalProvidersLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", MedicalProvidersLocator, driver,"Click on Medical Providers Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", MedicalProvidersLocator, driver, "Click on Medical Providers Locator");
     }
 
     public void NavigateToAgreements(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String AgreementsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_lblfontMod";
-        click("id", ESKACareNetLocator, driver,"Click on ESKA CareNet Locator");
-        click("id", CareNetSettingsLocator, driver,"Click on CareNet Settings Locator");
-        click("id", AgreementsLocator, driver,"Click on Medical Providers Locator");
+        click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
+        click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
+        click("id", AgreementsLocator, driver, "Click on Medical Providers Locator");
     }
 
     public void screenShot(WebDriver driver, ITestResult result, String methodName) {
@@ -270,7 +278,7 @@ public class BasePage {
         return uuid;
     }
 
-    public static WebElement Clear(String locatorType, String locator, WebDriver driver) {
+    public static WebElement Clear(String locatorType, String locator, WebDriver driver, String StepDescription) {
         Wait = new WebDriverWait(driver, 10);
 
         WebElement elem = null;
@@ -278,24 +286,37 @@ public class BasePage {
         switch (locatorType) {
             case "id":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator))).clear();
+                Reporter.log(StepDescription);
                 break;
             case "name":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(locator))).clear();
+                Reporter.log(StepDescription);
+
                 break;
             case "xpath":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).clear();
+                Reporter.log(StepDescription);
+
                 break;
             case "class":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator))).clear();
+                Reporter.log(StepDescription);
+
                 break;
             case "linktext":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(locator))).clear();
+                Reporter.log(StepDescription);
+
                 break;
             case "partiallinktext":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(locator))).clear();
+                Reporter.log(StepDescription);
+
                 break;
             case "cssselector":
                 Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator))).clear();
+                Reporter.log(StepDescription);
+
             default:
                 break;
         }
@@ -305,31 +326,54 @@ public class BasePage {
     public static WebElement autoSuggest(String imgSearch, String dvSuggestions, WebDriver driver) throws InterruptedException {
         try {
             driver.findElement(By.cssSelector(imgSearch)).click();
+            Reporter.log("Click on Search Icon");
+            WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
+            if (dvSuggestionsWait.isDisplayed()) {
+                WebElement Table = driver.findElement(By.cssSelector(dvSuggestions));
+                List<WebElement> Rows = Table.findElements(By.tagName("tr"));
+                for (int i = 1; i < Rows.size(); i++) {
+                    Rows.get(i).click();
+                    Reporter.log("Select the First Option from the autoSuggest Field");
+                    break;
+                }
+            }
 
         } catch (Exception e) {
             Thread.sleep(1000);
             driver.findElement(By.cssSelector(imgSearch)).click();
+            Reporter.log("Click on Search Icon");
+            WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
+            if (dvSuggestionsWait.isDisplayed()) {
+                WebElement Table = driver.findElement(By.cssSelector(dvSuggestions));
+                List<WebElement> Rows = Table.findElements(By.tagName("tr"));
+                for (int i = 1; i < Rows.size(); i++) {
+                    Rows.get(i).click();
+                    Reporter.log("Select the First Option from the autoSuggest Field");
 
-        }
-        WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
-
-        if (dvSuggestionsWait.isDisplayed()) {
-            WebElement Table = driver.findElement(By.cssSelector(dvSuggestions));
-            List<WebElement> Rows = Table.findElements(By.tagName("tr"));
-            for (int i = 1; i < Rows.size(); i++) {
-                Rows.get(i).click();
-                break;
+                    break;
+                }
             }
-        }
 
+
+        }
 
         return null;
     }
 
-    public static WebElement DDL(String DDLLocaterByName, String Value, WebDriver driver) {
+    public static WebElement DDL(String DDLLocaterByName, String Value, WebDriver driver) throws InterruptedException {
 
-        Select DDL = new Select(driver.findElement(By.name(DDLLocaterByName)));
-        DDL.selectByVisibleText(Value);
+        try {
+            Select DDL = new Select(driver.findElement(By.name(DDLLocaterByName)));
+            DDL.selectByVisibleText(Value);
+            Reporter.log("Select " + Value + " From the DDL");
+
+        } catch (Exception e) {
+            Thread.sleep(2000);
+            Select DDL = new Select(driver.findElement(By.name(DDLLocaterByName)));
+            DDL.selectByVisibleText(Value);
+            Reporter.log("Select " + Value + " From the DDL");
+        }
+
 
         return null;
     }
@@ -337,13 +381,13 @@ public class BasePage {
     public static WebElement TodayDate(String CalendarImageLocator, String TodayDateLocator, WebDriver driver) throws InterruptedException {
 
         try {
-            click("cssselector", CalendarImageLocator, driver,"Click on Calender Image");
-            click("cssselector", TodayDateLocator, driver,"Select Today Date ");
+            click("cssselector", CalendarImageLocator, driver, "Click on Calender Image");
+            click("cssselector", TodayDateLocator, driver, "Select Today Date ");
 
-        }catch (Exception e){
+        } catch (Exception e) {
             Thread.sleep(2000);
-            click("cssselector", CalendarImageLocator, driver,"Click on Calender Image");
-            click("cssselector", TodayDateLocator, driver,"Select Today Date ");
+            click("cssselector", CalendarImageLocator, driver, "Click on Calender Image");
+            click("cssselector", TodayDateLocator, driver, "Select Today Date ");
 
         }
 
@@ -353,20 +397,18 @@ public class BasePage {
 
 
     public static WebElement autocomplete(String AutoCompleteTextLocator, String ValueToSearch, WebDriver driver) throws InterruptedException {
-            WebElement AutoCompleteTextLocatorWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(AutoCompleteTextLocator)));
-            if (AutoCompleteTextLocatorWait.isDisplayed()) {
-                AutoCompleteTextLocatorWait.click();
-                AutoCompleteTextLocatorWait.sendKeys(ValueToSearch);
-                Thread.sleep(2000);
-                Actions action = new Actions(driver);
-                action.sendKeys(AutoCompleteTextLocatorWait, Keys.ARROW_DOWN).perform();
-                action.sendKeys(AutoCompleteTextLocatorWait, Keys.RETURN).perform();
-            }
+        WebElement AutoCompleteTextLocatorWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(AutoCompleteTextLocator)));
+        if (AutoCompleteTextLocatorWait.isDisplayed()) {
+            AutoCompleteTextLocatorWait.click();
+            AutoCompleteTextLocatorWait.sendKeys(ValueToSearch);
+            Thread.sleep(2000);
+            Actions action = new Actions(driver);
+            action.sendKeys(AutoCompleteTextLocatorWait, Keys.ARROW_DOWN).perform();
+            action.sendKeys(AutoCompleteTextLocatorWait, Keys.RETURN).perform();
+        }
 
         return null;
     }
-
-
 
 
 }
