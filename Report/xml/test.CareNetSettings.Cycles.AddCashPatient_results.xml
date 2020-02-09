@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="168.449">
+           time="189.267">
   <properties />
   
   
-            <testcase name="addNewVisitWithChargeMaster" time="112.493" classname="test.CareNetSettings.Cycles.AddCashPatient" />
-                <testcase name="registerNewPatient" time="55.956" classname="test.CareNetSettings.Cycles.AddCashPatient" />
+            <testcase name="addNewVisitWithChargeMaster" time="115.526" classname="test.CareNetSettings.Cycles.AddCashPatient" />
+                <testcase name="registerNewPatient" time="73.741" classname="test.CareNetSettings.Cycles.AddCashPatient" />
       
 </testsuite>

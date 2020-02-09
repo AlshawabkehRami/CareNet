@@ -66,7 +66,7 @@ public class AddCashPatient extends BasePage {
         click("cssselector", "input[id*='Gender_0']", OpenDriver, "Select Male Gender ");
         senKeys("cssselector", "input[id*='MemberMobileNo']", "0799114433", OpenDriver, "Enter Mobile No");
         click("cssselector", "input[id*='MemberSecondMobileNo']", OpenDriver, "Click on Second Mobile No ");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         WebElement SecondMobileNo = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[id*='MemberSecondMobileNo']")));
         SecondMobileNo.sendKeys("0799114433", Keys.TAB);
         Reporter.log("Enter Second Mobile No ");
@@ -111,7 +111,7 @@ public class AddCashPatient extends BasePage {
 
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,dependsOnMethods = "registerNewPatient")
     public void addNewVisitWithChargeMaster() throws InterruptedException {
 
         navigateToUrl(OpenDriver);

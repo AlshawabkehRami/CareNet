@@ -278,12 +278,12 @@
       <![CDATA[Closing The Browser]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="194174" started-at="2020-02-06T17:45:05 EET" finished-at="2020-02-06T17:48:19 EET">
+  <suite name="Suite" duration-ms="218382" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:09:47 EET">
     <groups>
     </groups>
-    <test name="Demo Cycle" duration-ms="194174" started-at="2020-02-06T17:45:05 EET" finished-at="2020-02-06T17:48:19 EET">
+    <test name="Demo Cycle" duration-ms="218382" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:09:47 EET">
       <class name="test.CareNetSettings.Cycles.AddCashPatient">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="12666" started-at="2020-02-06T17:45:05 EET" finished-at="2020-02-06T17:45:17 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="setUp" is-config="true" duration-ms="14779" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:06:24 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -293,7 +293,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="registerNewPatient" duration-ms="55956" started-at="2020-02-06T17:45:17 EET" finished-at="2020-02-06T17:46:13 EET">
+        <test-method status="PASS" signature="registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="registerNewPatient" duration-ms="73741" started-at="2020-02-09T09:06:24 EET" finished-at="2020-02-09T09:07:37 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -459,11 +459,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- registerNewPatient -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1402" started-at="2020-02-06T17:46:13 EET" finished-at="2020-02-06T17:46:15 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="tearDown" is-config="true" duration-ms="1121" started-at="2020-02-09T09:07:37 EET" finished-at="2020-02-09T09:07:38 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerNewPatient status=SUCCESS method=AddCashPatient.registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=registerNewPatient status=SUCCESS method=AddCashPatient.registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
@@ -478,7 +478,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="setUp" is-config="true" duration-ms="10330" started-at="2020-02-06T17:46:15 EET" finished-at="2020-02-06T17:46:25 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="setUp" is-config="true" duration-ms="11757" started-at="2020-02-09T09:07:39 EET" finished-at="2020-02-09T09:07:50 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -488,7 +488,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="addNewVisitWithChargeMaster" duration-ms="112493" started-at="2020-02-06T17:46:25 EET" finished-at="2020-02-06T17:48:18 EET">
+        <test-method status="PASS" signature="addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="addNewVisitWithChargeMaster" duration-ms="115526" started-at="2020-02-09T09:07:50 EET" depends-on-methods="test.CareNetSettings.Cycles.AddCashPatient.registerNewPatient" finished-at="2020-02-09T09:09:46 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -588,11 +588,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addNewVisitWithChargeMaster -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209]" name="tearDown" is-config="true" duration-ms="1237" started-at="2020-02-06T17:48:18 EET" finished-at="2020-02-06T17:48:19 EET">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="tearDown" is-config="true" duration-ms="1240" started-at="2020-02-09T09:09:46 EET" finished-at="2020-02-09T09:09:47 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewVisitWithChargeMaster status=SUCCESS method=AddCashPatient.addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@5a8e6209] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=addNewVisitWithChargeMaster status=SUCCESS method=AddCashPatient.addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
