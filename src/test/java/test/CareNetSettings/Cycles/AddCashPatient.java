@@ -49,7 +49,6 @@ public class AddCashPatient extends BasePage {
         senKeys("cssselector", "input[id*='txtFirstNameSearch']", FirstName1, OpenDriver, "Send any data in the first name filed  Data to appear new patient button ");
         click("cssselector", "[id*='btnSearchPatient']", OpenDriver, "click on the search button");
         OpenDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         click("id", "ctl00_ContentPlaceHolder1_ucPatientRegistration_btnNewPatient", OpenDriver, "click on the new patient button");
         Clear("cssselector", "input[id*='txtMemberFirstName']", OpenDriver, "Clear First Name Text");
         senKeys("cssselector", "input[id*='txtMemberFirstName']", FirstName2, OpenDriver, "Enter the first name in English");

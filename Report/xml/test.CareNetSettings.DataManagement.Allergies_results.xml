@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo Cycle"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="73.687">
+  <properties />
+  
+  
+            <testcase name="deleteAllergies" time="19.012" classname="test.CareNetSettings.DataManagement.Allergies" />
+                <testcase name="addAllergies" time="19.929" classname="test.CareNetSettings.DataManagement.Allergies" />
+                <testcase name="editAllergies" time="19.461" classname="test.CareNetSettings.DataManagement.Allergies" />
+                <testcase name="navigateToAllergiesPage" time="15.285" classname="test.CareNetSettings.DataManagement.Allergies" />
+      
+</testsuite>

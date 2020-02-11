@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+
 import java.lang.reflect.Method;
 
 /**
@@ -20,23 +21,80 @@ public class Vaccines extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl03_lblfontFrm";
+
     @BeforeMethod
     public void setUp() {
         OpenDriver = driverType(driver, "chrome");
 
     }
-    @Test
+
+    @Test(priority = 1)
     public void navigateToVaccinesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
         NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Vaccines Link Page");
-
+        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
         String ExpectedResult = "Search";
         Assert.assertEquals(ActualResult, ExpectedResult, "Vaccines Page not opened Properly");
+
+    }
+
+    String RandomString = generateString();
+    String VaccinesName = "VaccinesName" + RandomString;
+
+    @Test(priority = 2)
+    public void addVaccines() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        LoginWithAdminUser(OpenDriver);
+        NavigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
+        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
+        senKeys("cssselector", "input[id*='txtVaccineName']", VaccinesName, OpenDriver, "Fill Vaccine Name");
+        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+        String ExpectedResult1 = "x\n" +
+                "Operation Done Successfully .";
+        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+
+    }
+
+    @Test(priority = 3,dependsOnMethods = "addVaccines")
+    public void editVaccines() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        LoginWithAdminUser(OpenDriver);
+        NavigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
+        senKeys("cssselector","input[id*='txtName']",VaccinesName,OpenDriver,"Search By Vaccines Name "+VaccinesName);
+        click("cssselector","input[id*='btnShowAll']",OpenDriver,"Click on Show All Button");
+        click("xpath","//table/tbody/tr[2]",OpenDriver,"Click on the Row");
+        click("cssselector","input[id*='btnUpdate']",OpenDriver,"Click on update Button");
+        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+        String ExpectedResult1 = "x\n" +
+                "Operation Done Successfully .";
+        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+
+    }
+
+    @Test(priority = 4,dependsOnMethods = "addVaccines")
+    public void deleteVaccines() throws InterruptedException {
+
+        navigateToUrl(OpenDriver);
+        LoginWithAdminUser(OpenDriver);
+        NavigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
+        senKeys("cssselector","input[id*='txtName']",VaccinesName,OpenDriver,"Search By Vaccines Name "+VaccinesName);
+        click("cssselector","input[id*='btnShowAll']",OpenDriver,"Click on Show All Button");
+        click("cssselector","input[name*='grdVaccinesItem']",OpenDriver,"Click on checkBox to delete");
+        click("cssselector","a[id*='ibtnDelete']",OpenDriver,"Click on Delete Button");
+        OpenDriver.switchTo().alert().accept();
+        Reporter.log("Accept the WebPage Alert");
+        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+        String ExpectedResult1 = "x\n" +
+                "Operation Done Successfully .";
+        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
 
     }
     @AfterMethod

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\AddCashPatient.xml</span>
+                    <span>C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\Test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.Cycles.AddCashPatient" hash-for-method="addNewVisitWithChargeMaster">addNewVisitWithChargeMaster</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.Vaccines" hash-for-method="addVaccines">addVaccines</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.Cycles.AddCashPatient" hash-for-method="registerNewPatient">registerNewPatient</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.Vaccines" hash-for-method="deleteVaccines">deleteVaccines</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.Vaccines" hash-for-method="editVaccines">editVaccines</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.Vaccines" hash-for-method="navigateToVaccinesPage">navigateToVaccinesPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,21 +135,35 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.CareNetSettings.Cycles.AddCashPatient</span>
+              <span class="class-name">test.CareNetSettings.DataManagement.Vaccines</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewVisitWithChargeMaster">
-                  </a> <!-- addNewVisitWithChargeMaster -->
-                  <span class="method-name">addNewVisitWithChargeMaster</span>
+                  <a name="addVaccines">
+                  </a> <!-- addVaccines -->
+                  <span class="method-name">addVaccines</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="registerNewPatient">
-                  </a> <!-- registerNewPatient -->
-                  <span class="method-name">registerNewPatient</span>
+                  <a name="deleteVaccines">
+                  </a> <!-- deleteVaccines -->
+                  <span class="method-name">deleteVaccines</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editVaccines">
+                  </a> <!-- editVaccines -->
+                  <span class="method-name">editVaccines</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToVaccinesPage">
+                  </a> <!-- navigateToVaccinesPage -->
+                  <span class="method-name">navigateToVaccinesPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +171,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\AddCashPatient.xml</span>
+            <span class="header-content">C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\Test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -160,7 +184,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;10&quot; verbose=&quot;0&quot; name=&quot;Demo Cycle&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.CareNetSettings.Cycles.AddCashPatient&quot;/&gt;
+      &lt;class name=&quot;test.CareNetSettings.DataManagement.Vaccines&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Demo Cycle --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -200,20 +224,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addNewVisitWithChargeMaster')
-data.setCell(0, 2, 'test.CareNetSettings.Cycles.AddCashPatient')
-data.setCell(0, 3, 115526);
+data.setCell(0, 1, 'editVaccines')
+data.setCell(0, 2, 'test.CareNetSettings.DataManagement.Vaccines')
+data.setCell(0, 3, 20595);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerNewPatient')
-data.setCell(1, 2, 'test.CareNetSettings.Cycles.AddCashPatient')
-data.setCell(1, 3, 73741);
+data.setCell(1, 1, 'addVaccines')
+data.setCell(1, 2, 'test.CareNetSettings.DataManagement.Vaccines')
+data.setCell(1, 3, 20020);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteVaccines')
+data.setCell(2, 2, 'test.CareNetSettings.DataManagement.Vaccines')
+data.setCell(2, 3, 19983);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'navigateToVaccinesPage')
+data.setCell(3, 2, 'test.CareNetSettings.DataManagement.Vaccines')
+data.setCell(3, 3, 15985);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,7 +257,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">addNewVisitWithChargeMaster</span>
+              <span class="reporter-method-name">navigateToVaccinesPage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Navigate To The Url</span>
                 <span class="reporter-method-output">Click on the user name Field</span>
@@ -234,35 +266,13 @@ return data;
                 <span class="reporter-method-output">Enter Password</span>
                 <span class="reporter-method-output">Click on Login Button</span>
                 <span class="reporter-method-output">Click on CareNet Link</span>
-                <span class="reporter-method-output">Click on Patient and Visits Link</span>
-                <span class="reporter-method-output">Click on Reception Link</span>
-                <span class="reporter-method-output">Click on Patient management Link</span>
-                <span class="reporter-method-output">Clear First Name data if exist</span>
-                <span class="reporter-method-output">Enter the First name</span>
-                <span class="reporter-method-output">Click on Search button</span>
-                <span class="reporter-method-output">Click on File Number from the Grid Table</span>
-                <span class="reporter-method-output">Click on New Visit button </span>
-                <span class="reporter-method-output">Click on Search Icon</span>
-                <span class="reporter-method-output">Select the First Option from the autoSuggest Field</span>
-                <span class="reporter-method-output">Click on Search Icon</span>
-                <span class="reporter-method-output">Select the First Option from the autoSuggest Field</span>
-                <span class="reporter-method-output">Click on Search Icon</span>
-                <span class="reporter-method-output">Select the First Option from the autoSuggest Field</span>
-                <span class="reporter-method-output">Click on Calender Image</span>
-                <span class="reporter-method-output">Select Today Date </span>
-                <span class="reporter-method-output">Enter Note Description</span>
-                <span class="reporter-method-output">Click on Save button</span>
-                <span class="reporter-method-output">Click on Generate Bill button</span>
-                <span class="reporter-method-output">click on Inpatient Management</span>
-                <span class="reporter-method-output">click on Charge Master</span>
-                <span class="reporter-method-output">click on Charge Master</span>
-                <span class="reporter-method-output">click on Visit No</span>
-                <span class="reporter-method-output">Enter Visit Number</span>
-                <span class="reporter-method-output">click on search button</span>
+                <span class="reporter-method-output">Click on CareNet Settings</span>
+                <span class="reporter-method-output">Click on Data Management's Link</span>
+                <span class="reporter-method-output">Click on Vaccines Link Page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">registerNewPatient</span>
+              <span class="reporter-method-name">addVaccines</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Navigate To The Url</span>
                 <span class="reporter-method-output">Click on the user name Field</span>
@@ -271,53 +281,51 @@ return data;
                 <span class="reporter-method-output">Enter Password</span>
                 <span class="reporter-method-output">Click on Login Button</span>
                 <span class="reporter-method-output">Click on CareNet Link</span>
-                <span class="reporter-method-output">Click on Patient and Visits Link</span>
-                <span class="reporter-method-output">Click on Reception Link</span>
-                <span class="reporter-method-output">Click on Patient management Link</span>
-                <span class="reporter-method-output">Clear First Name Data If founded</span>
-                <span class="reporter-method-output">Send any data in the first name filed  Data to appear new patient button </span>
-                <span class="reporter-method-output">click on the search button</span>
-                <span class="reporter-method-output">click on the new patient button</span>
-                <span class="reporter-method-output">Clear First Name Text</span>
-                <span class="reporter-method-output">Enter the first name in English</span>
-                <span class="reporter-method-output">Enter the Second  name in English</span>
-                <span class="reporter-method-output">Enter the Last  name in English</span>
-                <span class="reporter-method-output">Enter the Family  name in English</span>
-                <span class="reporter-method-output">Enter إسم العائلة</span>
-                <span class="reporter-method-output">Enter الإسم الأخير</span>
-                <span class="reporter-method-output">Enter الإسم الثاني</span>
-                <span class="reporter-method-output">Enter الإسم الأول</span>
-                <span class="reporter-method-output">Enter the Email</span>
-                <span class="reporter-method-output">Click on Calender Image</span>
-                <span class="reporter-method-output">Select Today Date </span>
-                <span class="reporter-method-output">Select Male Gender </span>
-                <span class="reporter-method-output">Enter Mobile No</span>
-                <span class="reporter-method-output">Click on Second Mobile No </span>
-                <span class="reporter-method-output">Enter Second Mobile No </span>
-                <span class="reporter-method-output">Click on Search Icon</span>
-                <span class="reporter-method-output">Select the First Option from the autoSuggest Field</span>
-                <span class="reporter-method-output">Select Declaration From the DDL</span>
-                <span class="reporter-method-output">Enter Declaration Number</span>
-                <span class="reporter-method-output">Enter Declaration Place Of Issue</span>
-                <span class="reporter-method-output">Click on Calender Image</span>
-                <span class="reporter-method-output">Select Today Date </span>
-                <span class="reporter-method-output">Click on Calender Image</span>
-                <span class="reporter-method-output">Select Today Date </span>
-                <span class="reporter-method-output">Select Widower From the DDL</span>
-                <span class="reporter-method-output">Select AB+ From the DDL</span>
-                <span class="reporter-method-output">Click on Search Icon</span>
-                <span class="reporter-method-output">Select the First Option from the autoSuggest Field</span>
-                <span class="reporter-method-output">Select Labor From the DDL</span>
-                <span class="reporter-method-output">Enter External No.</span>
-                <span class="reporter-method-output">Enter Address Line 1</span>
-                <span class="reporter-method-output">Enter Address Line 2 </span>
-                <span class="reporter-method-output">Enter Emergency First Name </span>
-                <span class="reporter-method-output">Enter Emergency Second Name</span>
-                <span class="reporter-method-output">Enter Emergency Third Name </span>
-                <span class="reporter-method-output">Select Spouse From the DDL</span>
-                <span class="reporter-method-output">Enter Emergency Mobile No. </span>
-                <span class="reporter-method-output">Click on Add Emergency Contact button</span>
-                <span class="reporter-method-output">Click on Save Button </span>
+                <span class="reporter-method-output">Click on CareNet Settings</span>
+                <span class="reporter-method-output">Click on Data Management's Link</span>
+                <span class="reporter-method-output">Click on Vaccines Link Page</span>
+                <span class="reporter-method-output">Click on Add button</span>
+                <span class="reporter-method-output">Fill Vaccine Name</span>
+                <span class="reporter-method-output">Click on Save Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">editVaccines</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigate To The Url</span>
+                <span class="reporter-method-output">Click on the user name Field</span>
+                <span class="reporter-method-output">Enter User Name </span>
+                <span class="reporter-method-output">Click on The Password Field </span>
+                <span class="reporter-method-output">Enter Password</span>
+                <span class="reporter-method-output">Click on Login Button</span>
+                <span class="reporter-method-output">Click on CareNet Link</span>
+                <span class="reporter-method-output">Click on CareNet Settings</span>
+                <span class="reporter-method-output">Click on Data Management's Link</span>
+                <span class="reporter-method-output">Click on Vaccines Link Page</span>
+                <span class="reporter-method-output">Search By Vaccines Name VaccinesName72bd2</span>
+                <span class="reporter-method-output">Click on Show All Button</span>
+                <span class="reporter-method-output">Click on the Row</span>
+                <span class="reporter-method-output">Click on update Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteVaccines</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigate To The Url</span>
+                <span class="reporter-method-output">Click on the user name Field</span>
+                <span class="reporter-method-output">Enter User Name </span>
+                <span class="reporter-method-output">Click on The Password Field </span>
+                <span class="reporter-method-output">Enter Password</span>
+                <span class="reporter-method-output">Click on Login Button</span>
+                <span class="reporter-method-output">Click on CareNet Link</span>
+                <span class="reporter-method-output">Click on CareNet Settings</span>
+                <span class="reporter-method-output">Click on Data Management's Link</span>
+                <span class="reporter-method-output">Click on Vaccines Link Page</span>
+                <span class="reporter-method-output">Search By Vaccines Name VaccinesName72bd2</span>
+                <span class="reporter-method-output">Click on Show All Button</span>
+                <span class="reporter-method-output">Click on checkBox to delete</span>
+                <span class="reporter-method-output">Click on Delete Button</span>
+                <span class="reporter-method-output">Accept the WebPage Alert</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -335,30 +343,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.CareNetSettings.Cycles.AddCashPatient</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.CareNetSettings.DataManagement.Vaccines</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">registerNewPatient</span>
-                <span class="method-start">14781 ms</span>
+                <span class="method-name">navigateToVaccinesPage</span>
+                <span class="method-start">13718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=registerNewPatient status=SUCCESS method=AddCashPatient.registerNewPatient()[pri:1,...)</span>
-                <span class="method-start">88527 ms</span>
+                <span class="method-name">tearDown([TestResult name=navigateToVaccinesPage status=SUCCESS method=Vaccines.navigateToVaccinesPage()[pri:...)</span>
+                <span class="method-start">29706 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">89779 ms</span>
+                <span class="method-start">30756 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addNewVisitWithChargeMaster</span>
-                <span class="method-start">101536 ms</span>
+                <span class="method-name">addVaccines</span>
+                <span class="method-start">41010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=addNewVisitWithChargeMaster status=SUCCESS method=AddCashPatient.addNewVisitWithCha...)</span>
-                <span class="method-start">217062 ms</span>
+                <span class="method-name">tearDown([TestResult name=addVaccines status=SUCCESS method=Vaccines.addVaccines()[pri:2, instance:test.CareN...)</span>
+                <span class="method-start">61030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">62098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editVaccines</span>
+                <span class="method-start">72547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=editVaccines status=SUCCESS method=Vaccines.editVaccines()[pri:3, instance:test.Car...)</span>
+                <span class="method-start">93143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">94169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteVaccines</span>
+                <span class="method-start">104151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=deleteVaccines status=SUCCESS method=Vaccines.deleteVaccines()[pri:4, instance:test...)</span>
+                <span class="method-start">124135 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

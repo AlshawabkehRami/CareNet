@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo Cycle"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="77.645">
+  <properties />
+  
+  
+            <testcase name="editDiseases" time="19.937" classname="test.CareNetSettings.DataManagement.Diseases" />
+                <testcase name="deletDiseases" time="19.204" classname="test.CareNetSettings.DataManagement.Diseases" />
+                <testcase name="navigateToDiseasesPage" time="16.582" classname="test.CareNetSettings.DataManagement.Diseases" />
+                <testcase name="addDiseases" time="21.922" classname="test.CareNetSettings.DataManagement.Diseases" />
+      
+</testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -29,145 +29,13 @@
       <![CDATA[Click on CareNet Link]]>
     </line>
     <line>
-      <![CDATA[Click on Patient and Visits Link]]>
+      <![CDATA[Click on CareNet Settings]]>
     </line>
     <line>
-      <![CDATA[Click on Reception Link]]>
+      <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Patient management Link]]>
-    </line>
-    <line>
-      <![CDATA[Clear First Name Data If founded]]>
-    </line>
-    <line>
-      <![CDATA[Send any data in the first name filed  Data to appear new patient button ]]>
-    </line>
-    <line>
-      <![CDATA[click on the search button]]>
-    </line>
-    <line>
-      <![CDATA[click on the new patient button]]>
-    </line>
-    <line>
-      <![CDATA[Clear First Name Text]]>
-    </line>
-    <line>
-      <![CDATA[Enter the first name in English]]>
-    </line>
-    <line>
-      <![CDATA[Enter the Second  name in English]]>
-    </line>
-    <line>
-      <![CDATA[Enter the Last  name in English]]>
-    </line>
-    <line>
-      <![CDATA[Enter the Family  name in English]]>
-    </line>
-    <line>
-      <![CDATA[Enter إسم العائلة]]>
-    </line>
-    <line>
-      <![CDATA[Enter الإسم الأخير]]>
-    </line>
-    <line>
-      <![CDATA[Enter الإسم الثاني]]>
-    </line>
-    <line>
-      <![CDATA[Enter الإسم الأول]]>
-    </line>
-    <line>
-      <![CDATA[Enter the Email]]>
-    </line>
-    <line>
-      <![CDATA[Click on Calender Image]]>
-    </line>
-    <line>
-      <![CDATA[Select Today Date ]]>
-    </line>
-    <line>
-      <![CDATA[Select Male Gender ]]>
-    </line>
-    <line>
-      <![CDATA[Enter Mobile No]]>
-    </line>
-    <line>
-      <![CDATA[Click on Second Mobile No ]]>
-    </line>
-    <line>
-      <![CDATA[Enter Second Mobile No ]]>
-    </line>
-    <line>
-      <![CDATA[Click on Search Icon]]>
-    </line>
-    <line>
-      <![CDATA[Select the First Option from the autoSuggest Field]]>
-    </line>
-    <line>
-      <![CDATA[Select Declaration From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Enter Declaration Number]]>
-    </line>
-    <line>
-      <![CDATA[Enter Declaration Place Of Issue]]>
-    </line>
-    <line>
-      <![CDATA[Click on Calender Image]]>
-    </line>
-    <line>
-      <![CDATA[Select Today Date ]]>
-    </line>
-    <line>
-      <![CDATA[Click on Calender Image]]>
-    </line>
-    <line>
-      <![CDATA[Select Today Date ]]>
-    </line>
-    <line>
-      <![CDATA[Select Widower From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Select AB+ From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Click on Search Icon]]>
-    </line>
-    <line>
-      <![CDATA[Select the First Option from the autoSuggest Field]]>
-    </line>
-    <line>
-      <![CDATA[Select Labor From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Enter External No.]]>
-    </line>
-    <line>
-      <![CDATA[Enter Address Line 1]]>
-    </line>
-    <line>
-      <![CDATA[Enter Address Line 2 ]]>
-    </line>
-    <line>
-      <![CDATA[Enter Emergency First Name ]]>
-    </line>
-    <line>
-      <![CDATA[Enter Emergency Second Name]]>
-    </line>
-    <line>
-      <![CDATA[Enter Emergency Third Name ]]>
-    </line>
-    <line>
-      <![CDATA[Select Spouse From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Enter Emergency Mobile No. ]]>
-    </line>
-    <line>
-      <![CDATA[Click on Add Emergency Contact button]]>
-    </line>
-    <line>
-      <![CDATA[Click on Save Button ]]>
+      <![CDATA[Click on Vaccines Link Page]]>
     </line>
     <line>
       <![CDATA[Closing The Browser]]>
@@ -200,90 +68,138 @@
       <![CDATA[Click on CareNet Link]]>
     </line>
     <line>
-      <![CDATA[Click on Patient and Visits Link]]>
+      <![CDATA[Click on CareNet Settings]]>
     </line>
     <line>
-      <![CDATA[Click on Reception Link]]>
+      <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Patient management Link]]>
+      <![CDATA[Click on Vaccines Link Page]]>
     </line>
     <line>
-      <![CDATA[Clear First Name data if exist]]>
+      <![CDATA[Click on Add button]]>
     </line>
     <line>
-      <![CDATA[Enter the First name]]>
+      <![CDATA[Fill Vaccine Name]]>
     </line>
     <line>
-      <![CDATA[Click on Search button]]>
+      <![CDATA[Click on Save Button]]>
     </line>
     <line>
-      <![CDATA[Click on File Number from the Grid Table]]>
+      <![CDATA[Closing The Browser]]>
     </line>
     <line>
-      <![CDATA[Click on New Visit button ]]>
+      <![CDATA[Screenshot Capture in TestNG Results Started]]>
     </line>
     <line>
-      <![CDATA[Click on Search Icon]]>
+      <![CDATA[ChromeDriver is Opened And Maximized ]]>
     </line>
     <line>
-      <![CDATA[Select the First Option from the autoSuggest Field]]>
+      <![CDATA[Navigate To The Url]]>
     </line>
     <line>
-      <![CDATA[Click on Search Icon]]>
+      <![CDATA[Click on the user name Field]]>
     </line>
     <line>
-      <![CDATA[Select the First Option from the autoSuggest Field]]>
+      <![CDATA[Enter User Name ]]>
     </line>
     <line>
-      <![CDATA[Click on Search Icon]]>
+      <![CDATA[Click on The Password Field ]]>
     </line>
     <line>
-      <![CDATA[Select the First Option from the autoSuggest Field]]>
+      <![CDATA[Enter Password]]>
     </line>
     <line>
-      <![CDATA[Click on Calender Image]]>
+      <![CDATA[Click on Login Button]]>
     </line>
     <line>
-      <![CDATA[Select Today Date ]]>
+      <![CDATA[Click on CareNet Link]]>
     </line>
     <line>
-      <![CDATA[Enter Note Description]]>
+      <![CDATA[Click on CareNet Settings]]>
     </line>
     <line>
-      <![CDATA[Click on Save button]]>
+      <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Generate Bill button]]>
+      <![CDATA[Click on Vaccines Link Page]]>
     </line>
     <line>
-      <![CDATA[click on Inpatient Management]]>
+      <![CDATA[Search By Vaccines Name VaccinesName72bd2]]>
     </line>
     <line>
-      <![CDATA[click on Charge Master]]>
+      <![CDATA[Click on Show All Button]]>
     </line>
     <line>
-      <![CDATA[click on Charge Master]]>
+      <![CDATA[Click on the Row]]>
     </line>
     <line>
-      <![CDATA[click on Visit No]]>
+      <![CDATA[Click on update Button]]>
     </line>
     <line>
-      <![CDATA[Enter Visit Number]]>
+      <![CDATA[Closing The Browser]]>
     </line>
     <line>
-      <![CDATA[click on search button]]>
+      <![CDATA[Screenshot Capture in TestNG Results Started]]>
+    </line>
+    <line>
+      <![CDATA[ChromeDriver is Opened And Maximized ]]>
+    </line>
+    <line>
+      <![CDATA[Navigate To The Url]]>
+    </line>
+    <line>
+      <![CDATA[Click on the user name Field]]>
+    </line>
+    <line>
+      <![CDATA[Enter User Name ]]>
+    </line>
+    <line>
+      <![CDATA[Click on The Password Field ]]>
+    </line>
+    <line>
+      <![CDATA[Enter Password]]>
+    </line>
+    <line>
+      <![CDATA[Click on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Click on CareNet Link]]>
+    </line>
+    <line>
+      <![CDATA[Click on CareNet Settings]]>
+    </line>
+    <line>
+      <![CDATA[Click on Data Management's Link]]>
+    </line>
+    <line>
+      <![CDATA[Click on Vaccines Link Page]]>
+    </line>
+    <line>
+      <![CDATA[Search By Vaccines Name VaccinesName72bd2]]>
+    </line>
+    <line>
+      <![CDATA[Click on Show All Button]]>
+    </line>
+    <line>
+      <![CDATA[Click on checkBox to delete]]>
+    </line>
+    <line>
+      <![CDATA[Click on Delete Button]]>
+    </line>
+    <line>
+      <![CDATA[Accept the WebPage Alert]]>
     </line>
     <line>
       <![CDATA[Closing The Browser]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="218382" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:09:47 EET">
+  <suite name="Suite" duration-ms="125336" started-at="2020-02-11T15:10:29 EET" finished-at="2020-02-11T15:12:34 EET">
     <groups>
     </groups>
-    <test name="Demo Cycle" duration-ms="218382" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:09:47 EET">
-      <class name="test.CareNetSettings.Cycles.AddCashPatient">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="setUp" is-config="true" duration-ms="14779" started-at="2020-02-09T09:06:09 EET" finished-at="2020-02-09T09:06:24 EET">
+    <test name="Demo Cycle" duration-ms="125336" started-at="2020-02-11T15:10:29 EET" finished-at="2020-02-11T15:12:34 EET">
+      <class name="test.CareNetSettings.DataManagement.Vaccines">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="setUp" is-config="true" duration-ms="13716" started-at="2020-02-11T15:10:29 EET" finished-at="2020-02-11T15:10:43 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -293,7 +209,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="registerNewPatient" duration-ms="73741" started-at="2020-02-09T09:06:24 EET" finished-at="2020-02-09T09:07:37 EET">
+        <test-method status="PASS" signature="navigateToVaccinesPage()[pri:1, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="navigateToVaccinesPage" duration-ms="15985" started-at="2020-02-11T15:10:43 EET" finished-at="2020-02-11T15:10:59 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -317,158 +233,26 @@
               <![CDATA[Click on CareNet Link]]>
             </line>
             <line>
-              <![CDATA[Click on Patient and Visits Link]]>
+              <![CDATA[Click on CareNet Settings]]>
             </line>
             <line>
-              <![CDATA[Click on Reception Link]]>
+              <![CDATA[Click on Data Management's Link]]>
             </line>
             <line>
-              <![CDATA[Click on Patient management Link]]>
-            </line>
-            <line>
-              <![CDATA[Clear First Name Data If founded]]>
-            </line>
-            <line>
-              <![CDATA[Send any data in the first name filed  Data to appear new patient button ]]>
-            </line>
-            <line>
-              <![CDATA[click on the search button]]>
-            </line>
-            <line>
-              <![CDATA[click on the new patient button]]>
-            </line>
-            <line>
-              <![CDATA[Clear First Name Text]]>
-            </line>
-            <line>
-              <![CDATA[Enter the first name in English]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Second  name in English]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Last  name in English]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Family  name in English]]>
-            </line>
-            <line>
-              <![CDATA[Enter إسم العائلة]]>
-            </line>
-            <line>
-              <![CDATA[Enter الإسم الأخير]]>
-            </line>
-            <line>
-              <![CDATA[Enter الإسم الثاني]]>
-            </line>
-            <line>
-              <![CDATA[Enter الإسم الأول]]>
-            </line>
-            <line>
-              <![CDATA[Enter the Email]]>
-            </line>
-            <line>
-              <![CDATA[Click on Calender Image]]>
-            </line>
-            <line>
-              <![CDATA[Select Today Date ]]>
-            </line>
-            <line>
-              <![CDATA[Select Male Gender ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Mobile No]]>
-            </line>
-            <line>
-              <![CDATA[Click on Second Mobile No ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Second Mobile No ]]>
-            </line>
-            <line>
-              <![CDATA[Click on Search Icon]]>
-            </line>
-            <line>
-              <![CDATA[Select the First Option from the autoSuggest Field]]>
-            </line>
-            <line>
-              <![CDATA[Select Declaration From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Enter Declaration Number]]>
-            </line>
-            <line>
-              <![CDATA[Enter Declaration Place Of Issue]]>
-            </line>
-            <line>
-              <![CDATA[Click on Calender Image]]>
-            </line>
-            <line>
-              <![CDATA[Select Today Date ]]>
-            </line>
-            <line>
-              <![CDATA[Click on Calender Image]]>
-            </line>
-            <line>
-              <![CDATA[Select Today Date ]]>
-            </line>
-            <line>
-              <![CDATA[Select Widower From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Select AB+ From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Click on Search Icon]]>
-            </line>
-            <line>
-              <![CDATA[Select the First Option from the autoSuggest Field]]>
-            </line>
-            <line>
-              <![CDATA[Select Labor From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Enter External No.]]>
-            </line>
-            <line>
-              <![CDATA[Enter Address Line 1]]>
-            </line>
-            <line>
-              <![CDATA[Enter Address Line 2 ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Emergency First Name ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Emergency Second Name]]>
-            </line>
-            <line>
-              <![CDATA[Enter Emergency Third Name ]]>
-            </line>
-            <line>
-              <![CDATA[Select Spouse From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Enter Emergency Mobile No. ]]>
-            </line>
-            <line>
-              <![CDATA[Click on Add Emergency Contact button]]>
-            </line>
-            <line>
-              <![CDATA[Click on Save Button ]]>
+              <![CDATA[Click on Vaccines Link Page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- registerNewPatient -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="tearDown" is-config="true" duration-ms="1121" started-at="2020-02-09T09:07:37 EET" finished-at="2020-02-09T09:07:38 EET">
+        </test-method> <!-- navigateToVaccinesPage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="tearDown" is-config="true" duration-ms="1046" started-at="2020-02-11T15:10:59 EET" finished-at="2020-02-11T15:11:00 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerNewPatient status=SUCCESS method=AddCashPatient.registerNewPatient()[pri:1, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=navigateToVaccinesPage status=SUCCESS method=Vaccines.navigateToVaccinesPage()[pri:1, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.CareNetSettings.Cycles.AddCashPatient.registerNewPatient() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.CareNetSettings.DataManagement.Vaccines.navigateToVaccinesPage() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
@@ -478,7 +262,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="setUp" is-config="true" duration-ms="11757" started-at="2020-02-09T09:07:39 EET" finished-at="2020-02-09T09:07:50 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="setUp" is-config="true" duration-ms="10254" started-at="2020-02-11T15:11:00 EET" finished-at="2020-02-11T15:11:10 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -488,7 +272,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="addNewVisitWithChargeMaster" duration-ms="115526" started-at="2020-02-09T09:07:50 EET" depends-on-methods="test.CareNetSettings.Cycles.AddCashPatient.registerNewPatient" finished-at="2020-02-09T09:09:46 EET">
+        <test-method status="PASS" signature="addVaccines()[pri:2, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="addVaccines" duration-ms="20020" started-at="2020-02-11T15:11:10 EET" finished-at="2020-02-11T15:11:30 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -512,92 +296,35 @@
               <![CDATA[Click on CareNet Link]]>
             </line>
             <line>
-              <![CDATA[Click on Patient and Visits Link]]>
+              <![CDATA[Click on CareNet Settings]]>
             </line>
             <line>
-              <![CDATA[Click on Reception Link]]>
+              <![CDATA[Click on Data Management's Link]]>
             </line>
             <line>
-              <![CDATA[Click on Patient management Link]]>
+              <![CDATA[Click on Vaccines Link Page]]>
             </line>
             <line>
-              <![CDATA[Clear First Name data if exist]]>
+              <![CDATA[Click on Add button]]>
             </line>
             <line>
-              <![CDATA[Enter the First name]]>
+              <![CDATA[Fill Vaccine Name]]>
             </line>
             <line>
-              <![CDATA[Click on Search button]]>
-            </line>
-            <line>
-              <![CDATA[Click on File Number from the Grid Table]]>
-            </line>
-            <line>
-              <![CDATA[Click on New Visit button ]]>
-            </line>
-            <line>
-              <![CDATA[Click on Search Icon]]>
-            </line>
-            <line>
-              <![CDATA[Select the First Option from the autoSuggest Field]]>
-            </line>
-            <line>
-              <![CDATA[Click on Search Icon]]>
-            </line>
-            <line>
-              <![CDATA[Select the First Option from the autoSuggest Field]]>
-            </line>
-            <line>
-              <![CDATA[Click on Search Icon]]>
-            </line>
-            <line>
-              <![CDATA[Select the First Option from the autoSuggest Field]]>
-            </line>
-            <line>
-              <![CDATA[Click on Calender Image]]>
-            </line>
-            <line>
-              <![CDATA[Select Today Date ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Note Description]]>
-            </line>
-            <line>
-              <![CDATA[Click on Save button]]>
-            </line>
-            <line>
-              <![CDATA[Click on Generate Bill button]]>
-            </line>
-            <line>
-              <![CDATA[click on Inpatient Management]]>
-            </line>
-            <line>
-              <![CDATA[click on Charge Master]]>
-            </line>
-            <line>
-              <![CDATA[click on Charge Master]]>
-            </line>
-            <line>
-              <![CDATA[click on Visit No]]>
-            </line>
-            <line>
-              <![CDATA[Enter Visit Number]]>
-            </line>
-            <line>
-              <![CDATA[click on search button]]>
+              <![CDATA[Click on Save Button]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addNewVisitWithChargeMaster -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152]" name="tearDown" is-config="true" duration-ms="1240" started-at="2020-02-09T09:09:46 EET" finished-at="2020-02-09T09:09:47 EET">
+        </test-method> <!-- addVaccines -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="tearDown" is-config="true" duration-ms="1066" started-at="2020-02-11T15:11:30 EET" finished-at="2020-02-11T15:11:31 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewVisitWithChargeMaster status=SUCCESS method=AddCashPatient.addNewVisitWithChargeMaster()[pri:2, instance:test.CareNetSettings.Cycles.AddCashPatient@1f28c152] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=addVaccines status=SUCCESS method=Vaccines.addVaccines()[pri:2, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.CareNetSettings.Cycles.AddCashPatient.addNewVisitWithChargeMaster() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.CareNetSettings.DataManagement.Vaccines.addVaccines() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
@@ -607,7 +334,160 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.CareNetSettings.Cycles.AddCashPatient -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="setUp" is-config="true" duration-ms="10449" started-at="2020-02-11T15:11:31 EET" finished-at="2020-02-11T15:11:42 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot Capture in TestNG Results Started]]>
+            </line>
+            <line>
+              <![CDATA[ChromeDriver is Opened And Maximized ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="editVaccines()[pri:3, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="editVaccines" duration-ms="20595" started-at="2020-02-11T15:11:42 EET" depends-on-methods="test.CareNetSettings.DataManagement.Vaccines.addVaccines" finished-at="2020-02-11T15:12:02 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate To The Url]]>
+            </line>
+            <line>
+              <![CDATA[Click on the user name Field]]>
+            </line>
+            <line>
+              <![CDATA[Enter User Name ]]>
+            </line>
+            <line>
+              <![CDATA[Click on The Password Field ]]>
+            </line>
+            <line>
+              <![CDATA[Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[Click on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Click on CareNet Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on CareNet Settings]]>
+            </line>
+            <line>
+              <![CDATA[Click on Data Management's Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on Vaccines Link Page]]>
+            </line>
+            <line>
+              <![CDATA[Search By Vaccines Name VaccinesName72bd2]]>
+            </line>
+            <line>
+              <![CDATA[Click on Show All Button]]>
+            </line>
+            <line>
+              <![CDATA[Click on the Row]]>
+            </line>
+            <line>
+              <![CDATA[Click on update Button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editVaccines -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="tearDown" is-config="true" duration-ms="1023" started-at="2020-02-11T15:12:02 EET" finished-at="2020-02-11T15:12:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editVaccines status=SUCCESS method=Vaccines.editVaccines()[pri:3, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152] output=Navigate To The Url]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.CareNetSettings.DataManagement.Vaccines.editVaccines() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Closing The Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="setUp" is-config="true" duration-ms="9982" started-at="2020-02-11T15:12:03 EET" finished-at="2020-02-11T15:12:13 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot Capture in TestNG Results Started]]>
+            </line>
+            <line>
+              <![CDATA[ChromeDriver is Opened And Maximized ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteVaccines()[pri:4, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="deleteVaccines" duration-ms="19983" started-at="2020-02-11T15:12:13 EET" depends-on-methods="test.CareNetSettings.DataManagement.Vaccines.addVaccines" finished-at="2020-02-11T15:12:33 EET">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate To The Url]]>
+            </line>
+            <line>
+              <![CDATA[Click on the user name Field]]>
+            </line>
+            <line>
+              <![CDATA[Enter User Name ]]>
+            </line>
+            <line>
+              <![CDATA[Click on The Password Field ]]>
+            </line>
+            <line>
+              <![CDATA[Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[Click on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Click on CareNet Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on CareNet Settings]]>
+            </line>
+            <line>
+              <![CDATA[Click on Data Management's Link]]>
+            </line>
+            <line>
+              <![CDATA[Click on Vaccines Link Page]]>
+            </line>
+            <line>
+              <![CDATA[Search By Vaccines Name VaccinesName72bd2]]>
+            </line>
+            <line>
+              <![CDATA[Click on Show All Button]]>
+            </line>
+            <line>
+              <![CDATA[Click on checkBox to delete]]>
+            </line>
+            <line>
+              <![CDATA[Click on Delete Button]]>
+            </line>
+            <line>
+              <![CDATA[Accept the WebPage Alert]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteVaccines -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152]" name="tearDown" is-config="true" duration-ms="1124" started-at="2020-02-11T15:12:33 EET" finished-at="2020-02-11T15:12:34 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteVaccines status=SUCCESS method=Vaccines.deleteVaccines()[pri:4, instance:test.CareNetSettings.DataManagement.Vaccines@1f28c152] output=Navigate To The Url]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.CareNetSettings.DataManagement.Vaccines.deleteVaccines() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Closing The Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CareNetSettings.DataManagement.Vaccines -->
     </test> <!-- Demo Cycle -->
   </suite> <!-- Suite -->
 </testng-results>
