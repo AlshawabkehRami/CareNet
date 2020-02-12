@@ -230,7 +230,7 @@ public class BasePage {
         click("id", MedicalProvidersLocator, driver, "Click on Medical Providers Locator");
     }
 
-    public void NavigateToAgreements(WebDriver driver) {
+    public void navigateToAgreements(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String AgreementsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_lblfontMod";
@@ -427,6 +427,14 @@ public class BasePage {
     public static void acceptTheWebPageAlert(WebDriver driver){
         driver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
+    }
+    public static void AssertByPageName(String ExpectedResultPageName){
+
+        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
+                (By.id("ctl00_lblPageName"))).getText();
+        String ExpectedResultt = ExpectedResultPageName;
+        Assert.assertEquals(ActualResult, ExpectedResultt, ExpectedResultPageName+"Page not opened Properly");
+
     }
 }
 

@@ -34,7 +34,7 @@ public class PayersNetworks extends BasePage {
     public void navigateToPayersNetworks() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
-        NavigateToAgreements(OpenDriver);
+        navigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Payers Networks Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

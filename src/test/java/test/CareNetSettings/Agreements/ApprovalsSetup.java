@@ -23,7 +23,6 @@ public class ApprovalsSetup extends BasePage {
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl03_lblfontFrm";
 
-
     @BeforeMethod
     public void setUp() {
         OpenDriver = driverType(driver, "chrome");
@@ -34,17 +33,12 @@ public class ApprovalsSetup extends BasePage {
     public void navigateToApprovalsSetup() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
-        NavigateToAgreements(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Approvals Setup Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Approvals Setup";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Approvals Setup Page not opened Properly");
-
+        navigateToAgreements(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Approvals Setup Page Link");
+        AssertByPageName("Approvals Setup");
 
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
