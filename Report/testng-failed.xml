@@ -9,9 +9,12 @@
     <classes>
       <class name="test.CareNetSettings.DataManagement.BodySystem">
         <methods>
+          <include name="editBodySystemPartList"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="addBodySystemPartList"/>
           <include name="addBodySystem"/>
+          <include name="deleteBodySystemPartList"/>
           <include name="deleteBodySystem"/>
         </methods>
       </class> <!-- test.CareNetSettings.DataManagement.BodySystem -->

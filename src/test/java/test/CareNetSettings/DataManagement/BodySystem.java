@@ -74,6 +74,8 @@ public class BodySystem extends BasePage {
 
     }
 
+
+    String BodySystemPartName = "BodySystemName" + RandomString;
     @Test(priority = 4, dependsOnMethods = "addBodySystem")
     public void addBodySystemPartList() throws InterruptedException {
         navigateToUrl(OpenDriver);
@@ -83,9 +85,17 @@ public class BodySystem extends BasePage {
         senKeys("cssselector", "input[id*='txtBodySystemNameSearch']", Name, OpenDriver, "Search By Name" + Name);
         click("cssselector", "input[id*='btnSearch']", OpenDriver, "Click on Search Button");
         click("xpath", "//table/tbody/tr[2]", OpenDriver, "Click on The Row");
+        click("cssselector","a[id*='ibtnAddBodyPart']",OpenDriver,"Click on Add Body Part Button");
+        senKeys("cssselector","input[id*='txtBodySystemPartName']",BodySystemPartName,OpenDriver,"Fill BodySystemPartName");
+        senKeys("id","ctl00_ContentPlaceHolder1_txtBodySystemPartDescription","Automated Description",OpenDriver,"Fill Description");
+        click("cssselector","input[id*='btnSaveBodySystemPart']",OpenDriver,"Click on Save Button");
+
+        AssertOperationDoneSuccessfully();
+
+
     }
 
-    @Test(priority = 5, dependsOnMethods = "addBodySystem")
+    @Test(priority = 5, dependsOnMethods = {"addBodySystem","addBodySystemPartList"})
     public void editBodySystemPartList() throws InterruptedException {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);
@@ -96,7 +106,7 @@ public class BodySystem extends BasePage {
         click("xpath", "//table/tbody/tr[2]", OpenDriver, "Click on The Row");
     }
 
-    @Test(priority = 6, dependsOnMethods = "addBodySystem")
+    @Test(priority = 6, dependsOnMethods = {"addBodySystem","addBodySystemPartList"})
     public void deleteBodySystemPartList() throws InterruptedException {
         navigateToUrl(OpenDriver);
         LoginWithAdminUser(OpenDriver);

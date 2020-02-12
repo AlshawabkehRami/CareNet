@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,  2 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="addBodySystemPartList">addBodySystemPartList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="deleteBodySystem">deleteBodySystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="deleteBodySystemPartList">deleteBodySystemPartList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="editBodySystemPartList">editBodySystemPartList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +141,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="addBodySystem">addBodySystem</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CareNetSettings.DataManagement.BodySystem" hash-for-method="deleteBodySystem">deleteBodySystem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,6 +165,89 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.CareNetSettings.DataManagement.BodySystem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBodySystemPartList">
+                  </a> <!-- addBodySystemPartList -->
+                  <span class="method-name">addBodySystemPartList</span>
+                  <div class="stack-trace">java.lang.AssertionError: Operation Done Successfully . expected [x
+Operation Done Successsfully .] but found [x
+Operation Done Successfully .]
+	at Driver.BasePage.AssertOperationDoneSuccessfully(BasePage.java:418)
+	at test.CareNetSettings.DataManagement.BodySystem.addBodySystemPartList(BodySystem.java:93)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBodySystem">
+                  </a> <!-- deleteBodySystem -->
+                  <span class="method-name">deleteBodySystem</span>
+                  <div class="stack-trace">java.lang.AssertionError: Operation Done Successfully . expected [x
+Operation Done Successfully .] but found [x
+Can&apos;t Be Deleted Cause This Body System Has Related Parts]
+	at test.CareNetSettings.DataManagement.BodySystem.deleteBodySystem(BodySystem.java:135)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.CareNetSettings.DataManagement.BodySystem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBodySystemPartList">
+                  </a> <!-- deleteBodySystemPartList -->
+                  <span class="method-name">deleteBodySystemPartList</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BodySystem.deleteBodySystemPartList()[pri:6, instance:test.CareNetSettings.DataManagement.BodySystem@1f28c152] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editBodySystemPartList">
+                  </a> <!-- editBodySystemPartList -->
+                  <span class="method-name">editBodySystemPartList</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BodySystem.editBodySystemPartList()[pri:5, instance:test.CareNetSettings.DataManagement.BodySystem@1f28c152] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -143,13 +259,6 @@
                   <a name="addBodySystem">
                   </a> <!-- addBodySystem -->
                   <span class="method-name">addBodySystem</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteBodySystem">
-                  </a> <!-- deleteBodySystem -->
-                  <span class="method-name">deleteBodySystem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -224,23 +333,35 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addBodySystem')
+data.setCell(0, 1, 'addBodySystemPartList')
 data.setCell(0, 2, 'test.CareNetSettings.DataManagement.BodySystem')
-data.setCell(0, 3, 20333);
+data.setCell(0, 3, 19246);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'editBodySystem')
+data.setCell(1, 1, 'addBodySystem')
 data.setCell(1, 2, 'test.CareNetSettings.DataManagement.BodySystem')
-data.setCell(1, 3, 19228);
+data.setCell(1, 3, 18079);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteBodySystem')
+data.setCell(2, 1, 'editBodySystem')
 data.setCell(2, 2, 'test.CareNetSettings.DataManagement.BodySystem')
-data.setCell(2, 3, 18388);
+data.setCell(2, 3, 17791);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'navigateToBodySystem')
+data.setCell(3, 1, 'deleteBodySystem')
 data.setCell(3, 2, 'test.CareNetSettings.DataManagement.BodySystem')
-data.setCell(3, 3, 14598);
+data.setCell(3, 3, 17248);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'navigateToBodySystem')
+data.setCell(4, 2, 'test.CareNetSettings.DataManagement.BodySystem')
+data.setCell(4, 3, 13840);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'editBodySystemPartList')
+data.setCell(5, 2, 'test.CareNetSettings.DataManagement.BodySystem')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteBodySystemPartList')
+data.setCell(6, 2, 'test.CareNetSettings.DataManagement.BodySystem')
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -257,7 +378,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">deleteBodySystem</span>
+              <span class="reporter-method-name">navigateToBodySystem</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Navigate To The Url</span>
                 <span class="reporter-method-output">Click on the user name Field</span>
@@ -269,11 +390,6 @@ return data;
                 <span class="reporter-method-output">Click on CareNet Settings</span>
                 <span class="reporter-method-output">Click on Data Management's Link</span>
                 <span class="reporter-method-output">Click on Body System link Page </span>
-                <span class="reporter-method-output">Search By NameBodySystemName0085c</span>
-                <span class="reporter-method-output">Click on Search Button</span>
-                <span class="reporter-method-output">Click on the CheckBox to Delete</span>
-                <span class="reporter-method-output"></span>
-                <span class="reporter-method-output">Accept the WebPage Alert</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -308,14 +424,14 @@ return data;
                 <span class="reporter-method-output">Click on CareNet Settings</span>
                 <span class="reporter-method-output">Click on Data Management's Link</span>
                 <span class="reporter-method-output">Click on Body System link Page </span>
-                <span class="reporter-method-output">Search By NameBodySystemName0085c</span>
+                <span class="reporter-method-output">Search By NameBodySystemNamebade5</span>
                 <span class="reporter-method-output">Click on Search Button</span>
                 <span class="reporter-method-output">Click on The Row</span>
                 <span class="reporter-method-output">Click on Update Button</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">navigateToBodySystem</span>
+              <span class="reporter-method-name">deleteBodySystem</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Navigate To The Url</span>
                 <span class="reporter-method-output">Click on the user name Field</span>
@@ -327,6 +443,43 @@ return data;
                 <span class="reporter-method-output">Click on CareNet Settings</span>
                 <span class="reporter-method-output">Click on Data Management's Link</span>
                 <span class="reporter-method-output">Click on Body System link Page </span>
+                <span class="reporter-method-output">Search By NameBodySystemNamebade5</span>
+                <span class="reporter-method-output">Click on Search Button</span>
+                <span class="reporter-method-output">Click on the CheckBox to Delete</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">Accept the WebPage Alert</span>
+                <span class="reporter-method-output">########################################</span>
+                <span class="reporter-method-output">Test Case deleteBodySystem Executed with status = Failed  </span>
+                <span class="reporter-method-output">The screenshot has been Captured Correctly with name :: deleteBodySystem_20200212104151.png</span>
+                <span class="reporter-method-output">########################################</span>
+                <span class="reporter-method-output">Closing The Browser</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addBodySystemPartList</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigate To The Url</span>
+                <span class="reporter-method-output">Click on the user name Field</span>
+                <span class="reporter-method-output">Enter User Name </span>
+                <span class="reporter-method-output">Click on The Password Field </span>
+                <span class="reporter-method-output">Enter Password</span>
+                <span class="reporter-method-output">Click on Login Button</span>
+                <span class="reporter-method-output">Click on CareNet Link</span>
+                <span class="reporter-method-output">Click on CareNet Settings</span>
+                <span class="reporter-method-output">Click on Data Management's Link</span>
+                <span class="reporter-method-output">Click on Body System link Page </span>
+                <span class="reporter-method-output">Search By NameBodySystemNamebade5</span>
+                <span class="reporter-method-output">Click on Search Button</span>
+                <span class="reporter-method-output">Click on The Row</span>
+                <span class="reporter-method-output">Click on Add Body Part Button</span>
+                <span class="reporter-method-output">Fill BodySystemPartName</span>
+                <span class="reporter-method-output">Fill Description</span>
+                <span class="reporter-method-output">Click on Save Button</span>
+                <span class="reporter-method-output">########################################</span>
+                <span class="reporter-method-output">Test Case addBodySystemPartList Executed with status = Failed  </span>
+                <span class="reporter-method-output">The screenshot has been Captured Correctly with name :: addBodySystemPartList_20200212104121.png</span>
+                <span class="reporter-method-output">########################################</span>
+                <span class="reporter-method-output">Closing The Browser</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,47 +504,71 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateToBodySystem</span>
-                <span class="method-start">12293 ms</span>
+                <span class="method-start">12127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=navigateToBodySystem status=SUCCESS method=BodySystem.navigateToBodySystem()[pri:1,...)</span>
-                <span class="method-start">26894 ms</span>
+                <span class="method-start">25969 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">28144 ms</span>
+                <span class="method-start">27028 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addBodySystem</span>
-                <span class="method-start">38550 ms</span>
+                <span class="method-start">36966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addBodySystem status=SUCCESS method=BodySystem.addBodySystem()[pri:2, instance:test...)</span>
-                <span class="method-start">58884 ms</span>
+                <span class="method-start">55046 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">60066 ms</span>
+                <span class="method-start">56081 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editBodySystem</span>
-                <span class="method-start">70195 ms</span>
+                <span class="method-start">65723 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=editBodySystem status=SUCCESS method=BodySystem.editBodySystem()[pri:3, instance:te...)</span>
-                <span class="method-start">89423 ms</span>
+                <span class="method-start">83514 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">90561 ms</span>
+                <span class="method-start">84529 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteBodySystem</span>
-                <span class="method-start">100502 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addBodySystemPartList</span>
+                <span class="method-start">94419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=deleteBodySystem status=SUCCESS method=BodySystem.deleteBodySystem()[pri:4, instanc...)</span>
-                <span class="method-start">118890 ms</span>
+                <span class="method-name">tearDown([TestResult name=addBodySystemPartList status=FAILURE method=BodySystem.addBodySystemPartList()[pri:...)</span>
+                <span class="method-start">113672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">editBodySystemPartList</span>
+                <span class="method-start">115860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteBodySystemPartList</span>
+                <span class="method-start">115862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">115864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteBodySystem</span>
+                <span class="method-start">126333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=deleteBodySystem status=FAILURE method=BodySystem.deleteBodySystem()[pri:7, instanc...)</span>
+                <span class="method-start">143583 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

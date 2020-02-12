@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
@@ -410,7 +411,12 @@ public class BasePage {
         return null;
     }
 
-
+public static void AssertOperationDoneSuccessfully(){
+    String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+    String ExpectedResult1 = "x\n" +
+            "Operation Done Successfully .";
+    Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+}
 }
 
 
