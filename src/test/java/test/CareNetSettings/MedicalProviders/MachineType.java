@@ -33,7 +33,7 @@ public class MachineType extends BasePage {
 
     public void navigateToMachineType() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Machine Type Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

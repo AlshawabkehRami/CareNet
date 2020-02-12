@@ -33,7 +33,7 @@ public class ProviderItemsManagement extends BasePage {
 
     public void navigateToProviderItemsManagement() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Provider Items Management Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

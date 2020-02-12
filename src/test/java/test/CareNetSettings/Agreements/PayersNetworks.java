@@ -33,7 +33,7 @@ public class PayersNetworks extends BasePage {
 
     public void navigateToPayersNetworks() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Payers Networks Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

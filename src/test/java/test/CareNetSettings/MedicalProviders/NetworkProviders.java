@@ -33,7 +33,7 @@ public class NetworkProviders extends BasePage {
 
     public void navigateToNetworkProviders() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Network Providers Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

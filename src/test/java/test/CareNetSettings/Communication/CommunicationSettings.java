@@ -31,7 +31,7 @@ public class CommunicationSettings extends BasePage {
     @Test
     public void navigateToCommunicationSettingsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Communication Settings  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

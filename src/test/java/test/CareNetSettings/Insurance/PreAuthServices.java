@@ -32,7 +32,7 @@ public class PreAuthServices extends BasePage {
     @Test
     public void navigateToPreAuthServicesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Pre-Auth Services  Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

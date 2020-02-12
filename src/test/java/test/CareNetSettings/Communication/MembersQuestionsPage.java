@@ -32,7 +32,7 @@ public class MembersQuestionsPage extends BasePage {
     @Test
     public void navigateToMembersQuestionsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Members Questions Page  link ");
 

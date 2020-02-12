@@ -30,8 +30,8 @@ public class MangeProviders extends BasePage {
     @Test
     public void navigateToMangeProvidersPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Mange Providers page link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

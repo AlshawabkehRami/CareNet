@@ -32,7 +32,7 @@ public class LabQCResults extends BasePage {
     @Test
     public void navigateToLabQCResultsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToQualityControlLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Lab QC Results Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

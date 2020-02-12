@@ -28,8 +28,8 @@ public class UserSignature extends BasePage {
     @Test
     public void navigateToUserSignaturePage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on User Signature Link Page ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

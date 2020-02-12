@@ -31,7 +31,7 @@ public class InsuranceAgreement extends BasePage {
     @Test
     public void navigateToInsuranceAgreementPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Insurance Agreement  Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

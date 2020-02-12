@@ -33,7 +33,7 @@ public class MachineSetup extends BasePage {
 
     public void navigateToMachineSetup() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Machine Setup Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

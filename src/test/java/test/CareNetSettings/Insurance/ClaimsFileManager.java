@@ -31,7 +31,7 @@ public class ClaimsFileManager extends BasePage {
     @Test
     public void navigateToClaimsFileManagerPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Claims File Manager   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

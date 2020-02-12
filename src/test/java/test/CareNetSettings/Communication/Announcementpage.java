@@ -32,7 +32,7 @@ public class Announcementpage extends BasePage {
     @Test
     public void navigateToAnnouncementpage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Announcement  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

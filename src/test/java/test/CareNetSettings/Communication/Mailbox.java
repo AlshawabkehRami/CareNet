@@ -31,7 +31,7 @@ public class Mailbox extends BasePage {
     @Test
     public void navigateToMailboxPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Mailbox  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

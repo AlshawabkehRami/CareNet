@@ -34,7 +34,7 @@ public class ExcludedServicesAndDiseases extends BasePage {
 
     public void navigateToExcludedServicesAndDiseases() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Excluded Services And Diseases Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

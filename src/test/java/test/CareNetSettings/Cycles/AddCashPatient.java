@@ -1,10 +1,8 @@
 package test.CareNetSettings.Cycles;
 
 import Driver.BasePage;
-import org.checkerframework.checker.units.qual.Time;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -14,7 +12,6 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -37,7 +34,7 @@ public class AddCashPatient extends BasePage {
     @Test(priority = 1)
     public void registerNewPatient() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         click("cssselector", "[id*=rptApplications_ctl04_lblCSS]", OpenDriver, "Click on CareNet Link");
         click("cssselector", "span[id*='ctl09_lblfontSys']", OpenDriver, "Click on Patient and Visits Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_rptModule_ctl00_lblfontMod", OpenDriver, "Click on Reception Link");
@@ -114,7 +111,7 @@ public class AddCashPatient extends BasePage {
     public void addNewVisitWithChargeMaster() throws InterruptedException {
 
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         click("cssselector", "[id*=rptApplications_ctl04_lblCSS]", OpenDriver, "Click on CareNet Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_lblfontSys", OpenDriver, "Click on Patient and Visits Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_rptModule_ctl00_lblfontMod", OpenDriver, "Click on Reception Link");

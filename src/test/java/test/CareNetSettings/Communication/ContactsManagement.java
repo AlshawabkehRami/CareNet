@@ -31,7 +31,7 @@ public class ContactsManagement extends BasePage {
     @Test
     public void navigateToContactsManagementPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Contacts Management  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

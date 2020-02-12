@@ -31,7 +31,7 @@ public class ResubmissionLeftDays extends BasePage {
     @Test
     public void navigateToResubmissionLeftDaysPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Resubmission Left Days   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

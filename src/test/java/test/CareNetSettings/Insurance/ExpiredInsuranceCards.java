@@ -31,7 +31,7 @@ public class ExpiredInsuranceCards extends BasePage {
     @Test
     public void navigateToExpiredInsuranceCardsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Expired Insurance Cards   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

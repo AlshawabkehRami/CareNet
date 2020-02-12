@@ -29,8 +29,8 @@ public class Diseases extends BasePage {
     @Test(priority = 1)
     public void navigateToDiseasesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Diseases page link");
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
@@ -45,8 +45,8 @@ public class Diseases extends BasePage {
     @Test(priority = 2)
     public void addDiseases() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Diseases page link");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtDiseaseName']", DiseasesName, OpenDriver, "Fill Disease Name");
@@ -59,10 +59,8 @@ public class Diseases extends BasePage {
         senKeys("cssselector", "input[id*='txtDiseaseAlias']", "Disease Alias", OpenDriver, "Fill Disease Alias");
         senKeys("cssselector", "input[id*='txtFrequency']", "122" + RandomString, OpenDriver, "Fill The Frequency");
         click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
 
     }
@@ -70,17 +68,15 @@ public class Diseases extends BasePage {
     @Test(priority = 3, dependsOnMethods = "addDiseases")
     public void editDiseases() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Diseases page link");
         senKeys("cssselector", "input[id*='txtNameSearch']", DiseasesName, OpenDriver, "Search for the name of the disease" + DiseasesName);
         click("cssselector", "input[id*='btnSearch']", OpenDriver, "Click on Search Button");
         click("xpath", "//table/tbody/tr[2]", OpenDriver, "Click on the Disease Row ");
         click("cssselector", "input[id*='btnUpdate']", OpenDriver, "Click on Update Button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
     }
 
@@ -88,8 +84,8 @@ public class Diseases extends BasePage {
     public void deletDiseases() throws InterruptedException {
 
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Diseases page link");
         senKeys("cssselector", "input[id*='txtNameSearch']", DiseasesName, OpenDriver, "Search for the name of the disease" + DiseasesName);
         click("cssselector", "input[id*='btnSearch']", OpenDriver, "Click on Search Button");
@@ -97,10 +93,8 @@ public class Diseases extends BasePage {
         click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on delete Icon");
         OpenDriver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
     }
     @AfterMethod

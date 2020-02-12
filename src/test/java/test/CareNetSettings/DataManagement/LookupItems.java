@@ -31,8 +31,8 @@ public class LookupItems extends BasePage {
     @Test
     public void navigateToLookupItemsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Lookup Items Page Link");
 
         Wait = new WebDriverWait(OpenDriver, 20);

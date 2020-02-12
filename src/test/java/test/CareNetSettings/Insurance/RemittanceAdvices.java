@@ -32,7 +32,7 @@ public class RemittanceAdvices extends BasePage {
     @Test
     public void navigateToRemittanceAdvicesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on RemittanceAdvices Page  link ");
 

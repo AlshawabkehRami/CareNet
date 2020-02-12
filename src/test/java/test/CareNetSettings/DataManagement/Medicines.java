@@ -28,8 +28,8 @@ public class Medicines extends BasePage {
     @Test
     public void navigateToMedicinesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Medicines Link Page ");
 
         Wait = new WebDriverWait(OpenDriver, 20);

@@ -31,7 +31,7 @@ public class LotsNumbers extends BasePage {
     @Test
     public void navigateToLotsNumbersPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToQualityControlLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Lots Numbers Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

@@ -34,7 +34,7 @@ public class PriceLists extends BasePage {
 
     public void navigateToPriceLists() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Price Lists Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

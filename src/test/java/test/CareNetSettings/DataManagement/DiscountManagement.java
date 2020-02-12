@@ -10,7 +10,6 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
-import java.io.IOException;
 import java.lang.reflect.Method;
 
 /**
@@ -29,8 +28,8 @@ public class DiscountManagement extends BasePage {
     @Test
     public void navigateToDiscountManagementPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Navigate To Discount Management Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

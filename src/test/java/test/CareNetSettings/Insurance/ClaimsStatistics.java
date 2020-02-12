@@ -31,7 +31,7 @@ public class ClaimsStatistics extends BasePage {
     @Test
     public void navigateToClaimsStatisticsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Claims Statistics  Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

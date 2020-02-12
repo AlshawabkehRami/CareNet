@@ -33,7 +33,7 @@ public class ScheduleSettings extends BasePage {
 
     public void navigateToScheduleSettings() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Schedule Settings Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

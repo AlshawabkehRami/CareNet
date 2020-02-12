@@ -31,7 +31,7 @@ public class FinancialProviderSettings extends BasePage {
     @Test
     public void navigateToFinancialProviderSettingsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToIntegrationSettingsLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Financial Provider Settings Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

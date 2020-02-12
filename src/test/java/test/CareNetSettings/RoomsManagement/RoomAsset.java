@@ -34,7 +34,7 @@ public class RoomAsset extends BasePage {
 
     public void navigateToRoomAsset() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Room Asset Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

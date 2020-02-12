@@ -31,7 +31,7 @@ public class GroupsManagement extends BasePage {
     @Test
     public void navigateToGroupsManagementPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Groups Management  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

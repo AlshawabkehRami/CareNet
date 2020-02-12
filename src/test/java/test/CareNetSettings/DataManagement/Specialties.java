@@ -29,8 +29,8 @@ public class Specialties extends BasePage {
     @Test
     public void navigateToSpecialtiesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Specialties Page link ");
 
         Wait = new WebDriverWait(OpenDriver, 20);

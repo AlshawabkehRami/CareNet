@@ -25,17 +25,71 @@ public class MedicalServices extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToMedicalServicesPage() throws InterruptedException {
+    @Test(priority = 1)
+    public void navigateToMedicalServices() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Medical Services link page");
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
         String ExpectedResult = "Search";
         Assert.assertEquals(ActualResult, ExpectedResult, "Medical Services Page not opened Properly");
+    }
+
+    String RandomString = generateString();
+    String MedicalServicesName = "MedicalServicesName" + RandomString;
+
+    @Test(priority = 2)
+    public void addMedicalServices() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
+        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button ");
+        senKeys("id", "ctl00_ContentPlaceHolder1_txtCode", RandomString, OpenDriver, "Fill the Code ");
+        senKeys("id", "ctl00_ContentPlaceHolder1_txtName", MedicalServicesName, OpenDriver, "Fill the Medical Services Name" + MedicalServicesName);
+        DDL("ctl00$ContentPlaceHolder1$ddlServiceTypeEntry", "SERVICE", OpenDriver);
+        Thread.sleep(500);
+        senKeys("id", "ctl00_ContentPlaceHolder1_txtVAT", "25", OpenDriver, "Fill VAT%");
+        click("cssselector", "input[id*='cbIsStandard']", OpenDriver, "Click on Is Standard");
+        click("cssselector", "input[id*='chkNeedsUpload']", OpenDriver, "Click Needs Upload");
+        click("cssselector", "input[id*='cbIsAnesthesia']", OpenDriver, "Click Is Anesthesia");
+        click("cssselector", "input[id*='cbIsConsultation']", OpenDriver, "Click Is Consultation");
+        senKeys("cssselector", "input[id*='txtStandardCode']", RandomString, OpenDriver, "Fill Standard Code");
+        senKeys("cssselector", "input[id*='txtServicePoint']", "15", OpenDriver, "Fill Service Points");
+        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        assertOperationDoneSuccessfully();
+    }
+
+    @Test(priority = 3, dependsOnMethods = "addMedicalServices")
+    public void editMedicalServices() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
+        senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, OpenDriver, "Searching for " + MedicalServicesName);
+        click("cssselector", "input[id*='btnSerach']", OpenDriver, "Click on Search Button");
+        clickOnTheRowTable(OpenDriver);
+        click("cssselector", "input[id*='btnUpdate']", OpenDriver, "");
+        assertOperationDoneSuccessfully();
+
+    }
+
+    @Test(priority = 4, dependsOnMethods = "addMedicalServices")
+    public void deleteMedicalServices() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
+        senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, OpenDriver, "Searching for :: " + MedicalServicesName);
+        click("cssselector", "input[id*='btnSerach']", OpenDriver, "Click on Search Button");
+        click("cssselector", "input[name*='gvServicesItem']", OpenDriver, "Click on CheckBox To delete");
+        click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on Delete Button");
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
+
     }
 
     @AfterMethod

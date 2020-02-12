@@ -31,8 +31,8 @@ public class Vaccines extends BasePage {
     @Test(priority = 1)
     public void navigateToVaccinesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
@@ -48,33 +48,29 @@ public class Vaccines extends BasePage {
     @Test(priority = 2)
     public void addVaccines() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtVaccineName']", VaccinesName, OpenDriver, "Fill Vaccine Name");
         click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
     }
 
     @Test(priority = 3,dependsOnMethods = "addVaccines")
     public void editVaccines() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
         senKeys("cssselector","input[id*='txtName']",VaccinesName,OpenDriver,"Search By Vaccines Name "+VaccinesName);
         click("cssselector","input[id*='btnShowAll']",OpenDriver,"Click on Show All Button");
         click("xpath","//table/tbody/tr[2]",OpenDriver,"Click on the Row");
         click("cssselector","input[id*='btnUpdate']",OpenDriver,"Click on update Button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
     }
 
@@ -82,8 +78,8 @@ public class Vaccines extends BasePage {
     public void deleteVaccines() throws InterruptedException {
 
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
         senKeys("cssselector","input[id*='txtName']",VaccinesName,OpenDriver,"Search By Vaccines Name "+VaccinesName);
         click("cssselector","input[id*='btnShowAll']",OpenDriver,"Click on Show All Button");
@@ -91,10 +87,8 @@ public class Vaccines extends BasePage {
         click("cssselector","a[id*='ibtnDelete']",OpenDriver,"Click on Delete Button");
         OpenDriver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
     }
     @AfterMethod

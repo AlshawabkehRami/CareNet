@@ -33,7 +33,7 @@ public class RoomsCategories extends BasePage {
 
     public void navigateToRoomsCategories() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Rooms Categories Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

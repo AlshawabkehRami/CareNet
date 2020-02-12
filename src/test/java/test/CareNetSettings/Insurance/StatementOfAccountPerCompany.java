@@ -31,7 +31,7 @@ public class StatementOfAccountPerCompany extends BasePage {
     @Test
     public void navigateToStatementOfAccountPerCompanyPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Statement Of Account Per Company   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

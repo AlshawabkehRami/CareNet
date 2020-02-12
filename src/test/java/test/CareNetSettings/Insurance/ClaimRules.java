@@ -31,7 +31,7 @@ public class ClaimRules extends BasePage {
     @Test
     public void navigateToClaimRulesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Claim Rules   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

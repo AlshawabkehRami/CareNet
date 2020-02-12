@@ -34,7 +34,7 @@ public class MachineService extends BasePage {
 
     public void navigateToMachineService() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Machine Service Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

@@ -33,7 +33,7 @@ public class AssetTypes extends BasePage {
 
     public void navigateToAssetTypes() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on AssetTypes Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

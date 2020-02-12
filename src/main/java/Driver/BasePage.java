@@ -157,7 +157,7 @@ public class BasePage {
 
     }
 
-    public void LoginWithAdminUser(WebDriver driver) throws InterruptedException {
+    public void loginWithAdminUser(WebDriver driver) throws InterruptedException {
 
         click("id", "txtUserName", driver, "Click on the user name Field");
         senKeys("id", "txtUserName", "admin", driver, "Enter User Name ");
@@ -167,7 +167,7 @@ public class BasePage {
         click("id", "btnLogin", driver, "Click on Login Button");
     }
 
-    public void NavigateToDataManagmentLink(WebDriver driver) {
+    public void navigateToDataManagmentLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
@@ -411,12 +411,23 @@ public class BasePage {
         return null;
     }
 
-public static void AssertOperationDoneSuccessfully(){
-    String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-    String ExpectedResult1 = "x\n" +
-            "Operation Done Successfully .";
-    Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
-}
+    public static void assertOperationDoneSuccessfully() {
+        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+        String ExpectedResult1 = "x\n" +
+                "Operation Done Successfully .";
+        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+    }
+
+    public static void clickOnTheRowTable(WebDriver driver) {
+
+        click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
+
+    }
+
+    public static void acceptTheWebPageAlert(WebDriver driver){
+        driver.switchTo().alert().accept();
+        Reporter.log("Accept the WebPage Alert");
+    }
 }
 
 

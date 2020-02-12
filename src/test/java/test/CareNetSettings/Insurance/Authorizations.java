@@ -31,7 +31,7 @@ public class Authorizations extends BasePage {
     @Test
     public void navigateToAuthorizationsPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToInsuranceLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Authorizations   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);

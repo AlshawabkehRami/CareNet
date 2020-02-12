@@ -1,104 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Demo Cycle"
-           tests="7"
-           failures="2"
+           tests="6"
+           failures="0"
            errors="0"
-           skipped="2"
-           time="86.204">
+           skipped="0"
+           time="116.563">
   <properties />
-            <testcase name="deleteBodySystem" time="17.248" classname="test.CareNetSettings.DataManagement.BodySystem">
-                <failure type="java.lang.AssertionError"
-                  message="Operation Done Successfully . expected [x
-Operation Done Successfully .] but found [x
-Can&apos;t Be Deleted Cause This Body System Has Related Parts]"
-              >
-<![CDATA[java.lang.AssertionError: Operation Done Successfully . expected [x
-Operation Done Successfully .] but found [x
-Can't Be Deleted Cause This Body System Has Related Parts]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  test.CareNetSettings.DataManagement.BodySystem.deleteBodySystem(BodySystem.java:135)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(ArrayList.java:1257)
-  org.testng.TestRunner.privateRun(TestRunner.java:770)
-  org.testng.TestRunner.run(TestRunner.java:591)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-  java.lang.Thread.run(Thread.java:748)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="addBodySystemPartList" time="19.246" classname="test.CareNetSettings.DataManagement.BodySystem">
-                <failure type="java.lang.AssertionError"
-                  message="Operation Done Successfully . expected [x
-Operation Done Successsfully .] but found [x
-Operation Done Successfully .]"
-              >
-<![CDATA[java.lang.AssertionError: Operation Done Successfully . expected [x
-Operation Done Successsfully .] but found [x
-Operation Done Successfully .]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  Driver.BasePage.AssertOperationDoneSuccessfully(BasePage.java:418)
-  test.CareNetSettings.DataManagement.BodySystem.addBodySystemPartList(BodySystem.java:93)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(ArrayList.java:1257)
-  org.testng.TestRunner.privateRun(TestRunner.java:770)
-  org.testng.TestRunner.run(TestRunner.java:591)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-  java.lang.Thread.run(Thread.java:748)
-]]>
-      </failure>
-
-          </testcase>
   
-            <testcase name="editBodySystemPartList" time="0.0" classname="test.CareNetSettings.DataManagement.BodySystem">
-          <skipped />
-    </testcase>
-            <testcase name="deleteBodySystemPartList" time="0.0" classname="test.CareNetSettings.DataManagement.BodySystem">
-          <skipped />
-    </testcase>
   
-            <testcase name="navigateToBodySystem" time="13.840" classname="test.CareNetSettings.DataManagement.BodySystem" />
-                <testcase name="addBodySystem" time="18.079" classname="test.CareNetSettings.DataManagement.BodySystem" />
-                <testcase name="editBodySystem" time="17.791" classname="test.CareNetSettings.DataManagement.BodySystem" />
+            <testcase name="navigateToBodySystem" time="15.815" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="deleteBodySystem" time="17.941" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="addBodySystem" time="21.907" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="addBodySystemPartList" time="21.838" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="deleteBodySystemPartList" time="18.733" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="editBodySystem" time="20.329" classname="test.CareNetSettings.DataManagement.BodySystem" />
       
 </testsuite>

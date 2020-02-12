@@ -33,7 +33,7 @@ public class UserSignature extends BasePage {
 
     public void navigateToUserSignature() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on UserSignature Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

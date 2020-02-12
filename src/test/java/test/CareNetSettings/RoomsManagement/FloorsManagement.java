@@ -33,7 +33,7 @@ public class FloorsManagement extends BasePage {
 
     public void navigateToFloorsManagement() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on FloorsManagement Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

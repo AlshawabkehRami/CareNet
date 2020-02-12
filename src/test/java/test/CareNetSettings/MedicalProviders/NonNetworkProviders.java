@@ -33,7 +33,7 @@ public class NonNetworkProviders extends BasePage {
     @Test
     public void navigateToNonNetworkProvidersPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Non-Network Providers Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

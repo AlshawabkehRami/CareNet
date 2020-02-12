@@ -31,7 +31,7 @@ public class EventTemplates extends BasePage {
     @Test
     public void navigateToEventTemplatesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToCommunicationLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Event Templates  Page link ");
         Wait = new WebDriverWait(OpenDriver, 20);

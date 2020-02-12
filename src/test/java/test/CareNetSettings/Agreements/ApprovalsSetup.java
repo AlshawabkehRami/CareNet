@@ -33,7 +33,7 @@ public class ApprovalsSetup extends BasePage {
 
     public void navigateToApprovalsSetup() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Approvals Setup Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

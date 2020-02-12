@@ -34,7 +34,7 @@ public class RoomsManagement extends BasePage {
 
     public void navigateToRoomsManagement() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Rooms Management Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

@@ -33,7 +33,7 @@ public class BranchSettings extends BasePage {
 
     public void navigateToBranchSettings() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
+        loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Branch Settings Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);

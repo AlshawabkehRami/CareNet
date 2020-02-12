@@ -32,8 +32,8 @@ public class Allergies extends BasePage {
     @Test(priority = 1)
     public void navigateToAllergiesPage() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Allergies Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
@@ -48,33 +48,29 @@ public class Allergies extends BasePage {
     @Test(priority = 2)
     public void addAllergies() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Allergies Page Link");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtAllergyName']", AllergiesName, OpenDriver, "Fill ");
         DDL("ctl00$ContentPlaceHolder1$ddlAllergyType", "Food Allergy", OpenDriver);
         click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
     }
 
     @Test(priority = 3, dependsOnMethods = "addAllergies")
     public void editAllergies() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Allergies Page Link");
         senKeys("cssselector", "input[id*='txtName']", AllergiesName, OpenDriver, "Fill Search field with");
         click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on the Search button");
         click("xpath", "//table/tbody/tr[2]", OpenDriver, "click on the Row");
         click("cssselector", "input[id*='btnUpdate']", OpenDriver, "Click on the Update Button");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
 
 
     }
@@ -82,8 +78,8 @@ public class Allergies extends BasePage {
     @Test(priority = 4, dependsOnMethods = "addAllergies")
     public void deleteAllergies() throws InterruptedException {
         navigateToUrl(OpenDriver);
-        LoginWithAdminUser(OpenDriver);
-        NavigateToDataManagmentLink(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Allergies Page Link");
         senKeys("cssselector", "input[id*='txtName']", AllergiesName, OpenDriver, "Fill Search field with");
         click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on the Search button");
@@ -91,10 +87,8 @@ public class Allergies extends BasePage {
         click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on Delete Button");
         OpenDriver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+        assertOperationDoneSuccessfully();
+
     }
 
     @AfterMethod
