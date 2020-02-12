@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Demo Cycle"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="72.547">
+  <properties />
+  
+  
+            <testcase name="deleteBodySystem" time="18.388" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="addBodySystem" time="20.333" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="editBodySystem" time="19.228" classname="test.CareNetSettings.DataManagement.BodySystem" />
+                <testcase name="navigateToBodySystem" time="14.598" classname="test.CareNetSettings.DataManagement.BodySystem" />
+      
+</testsuite>

@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="10" verbose="0" name="Demo Cycle(failed)" parallel="tests">
     <classes>
-      <class name="test.CareNetSettings.DataManagement.Vaccines">
+      <class name="test.CareNetSettings.DataManagement.BodySystem">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="addVaccines"/>
-          <include name="deleteVaccines"/>
+          <include name="setUp"/>
+          <include name="addBodySystem"/>
+          <include name="deleteBodySystem"/>
         </methods>
-      </class> <!-- test.CareNetSettings.DataManagement.Vaccines -->
+      </class> <!-- test.CareNetSettings.DataManagement.BodySystem -->
     </classes>
   </test> <!-- Demo Cycle(failed) -->
 </suite> <!-- Failed suite [Suite] -->
