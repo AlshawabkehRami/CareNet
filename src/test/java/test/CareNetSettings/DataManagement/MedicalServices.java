@@ -50,7 +50,7 @@ public class MedicalServices extends BasePage {
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button ");
         senKeys("id", "ctl00_ContentPlaceHolder1_txtCode", RandomString, OpenDriver, "Fill the Code ");
         senKeys("id", "ctl00_ContentPlaceHolder1_txtName", MedicalServicesName, OpenDriver, "Fill the Medical Services Name" + MedicalServicesName);
-        DDL("ctl00$ContentPlaceHolder1$ddlServiceTypeEntry", "SERVICE", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlServiceTypeEntry", "SERVICE", OpenDriver);
         Thread.sleep(500);
         senKeys("id", "ctl00_ContentPlaceHolder1_txtVAT", "25", OpenDriver, "Fill VAT%");
         click("cssselector", "input[id*='cbIsStandard']", OpenDriver, "Click on Is Standard");

@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="10" verbose="0" name="Demo Cycle(failed)" parallel="tests">
     <classes>
-      <class name="test.CareNetSettings.DataManagement.MedicalServices">
+      <class name="test.CareNetSettings.DataManagement.UserSignature">
         <methods>
-          <include name="addMedicalServices"/>
-          <include name="deleteMedicalServices"/>
+          <include name="addUserSignature"/>
           <include name="setUp"/>
+          <include name="navigateToUserSignature"/>
+          <include name="deleteUserSignature"/>
         </methods>
-      </class> <!-- test.CareNetSettings.DataManagement.MedicalServices -->
+      </class> <!-- test.CareNetSettings.DataManagement.UserSignature -->
     </classes>
   </test> <!-- Demo Cycle(failed) -->
 </suite> <!-- Failed suite [Suite] -->

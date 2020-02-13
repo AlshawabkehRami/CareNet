@@ -53,7 +53,7 @@ public class Allergies extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Allergies Page Link");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtAllergyName']", AllergiesName, OpenDriver, "Fill ");
-        DDL("ctl00$ContentPlaceHolder1$ddlAllergyType", "Food Allergy", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlAllergyType", "Food Allergy", OpenDriver);
         click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save button");
         assertOperationDoneSuccessfully();
 

@@ -26,8 +26,7 @@ public class Symptoms extends BasePage {
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
-        assertOperationDoneSuccessfully();
-
+        assertByPageName("Symptoms");
 
     }
 
@@ -42,8 +41,8 @@ public class Symptoms extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtSymptomName']", SymptomName2, OpenDriver, "Fill Symptom Name");
-        DDL("ctl00$ContentPlaceHolder1$ddlSymptomGroup", "Allergic", OpenDriver);
-        DDL("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlSymptomGroup", "Allergic", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
         click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
         assertOperationDoneSuccessfully();
 
@@ -57,12 +56,13 @@ public class Symptoms extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
         senKeys("cssselector", "input[id*='txtName']", SymptomName2, OpenDriver, "Enter Symptom Name");
         click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on Search Button");
-        click("xpath","//table/tbody/tr[2]",OpenDriver,"Click on the Row");
-        click("cssselector","input[id*='btnUpdate']",OpenDriver,"Click on update Button");
+        click("xpath", "//table/tbody/tr[2]", OpenDriver, "Click on the Row");
+        click("cssselector", "input[id*='btnUpdate']", OpenDriver, "Click on update Button");
         assertOperationDoneSuccessfully();
 
 
     }
+
     @Test(priority = 4, dependsOnMethods = "addSymptoms")
     public void deleteSymptoms() throws InterruptedException {
         navigateToUrl(OpenDriver);
@@ -76,9 +76,6 @@ public class Symptoms extends BasePage {
         OpenDriver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
         assertOperationDoneSuccessfully();
-
-
-
 
 
     }

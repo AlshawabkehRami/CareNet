@@ -25,19 +25,46 @@ public class UserSignature extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToUserSignaturePage() throws InterruptedException {
+    @Test(priority = 1)
+    public void navigateToUserSignature() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on User Signature Link Page ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSignatureList"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Medicines Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on User Signature Link Page ");
+        assertByPageName("Users Signatures");
     }
 
+    String ImagePath = "C:\\Users\\r.alshawabkeh\\IdeaProjects\\Second_Project\\testIamge.png";
+
+    @Test(priority = 2, dependsOnMethods = "navigateToUserSignature")
+    public void addUserSignature() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on User Signature Link Page ");
+        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
+        Thread.sleep(2000);
+        autoSuggest("img[id*='sggEmployee2_imgSearch']", "div[id*='sggEmployee2_dvSuggestions']", OpenDriver);
+        Thread.sleep(1000);
+        OpenDriver.findElement(By.id("ctl00_ContentPlaceHolder1_fileUpload")).sendKeys(ImagePath);
+        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        assertOperationDoneSuccessfully();
+
+
+    }
+
+    @Test(priority = 3, dependsOnMethods = "addUserSignature")
+    public void deleteUserSignature() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on User Signature Link Page ");
+        autoSuggest("img[id*='sggEmployee_imgSearch']", "div[id*='dvSuggestions']", OpenDriver);
+        click("cssselector", "input[name*='btnSearch']", OpenDriver, "Click on Search Button");
+        click("cssselector", "a[id*='ibtnDeleteFile']", OpenDriver, "Click on Delete Button");
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

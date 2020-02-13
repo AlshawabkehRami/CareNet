@@ -50,10 +50,10 @@ public class Diseases extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Diseases page link");
         click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
         senKeys("cssselector", "input[id*='txtDiseaseName']", DiseasesName, OpenDriver, "Fill Disease Name");
-        DDL("ctl00$ContentPlaceHolder1$ddlCodingSystem", "Not Standard", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlCodingSystem", "Not Standard", OpenDriver);
         senKeys("id", "ctl00_ContentPlaceHolder1_txtCode", "Code" + RandomString, OpenDriver, "Fill The Code");
         senKeys("cssselector", "input[id*='txtIcdCode']", "ICD Code" + RandomString, OpenDriver, "Fill The ICD Code");
-        DDL("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
         senKeys("cssselector", "input[id*='txtAgeFrom']", "18", OpenDriver, "Fill Age From");
         senKeys("cssselector", "input[id*='txtAgeTo']", "99", OpenDriver, "Fill Age From");
         senKeys("cssselector", "input[id*='txtDiseaseAlias']", "Disease Alias", OpenDriver, "Fill Disease Alias");

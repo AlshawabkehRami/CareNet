@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -35,7 +35,7 @@
       <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Medical Services link page]]>
+      <![CDATA[Click on User Signature Link Page ]]>
     </line>
     <line>
       <![CDATA[Closing The Browser]]>
@@ -74,40 +74,16 @@
       <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Medical Services link page]]>
+      <![CDATA[Click on User Signature Link Page ]]>
     </line>
     <line>
-      <![CDATA[Click on Add button ]]>
+      <![CDATA[Click on Add button]]>
     </line>
     <line>
-      <![CDATA[Fill the Code ]]>
+      <![CDATA[Click on Search Icon]]>
     </line>
     <line>
-      <![CDATA[Fill the Medical Services NameMedicalServicesName475c1]]>
-    </line>
-    <line>
-      <![CDATA[Select SERVICE From the DDL]]>
-    </line>
-    <line>
-      <![CDATA[Fill VAT%]]>
-    </line>
-    <line>
-      <![CDATA[Click on Is Standard]]>
-    </line>
-    <line>
-      <![CDATA[Click Needs Upload]]>
-    </line>
-    <line>
-      <![CDATA[Click Is Anesthesia]]>
-    </line>
-    <line>
-      <![CDATA[Click Is Consultation]]>
-    </line>
-    <line>
-      <![CDATA[Fill Standard Code]]>
-    </line>
-    <line>
-      <![CDATA[Fill Service Points]]>
+      <![CDATA[Select the First Option from the autoSuggest Field]]>
     </line>
     <line>
       <![CDATA[Click on Save Button]]>
@@ -149,67 +125,16 @@
       <![CDATA[Click on Data Management's Link]]>
     </line>
     <line>
-      <![CDATA[Click on Medical Services link page]]>
+      <![CDATA[Click on User Signature Link Page ]]>
     </line>
     <line>
-      <![CDATA[Searching for MedicalServicesName475c1]]>
+      <![CDATA[Click on Search Icon]]>
     </line>
     <line>
-      <![CDATA[Click on Search Button]]>
-    </line>
-    <line>
-      <![CDATA[click on the Row]]>
-    </line>
-    <line>
-      <![CDATA[]]>
-    </line>
-    <line>
-      <![CDATA[Closing The Browser]]>
-    </line>
-    <line>
-      <![CDATA[Screenshot Capture in TestNG Results Started]]>
-    </line>
-    <line>
-      <![CDATA[ChromeDriver is Opened And Maximized ]]>
-    </line>
-    <line>
-      <![CDATA[Navigate To The Url]]>
-    </line>
-    <line>
-      <![CDATA[Click on the user name Field]]>
-    </line>
-    <line>
-      <![CDATA[Enter User Name ]]>
-    </line>
-    <line>
-      <![CDATA[Click on The Password Field ]]>
-    </line>
-    <line>
-      <![CDATA[Enter Password]]>
-    </line>
-    <line>
-      <![CDATA[Click on Login Button]]>
-    </line>
-    <line>
-      <![CDATA[Click on CareNet Link]]>
-    </line>
-    <line>
-      <![CDATA[Click on CareNet Settings]]>
-    </line>
-    <line>
-      <![CDATA[Click on Data Management's Link]]>
-    </line>
-    <line>
-      <![CDATA[Click on Medical Services link page]]>
-    </line>
-    <line>
-      <![CDATA[Searching for :: MedicalServicesName475c1]]>
+      <![CDATA[Select the First Option from the autoSuggest Field]]>
     </line>
     <line>
       <![CDATA[Click on Search Button]]>
-    </line>
-    <line>
-      <![CDATA[Click on CheckBox To delete]]>
     </line>
     <line>
       <![CDATA[Click on Delete Button]]>
@@ -221,12 +146,12 @@
       <![CDATA[Closing The Browser]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="140521" started-at="2020-02-12T18:30:41 EET" finished-at="2020-02-12T18:33:02 EET">
+  <suite name="Suite" duration-ms="121520" started-at="2020-02-13T12:53:07 EET" finished-at="2020-02-13T12:55:09 EET">
     <groups>
     </groups>
-    <test name="Demo Cycle" duration-ms="140521" started-at="2020-02-12T18:30:41 EET" finished-at="2020-02-12T18:33:02 EET">
-      <class name="test.CareNetSettings.DataManagement.MedicalServices">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="setUp" is-config="true" duration-ms="14411" started-at="2020-02-12T18:30:42 EET" finished-at="2020-02-12T18:30:56 EET">
+    <test name="Demo Cycle" duration-ms="121520" started-at="2020-02-13T12:53:07 EET" finished-at="2020-02-13T12:55:09 EET">
+      <class name="test.CareNetSettings.DataManagement.UserSignature">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="setUp" is-config="true" duration-ms="22925" started-at="2020-02-13T12:53:07 EET" finished-at="2020-02-13T12:53:30 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -236,7 +161,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateToMedicalServices()[pri:1, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="navigateToMedicalServices" duration-ms="21743" started-at="2020-02-12T18:30:56 EET" finished-at="2020-02-12T18:31:18 EET">
+        <test-method status="PASS" signature="navigateToUserSignature()[pri:1, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="navigateToUserSignature" duration-ms="19049" started-at="2020-02-13T12:53:30 EET" finished-at="2020-02-13T12:53:49 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -266,20 +191,20 @@
               <![CDATA[Click on Data Management's Link]]>
             </line>
             <line>
-              <![CDATA[Click on Medical Services link page]]>
+              <![CDATA[Click on User Signature Link Page ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- navigateToMedicalServices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="tearDown" is-config="true" duration-ms="982" started-at="2020-02-12T18:31:18 EET" finished-at="2020-02-12T18:31:19 EET">
+        </test-method> <!-- navigateToUserSignature -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="tearDown" is-config="true" duration-ms="1258" started-at="2020-02-13T12:53:49 EET" finished-at="2020-02-13T12:53:51 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToMedicalServices status=SUCCESS method=MedicalServices.navigateToMedicalServices()[pri:1, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=navigateToUserSignature status=SUCCESS method=UserSignature.navigateToUserSignature()[pri:1, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.CareNetSettings.DataManagement.MedicalServices.navigateToMedicalServices() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.CareNetSettings.DataManagement.UserSignature.navigateToUserSignature() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
@@ -289,7 +214,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="setUp" is-config="true" duration-ms="10018" started-at="2020-02-12T18:31:19 EET" finished-at="2020-02-12T18:31:29 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="setUp" is-config="true" duration-ms="10567" started-at="2020-02-13T12:53:51 EET" finished-at="2020-02-13T12:54:01 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -299,7 +224,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addMedicalServices()[pri:2, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="addMedicalServices" duration-ms="26731" started-at="2020-02-12T18:31:29 EET" finished-at="2020-02-12T18:31:55 EET">
+        <test-method status="PASS" signature="addUserSignature()[pri:2, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="addUserSignature" duration-ms="31761" started-at="2020-02-13T12:54:01 EET" depends-on-methods="test.CareNetSettings.DataManagement.UserSignature.navigateToUserSignature" finished-at="2020-02-13T12:54:33 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -329,56 +254,32 @@
               <![CDATA[Click on Data Management's Link]]>
             </line>
             <line>
-              <![CDATA[Click on Medical Services link page]]>
+              <![CDATA[Click on User Signature Link Page ]]>
             </line>
             <line>
-              <![CDATA[Click on Add button ]]>
+              <![CDATA[Click on Add button]]>
             </line>
             <line>
-              <![CDATA[Fill the Code ]]>
+              <![CDATA[Click on Search Icon]]>
             </line>
             <line>
-              <![CDATA[Fill the Medical Services NameMedicalServicesName475c1]]>
-            </line>
-            <line>
-              <![CDATA[Select SERVICE From the DDL]]>
-            </line>
-            <line>
-              <![CDATA[Fill VAT%]]>
-            </line>
-            <line>
-              <![CDATA[Click on Is Standard]]>
-            </line>
-            <line>
-              <![CDATA[Click Needs Upload]]>
-            </line>
-            <line>
-              <![CDATA[Click Is Anesthesia]]>
-            </line>
-            <line>
-              <![CDATA[Click Is Consultation]]>
-            </line>
-            <line>
-              <![CDATA[Fill Standard Code]]>
-            </line>
-            <line>
-              <![CDATA[Fill Service Points]]>
+              <![CDATA[Select the First Option from the autoSuggest Field]]>
             </line>
             <line>
               <![CDATA[Click on Save Button]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addMedicalServices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="tearDown" is-config="true" duration-ms="1060" started-at="2020-02-12T18:31:55 EET" finished-at="2020-02-12T18:31:56 EET">
+        </test-method> <!-- addUserSignature -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="tearDown" is-config="true" duration-ms="1240" started-at="2020-02-13T12:54:33 EET" finished-at="2020-02-13T12:54:34 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addMedicalServices status=SUCCESS method=MedicalServices.addMedicalServices()[pri:2, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=addUserSignature status=SUCCESS method=UserSignature.addUserSignature()[pri:2, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.CareNetSettings.DataManagement.MedicalServices.addMedicalServices() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.CareNetSettings.DataManagement.UserSignature.addUserSignature() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
@@ -388,7 +289,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="setUp" is-config="true" duration-ms="10798" started-at="2020-02-12T18:31:57 EET" finished-at="2020-02-12T18:32:07 EET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="setUp" is-config="true" duration-ms="10130" started-at="2020-02-13T12:54:34 EET" finished-at="2020-02-13T12:54:44 EET">
           <reporter-output>
             <line>
               <![CDATA[Screenshot Capture in TestNG Results Started]]>
@@ -398,7 +299,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="editMedicalServices()[pri:3, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="editMedicalServices" duration-ms="21853" started-at="2020-02-12T18:32:07 EET" depends-on-methods="test.CareNetSettings.DataManagement.MedicalServices.addMedicalServices" finished-at="2020-02-12T18:32:29 EET">
+        <test-method status="PASS" signature="deleteUserSignature()[pri:3, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="deleteUserSignature" duration-ms="23300" started-at="2020-02-13T12:54:44 EET" depends-on-methods="test.CareNetSettings.DataManagement.UserSignature.addUserSignature" finished-at="2020-02-13T12:55:08 EET">
           <reporter-output>
             <line>
               <![CDATA[Navigate To The Url]]>
@@ -428,91 +329,16 @@
               <![CDATA[Click on Data Management's Link]]>
             </line>
             <line>
-              <![CDATA[Click on Medical Services link page]]>
+              <![CDATA[Click on User Signature Link Page ]]>
             </line>
             <line>
-              <![CDATA[Searching for MedicalServicesName475c1]]>
+              <![CDATA[Click on Search Icon]]>
             </line>
             <line>
-              <![CDATA[Click on Search Button]]>
-            </line>
-            <line>
-              <![CDATA[click on the Row]]>
-            </line>
-            <line>
-              <![CDATA[]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- editMedicalServices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="tearDown" is-config="true" duration-ms="998" started-at="2020-02-12T18:32:29 EET" finished-at="2020-02-12T18:32:30 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editMedicalServices status=SUCCESS method=MedicalServices.editMedicalServices()[pri:3, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c] output=Navigate To The Url]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void test.CareNetSettings.DataManagement.MedicalServices.editMedicalServices() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Closing The Browser]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="setUp" is-config="true" duration-ms="10089" started-at="2020-02-12T18:32:30 EET" finished-at="2020-02-12T18:32:40 EET">
-          <reporter-output>
-            <line>
-              <![CDATA[Screenshot Capture in TestNG Results Started]]>
-            </line>
-            <line>
-              <![CDATA[ChromeDriver is Opened And Maximized ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteMedicalServices()[pri:4, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="deleteMedicalServices" duration-ms="20575" started-at="2020-02-12T18:32:40 EET" depends-on-methods="test.CareNetSettings.DataManagement.MedicalServices.addMedicalServices" finished-at="2020-02-12T18:33:01 EET">
-          <reporter-output>
-            <line>
-              <![CDATA[Navigate To The Url]]>
-            </line>
-            <line>
-              <![CDATA[Click on the user name Field]]>
-            </line>
-            <line>
-              <![CDATA[Enter User Name ]]>
-            </line>
-            <line>
-              <![CDATA[Click on The Password Field ]]>
-            </line>
-            <line>
-              <![CDATA[Enter Password]]>
-            </line>
-            <line>
-              <![CDATA[Click on Login Button]]>
-            </line>
-            <line>
-              <![CDATA[Click on CareNet Link]]>
-            </line>
-            <line>
-              <![CDATA[Click on CareNet Settings]]>
-            </line>
-            <line>
-              <![CDATA[Click on Data Management's Link]]>
-            </line>
-            <line>
-              <![CDATA[Click on Medical Services link page]]>
-            </line>
-            <line>
-              <![CDATA[Searching for :: MedicalServicesName475c1]]>
+              <![CDATA[Select the First Option from the autoSuggest Field]]>
             </line>
             <line>
               <![CDATA[Click on Search Button]]>
-            </line>
-            <line>
-              <![CDATA[Click on CheckBox To delete]]>
             </line>
             <line>
               <![CDATA[Click on Delete Button]]>
@@ -521,17 +347,17 @@
               <![CDATA[Accept the WebPage Alert]]>
             </line>
           </reporter-output>
-        </test-method> <!-- deleteMedicalServices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c]" name="tearDown" is-config="true" duration-ms="1132" started-at="2020-02-12T18:33:01 EET" finished-at="2020-02-12T18:33:02 EET">
+        </test-method> <!-- deleteUserSignature -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c]" name="tearDown" is-config="true" duration-ms="1204" started-at="2020-02-13T12:55:08 EET" finished-at="2020-02-13T12:55:09 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteMedicalServices status=SUCCESS method=MedicalServices.deleteMedicalServices()[pri:4, instance:test.CareNetSettings.DataManagement.MedicalServices@731a74c] output=Navigate To The Url]]]>
+                <![CDATA[[TestResult name=deleteUserSignature status=SUCCESS method=UserSignature.deleteUserSignature()[pri:3, instance:test.CareNetSettings.DataManagement.UserSignature@731a74c] output=Navigate To The Url]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void test.CareNetSettings.DataManagement.MedicalServices.deleteMedicalServices() throws java.lang.InterruptedException]]>
+                <![CDATA[public void test.CareNetSettings.DataManagement.UserSignature.deleteUserSignature() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
@@ -541,7 +367,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.CareNetSettings.DataManagement.MedicalServices -->
+      </class> <!-- test.CareNetSettings.DataManagement.UserSignature -->
     </test> <!-- Demo Cycle -->
   </suite> <!-- Suite -->
 </testng-results>

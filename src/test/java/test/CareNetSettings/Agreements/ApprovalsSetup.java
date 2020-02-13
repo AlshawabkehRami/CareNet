@@ -1,11 +1,7 @@
 package test.CareNetSettings.Agreements;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -35,7 +31,7 @@ public class ApprovalsSetup extends BasePage {
         loginWithAdminUser(OpenDriver);
         navigateToAgreements(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Approvals Setup Page Link");
-        AssertByPageName("Approvals Setup");
+        assertByPageName("Approvals Setup");
 
     }
 

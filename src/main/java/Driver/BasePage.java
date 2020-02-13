@@ -324,9 +324,9 @@ public class BasePage {
         return elem;
     }
 
-    public static WebElement autoSuggest(String imgSearch, String dvSuggestions, WebDriver driver) throws InterruptedException {
+    public static WebElement autoSuggest(String cssSelectorImgSearch, String dvSuggestions, WebDriver driver) throws InterruptedException {
         try {
-            driver.findElement(By.cssSelector(imgSearch)).click();
+            driver.findElement(By.cssSelector(cssSelectorImgSearch)).click();
             Reporter.log("Click on Search Icon");
             WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
             if (dvSuggestionsWait.isDisplayed()) {
@@ -341,7 +341,7 @@ public class BasePage {
 
         } catch (Exception e) {
             Thread.sleep(1000);
-            driver.findElement(By.cssSelector(imgSearch)).click();
+            driver.findElement(By.cssSelector(cssSelectorImgSearch)).click();
             Reporter.log("Click on Search Icon");
             WebElement dvSuggestionsWait = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(dvSuggestions)));
             if (dvSuggestionsWait.isDisplayed()) {
@@ -361,7 +361,7 @@ public class BasePage {
         return null;
     }
 
-    public static WebElement DDL(String DDLLocaterByName, String Value, WebDriver driver) throws InterruptedException {
+    public static WebElement DDLByValue(String DDLLocaterByName, String Value, WebDriver driver) throws InterruptedException {
 
         try {
             Select DDL = new Select(driver.findElement(By.name(DDLLocaterByName)));
@@ -379,16 +379,34 @@ public class BasePage {
         return null;
     }
 
-    public static WebElement TodayDate(String CalendarImageLocator, String TodayDateLocator, WebDriver driver) throws InterruptedException {
+    public static WebElement DDLByIndex(String DDLBycssSelector, Integer Index, WebDriver driver) throws InterruptedException {
 
         try {
-            click("cssselector", CalendarImageLocator, driver, "Click on Calender Image");
-            click("cssselector", TodayDateLocator, driver, "Select Today Date ");
+            Select DDL = new Select(driver.findElement(By.cssSelector(DDLBycssSelector)));
+            DDL.selectByIndex(Index);
+            Reporter.log("Select " + Index + " From the DDLBycssSelector");
 
         } catch (Exception e) {
             Thread.sleep(2000);
-            click("cssselector", CalendarImageLocator, driver, "Click on Calender Image");
-            click("cssselector", TodayDateLocator, driver, "Select Today Date ");
+            Select DDL = new Select(driver.findElement(By.cssSelector(DDLBycssSelector)));
+            DDL.selectByIndex(Index);
+            Reporter.log("Select " + Index + " From the DDLBycssSelector");
+        }
+
+
+        return null;
+    }
+
+    public static WebElement TodayDate(String CalendarImagecssselector, String TodayDatecssselector, WebDriver driver) throws InterruptedException {
+
+        try {
+            click("cssselector", CalendarImagecssselector, driver, "Click on Calender Image");
+            click("cssselector", TodayDatecssselector, driver, "Select Today Date ");
+
+        } catch (Exception e) {
+            Thread.sleep(2000);
+            click("cssselector", CalendarImagecssselector, driver, "Click on Calender Image");
+            click("cssselector", TodayDatecssselector, driver, "Select Today Date ");
 
         }
 
@@ -428,7 +446,7 @@ public class BasePage {
         driver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
     }
-    public static void AssertByPageName(String ExpectedResultPageName){
+    public static void assertByPageName(String ExpectedResultPageName){
 
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();
