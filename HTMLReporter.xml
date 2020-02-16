@@ -1,52 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="CareNet Settings"
-       verbose="1" preserve-order="true">
+       verbose="1">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 
     </listeners>
-
-    <test name="Agreements">
-        <packages>
-            <package name="test.CareNetSettings.Agreements"/>
-        </packages>
-    </test>
-    <test name="Communication">
-        <packages>
-            <package name="test.CareNetSettings.Communication"/>
-        </packages>
-    </test>
     <test name="DataManagement">
         <packages>
             <package name="test.CareNetSettings.DataManagement"/>
         </packages>
     </test>
-    <test name="Insurance">
-        <packages>
-            <package name="test.CareNetSettings.Insurance"/>
-        </packages>
-    </test>
-    <test name="Integration Settings">
-        <packages>
-            <package name="test.CareNetSettings.IntegrationSettings"/>
-        </packages>
-    </test>
-    <test name="Medical Providers">
-        <packages>
-            <package name="test.CareNetSettings.MedicalProviders"/>
-        </packages>
-    </test>
-    <test name="Quality Control">
-        <packages>
-            <package name="test.CareNetSettings.QualityControl"/>
-        </packages>
-    </test>
-    <test name="Rooms Management">
-        <packages>
-            <package name="test.CareNetSettings.RoomsManagement"/>
-        </packages>
-    </test>
-
 
 </suite>

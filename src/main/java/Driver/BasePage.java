@@ -35,6 +35,7 @@ public class BasePage {
                 Reporter.log("Screenshot Capture in TestNG Results Started");
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
+                driver.manage().deleteAllCookies();
                 driver.manage().window().maximize();
                 Reporter.log("ChromeDriver is Opened And Maximized ");
                 break;
@@ -436,22 +437,28 @@ public class BasePage {
         Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
     }
 
-    public static void clickOnTheRowTable(WebDriver driver) {
+    public static void clickOnTheRowTable(WebDriver driver)  {
+        try {
+            click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
 
-        click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
+        } catch (Exception e) {
+            click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
+
+        }
+
 
     }
 
-    public static void acceptTheWebPageAlert(WebDriver driver){
+    public static void acceptTheWebPageAlert(WebDriver driver) {
         driver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
     }
-    public static void assertByPageName(String ExpectedResultPageName){
+
+    public static void assertByPageName(String ExpectedResultPageName) {
 
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResultt = ExpectedResultPageName;
-        Assert.assertEquals(ActualResult, ExpectedResultt, ExpectedResultPageName+"Page not opened Properly");
+        Assert.assertEquals(ActualResult, ExpectedResultPageName, ExpectedResultPageName + "Page not opened Properly");
 
     }
 }

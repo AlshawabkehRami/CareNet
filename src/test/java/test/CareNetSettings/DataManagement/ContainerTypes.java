@@ -25,17 +25,60 @@ public class ContainerTypes extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToContainerTypesPage() throws InterruptedException {
+    @Test(priority = 1)
+    public void navigateToContainerTypes() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Container Types Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Container Types";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Container TypesPage not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Container Types Page Link");
+        assertByPageName("Container Types");
+
+    }
+
+    String RandomString = generateString();
+    String ContainerTypeName = "Container Type Name" + RandomString;
+
+    @Test(priority = 2,dependsOnMethods = "navigateToContainerTypes")
+    public void addContainerTypes() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Container Types Page Link");
+        click("cssselector", "input[id$='btnSearch']", OpenDriver, "Click on Search Button");
+        click("cssselector", "a[id$='ibtnAdd']", OpenDriver, "Click on Add Button");
+        senKeys("cssselector", "input[id$='ContainerTypeName']", ContainerTypeName, OpenDriver, "Fill Container Type Name");
+        click("cssselector", "input[id$='btnSave']", OpenDriver, "click on Save Button");
+        assertOperationDoneSuccessfully();
+
+
+    }
+
+    @Test(priority = 3,dependsOnMethods = "addContainerTypes")
+    public void editContainerTypes() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Container Types Page Link");
+        senKeys("cssselector", "input[id$='txtName']", ContainerTypeName, OpenDriver, "Fill Search Field With :: " + ContainerTypeName);
+        click("cssselector", "input[id$='btnSearch']", OpenDriver, "Click on Search Button");
+        clickOnTheRowTable(OpenDriver);
+        click("cssselector", "input[id$='btnSave']", OpenDriver, "click on Save Button");
+        assertOperationDoneSuccessfully();
+
+    }
+
+    @Test(priority = 4,dependsOnMethods = "addContainerTypes")
+    public void deleteContainerTypes() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Container Types Page Link");
+        senKeys("cssselector", "input[id$='txtName']", ContainerTypeName, OpenDriver, "Fill Search Field With :: " + ContainerTypeName);
+        click("cssselector", "input[id$='btnSearch']", OpenDriver, "Click on Search Button");
+        click("cssselector", "input[name$='gvContainerTypesItem']", OpenDriver, "Click on the CheckBox for Delete");
+        click("cssselector", "a[id$='ibtnDelete']", OpenDriver, "Click on Delete Button");
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
 
     }
 
