@@ -1,15 +1,9 @@
 package test.CareNetSettings.DataManagement;
-
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
 import java.lang.reflect.Method;
 
 /**
@@ -27,16 +21,12 @@ public class MedicalServiceCategory extends BasePage {
     }
 
     @Test
-    public void navigateToMedicalServiceCategoryPage() throws InterruptedException {
+    public void navigateToMedicalServiceCategory() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Medical Service Category Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Medical Service Category Page not opened Properly");
+        assertByPageName("Medical Service Category");
     }
 
     @AfterMethod

@@ -1,15 +1,9 @@
 package test.CareNetSettings.DataManagement;
-
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
 import java.lang.reflect.Method;
 
 /**
@@ -31,11 +25,7 @@ public class MedicalServices extends BasePage {
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Medical Services Page not opened Properly");
+        assertByPageName("Medical Services");
     }
 
     String RandomString = generateString();
@@ -47,7 +37,7 @@ public class MedicalServices extends BasePage {
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Medical Services link page");
-        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button ");
+        clickOnAddButton(OpenDriver);
         senKeys("id", "ctl00_ContentPlaceHolder1_txtCode", RandomString, OpenDriver, "Fill the Code ");
         senKeys("id", "ctl00_ContentPlaceHolder1_txtName", MedicalServicesName, OpenDriver, "Fill the Medical Services Name" + MedicalServicesName);
         DDLByValue("ctl00$ContentPlaceHolder1$ddlServiceTypeEntry", "SERVICE", OpenDriver);
@@ -59,7 +49,7 @@ public class MedicalServices extends BasePage {
         click("cssselector", "input[id*='cbIsConsultation']", OpenDriver, "Click Is Consultation");
         senKeys("cssselector", "input[id*='txtStandardCode']", RandomString, OpenDriver, "Fill Standard Code");
         senKeys("cssselector", "input[id*='txtServicePoint']", "15", OpenDriver, "Fill Service Points");
-        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        clickOnSaveButton(OpenDriver);
         assertOperationDoneSuccessfully();
     }
 
@@ -72,7 +62,7 @@ public class MedicalServices extends BasePage {
         senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, OpenDriver, "Searching for " + MedicalServicesName);
         click("cssselector", "input[id*='btnSerach']", OpenDriver, "Click on Search Button");
         clickOnTheRowTable(OpenDriver);
-        click("cssselector", "input[id*='btnUpdate']", OpenDriver, "");
+        clickOnUpdateButton(OpenDriver);
         assertOperationDoneSuccessfully();
 
     }
@@ -86,10 +76,10 @@ public class MedicalServices extends BasePage {
         senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, OpenDriver, "Searching for :: " + MedicalServicesName);
         click("cssselector", "input[id*='btnSerach']", OpenDriver, "Click on Search Button");
         click("cssselector", "input[name*='gvServicesItem']", OpenDriver, "Click on CheckBox To delete");
-        click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on Delete Button");
+        clickOnDeleteButton(OpenDriver);
+        // click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on Delete Button");
         acceptTheWebPageAlert(OpenDriver);
         assertOperationDoneSuccessfully();
-
     }
 
     @AfterMethod

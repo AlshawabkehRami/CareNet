@@ -1,12 +1,10 @@
 package test.CareNetSettings.DataManagement;
-
 import Driver.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
 import java.lang.reflect.Method;
 
 public class Symptoms extends BasePage {
@@ -39,11 +37,11 @@ public class Symptoms extends BasePage {
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
-        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add button");
+        clickOnAddButton(OpenDriver);
         senKeys("cssselector", "input[id*='txtSymptomName']", SymptomName2, OpenDriver, "Fill Symptom Name");
         DDLByValue("ctl00$ContentPlaceHolder1$ddlSymptomGroup", "Allergic", OpenDriver);
         DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
-        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        clickOnSaveButton(OpenDriver);
         assertOperationDoneSuccessfully();
 
     }
@@ -55,9 +53,9 @@ public class Symptoms extends BasePage {
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
         senKeys("cssselector", "input[id*='txtName']", SymptomName2, OpenDriver, "Enter Symptom Name");
-        click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on Search Button");
-        click("xpath", "//table/tbody/tr[2]", OpenDriver, "Click on the Row");
-        click("cssselector", "input[id*='btnUpdate']", OpenDriver, "Click on update Button");
+        clickOnShowAllButton(OpenDriver);
+        clickOnTheRowTable(OpenDriver);
+        clickOnUpdateButton(OpenDriver);
         assertOperationDoneSuccessfully();
 
 
@@ -72,9 +70,8 @@ public class Symptoms extends BasePage {
         senKeys("cssselector", "input[id*='txtName']", SymptomName2, OpenDriver, "Enter Symptom Name");
         click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on Search Button");
         click("cssselector", "input[name*='grdSymptomsItem']", OpenDriver, "Click on The checkbos to delete");
-        click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on delete Icon");
-        OpenDriver.switchTo().alert().accept();
-        Reporter.log("Accept the WebPage Alert");
+        clickOnDeleteButton(OpenDriver);
+        acceptTheWebPageAlert(OpenDriver);
         assertOperationDoneSuccessfully();
 
 

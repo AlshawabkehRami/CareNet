@@ -1,99 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="Rami">
+    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/Suite/Demo Cycle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/Suite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/bullet_point.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/collapseall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/failed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/reportng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/reportng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/sorttable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/suite1_test1_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/html/suites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/jquery-1.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.LabTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.LabUnits.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/navigator-bullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/Demo Cycle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/Suite/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/passed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/skipped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng-results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/testng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.DataManagement.LabTests_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.DataManagement.LabUnits_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addClinicalExamination_20200218182329.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addClinicalExamination_20200218182546.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addClinicalExamination_20200218183005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addContainerTypes_20200218170906.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addLabTests_20200216171750.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystemPartList_20200217124630.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystemPartList_20200217125202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystemPartList_20200217141419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200217124702.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200217125234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200217141451.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteLabUnits_20200216161956.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteMedicalServices_20200218161535.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteRadiologyProcedure_20200218175355.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/editLabUnits_20200216160649.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/editLabUnits_20200216160931.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/editMedicalServices_20200218161453.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/editRadiologyProcedure_20200218175311.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/editSymptoms_20200217120512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToAllergiesPage_20200217122609.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToBodySystem_20200217124317.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToClinicalExaminationPage_20200218180316.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToDiseasesPage_20200217121652.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToLabTests_20200216164717.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicalServiceCategoryPage_20200218160732.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicalServices_20200218161338.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToRadiologyProcedurePage_20200218172254.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTMLReporter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLReporter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Suite/Demo Cycle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Suite/Demo Cycle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/overview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/reportng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/reportng.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/sorttable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/suite1_test1_results.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/html/suites.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.BodySystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.Medicines.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/junitreports/TEST-test.CareNetSettings.DataManagement.UserSignature.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/Demo Cycle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.DataManagement.BodySystem_results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.DataManagement.Medicines_results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/xml/test.CareNetSettings.DataManagement.UserSignature_results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addAllergies_20200211124755.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addAllergies_20200211125136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystemPartList_20200212102448.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystemPartList_20200212104121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystem_20200211160544.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystem_20200211160752.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystem_20200211160923.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addBodySystem_20200212123306.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addDiseases_20200211114821.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addDiseases_20200211121734.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMedicalServices_20200212163043.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMedicalServices_20200212163435.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMedicalServices_20200212163625.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMedicalServices_20200212163802.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addVaccines_20200211141903.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deletDiseases_20200211122521.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deletDiseases_20200211123124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteAllergies_20200211140608.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystemPartList_20200212124157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystemPartList_20200212124932.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200211163132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200211163424.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200211170215.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200211171632.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200212104151.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200212124228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteBodySystem_20200212125006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteVaccines_20200211150403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteVaccines_20200211150732.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteVaccines_20200211151007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/editAllergies_20200211125911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/editBodySystemPartList_20200212124117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/editBodySystem_20200211162535.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/editDiseases_20200211121541.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/editVaccines_20200211142910.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/navigateToAllergiesPage_20200211140728.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/navigateToApprovalsSetup_20200212184141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/navigateToDiseasesPage_20200211121616.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicinesPage_20200213092157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/navigateToSymptomsPage_20200212184501.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Allergies.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Allergies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/BodySystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/BodySystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/ClinicalExamination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/ClinicalExamination.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/ContainerTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/ContainerTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Diseases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Diseases.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabSampleTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabSampleTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabUnits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabUnits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServiceCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServiceCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Medicines.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Medicines.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/RadiologyProcedure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/RadiologyProcedure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Symptoms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Symptoms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/UserSignature.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/UserSignature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Vaccines.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Vaccines.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +166,7 @@
       <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\Driver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UserSignature">
+  <component name="RunManager" selected="TestNG.ClinicalExamination">
     <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" type="TestNG" nameIsGenerated="true">
       <module name="Second_Project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/HTMLReporter.xml" />
@@ -220,9 +230,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" type="TestNG" nameIsGenerated="true">
       <module name="Second_Project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Test.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/dataManagement.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -241,16 +251,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" type="TestNG" nameIsGenerated="true">
+    <configuration name="ClinicalExamination" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/dataManagement.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.ClinicalExamination" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Report" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
@@ -314,7 +329,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Medicines" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LabUnits" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
       <extension name="coverage">
         <pattern>
@@ -324,7 +339,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.Medicines" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.LabUnits" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -340,7 +355,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserSignature" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RadiologyProcedure" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
       <extension name="coverage">
         <pattern>
@@ -350,7 +365,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.UserSignature" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.RadiologyProcedure" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -389,19 +404,19 @@
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMNew.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" />
-      <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" />
-      <item itemvalue="TestNG.Medicines" />
-      <item itemvalue="TestNG.UserSignature" />
       <item itemvalue="TestNG.LabSampleTypes" />
       <item itemvalue="TestNG.ContainerTypes" />
+      <item itemvalue="TestNG.LabUnits" />
+      <item itemvalue="TestNG.RadiologyProcedure" />
+      <item itemvalue="TestNG.ClinicalExamination" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserSignature" />
-        <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" />
+        <item itemvalue="TestNG.ClinicalExamination" />
+        <item itemvalue="TestNG.RadiologyProcedure" />
+        <item itemvalue="TestNG.LabUnits" />
         <item itemvalue="TestNG.ContainerTypes" />
         <item itemvalue="TestNG.LabSampleTypes" />
-        <item itemvalue="TestNG.Medicines" />
       </list>
     </recent_temporary>
   </component>
@@ -526,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581591462473</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Rami">
+      <created>1581859736919</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581859736919</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -571,12 +593,16 @@
     <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003493381" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581341541959" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575896347887" />
-    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581504695566">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581937045263">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1580633866496" />
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581937045263" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581504695566" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1576403127683" />
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582036433288">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1582036433288" />
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1575383136488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -594,14 +620,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="223" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1576065559881" />
+    <state x="-1226" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581932601748">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1226" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581932601748" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576162585008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1581859622608">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1581859712296">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859622608" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859712296" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581493971776" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
@@ -622,71 +652,71 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1581859622647">
+    <state width="1323" height="234" key="GridCell.Tab.0.bottom" timestamp="1582044201304">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859622647" />
+    <state width="1323" height="234" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044201304" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306344" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1581859622646">
+    <state width="1323" height="234" key="GridCell.Tab.0.center" timestamp="1582044201303">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859622646" />
+    <state width="1323" height="234" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044201303" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1581859622646">
+    <state width="1323" height="234" key="GridCell.Tab.0.left" timestamp="1582044201303">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859622646" />
+    <state width="1323" height="234" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044201303" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1581859622647">
+    <state width="1323" height="234" key="GridCell.Tab.0.right" timestamp="1582044201303">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="163" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581859622647" />
+    <state width="1323" height="234" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044201303" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306344" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405021" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1580631881038">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1581929558520">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1580631881038" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581929558520" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965866" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115734" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1580631881038">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1581929558519">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1580631881038" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581929558519" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115733" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1580631881038">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1581929558519">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1580631881038" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581929558519" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115733" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1580631881038">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1581929558520">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1580631881038" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581929558520" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115734" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />

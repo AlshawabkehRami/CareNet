@@ -430,18 +430,30 @@ public class BasePage {
         return null;
     }
 
-    public static void assertOperationDoneSuccessfully() {
-        String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
-        String ExpectedResult1 = "x\n" +
-                "Operation Done Successfully .";
-        Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+    public static void assertOperationDoneSuccessfully() throws InterruptedException {
+        try {
+            String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+            String ExpectedResult1 = "x\n" +
+                    "Operation Done Successfully .";
+            Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+
+        } catch (Exception e) {
+            Thread.sleep(2000);
+            String ActualResult1 = Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("info_message"))).getText();
+            String ExpectedResult1 = "x\n" +
+                    "Operation Done Successfully .";
+            Assert.assertEquals(ActualResult1, ExpectedResult1, "Operation Done Successfully .");
+
+        }
+
     }
 
-    public static void clickOnTheRowTable(WebDriver driver)  {
+    public static void clickOnTheRowTable(WebDriver driver) throws InterruptedException {
         try {
             click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
 
         } catch (Exception e) {
+            Thread.sleep(3000);
             click("xpath", "//table/tbody/tr[2]", driver, "click on the Row");
 
         }
@@ -449,7 +461,8 @@ public class BasePage {
 
     }
 
-    public static void acceptTheWebPageAlert(WebDriver driver) {
+    public static void acceptTheWebPageAlert(WebDriver driver) throws InterruptedException {
+
         driver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");
     }
@@ -461,6 +474,67 @@ public class BasePage {
         Assert.assertEquals(ActualResult, ExpectedResultPageName, ExpectedResultPageName + "Page not opened Properly");
 
     }
+
+
+    public static void clickOnAddButton(WebDriver driver) {
+        click("cssselector", "a[id$='ibtnAdd']", driver, "Click on Add Button");
+
+    }
+
+    public static void clickOnSearchButton(WebDriver driver) throws InterruptedException {
+
+        try {
+            click("cssselector", "input[id$='btnSearch']", driver, "Click on Search Button");
+
+        } catch (Exception e) {
+            Thread.sleep(2000);
+            click("cssselector", "input[id$='btnSearch']", driver, "Click on Search Button");
+
+        }
+    }
+
+    public static void clickOnDeleteButton(WebDriver driver) throws InterruptedException {
+
+        try {
+            click("cssselector", "a[id$='ibtnDelete']", driver, "Click on Delete Button");
+        } catch (Exception e) {
+            Thread.sleep(1000);
+            click("cssselector", "a[id$='ibtnDelete']", driver, "Click on Delete Button");
+
+        }
+
+    }
+
+    public static void clickOnSaveButton(WebDriver driver) throws InterruptedException {
+        try {
+            click("cssselector", "input[id*='btnSave']", driver, "Click on Save Button");
+
+        } catch (Exception e) {
+            Thread.sleep(1000);
+            click("cssselector", "input[id*='btnSave']", driver, "Click on Save Button");
+
+
+        }
+
+    }
+
+    public static void clickOnUpdateButton(WebDriver driver) {
+        click("cssselector", "input[id*='btnUpdate']", driver, "Click on update Button");
+
+    }
+
+    public static void clickOnShowAllButton(WebDriver driver) {
+        click("cssselector", "input[id*='btnShowAll']", driver, "Click on Search Button");
+
+    }
+
+    public static void scrollDown(WebDriver driver) {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+
+    }
+
 }
 
 

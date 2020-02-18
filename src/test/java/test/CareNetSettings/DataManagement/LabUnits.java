@@ -1,15 +1,9 @@
 package test.CareNetSettings.DataManagement;
-
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
 import java.lang.reflect.Method;
 
 /**
@@ -27,16 +21,56 @@ public class LabUnits extends BasePage {
     }
 
     @Test
-    public void navigateToLabUnitsPage() throws InterruptedException {
+    public void navigateToLabUnits() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Lab Units Link Page ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Lab Units Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
+        assertByPageName("Lab Units");
+    }
+
+    String RandomString = generateString();
+    String LabUnitsName = "LabUnits" + RandomString;
+
+    @Test(priority = 2)
+    public void addLabUnits() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
+        clickOnAddButton(OpenDriver);
+        senKeys("cssselector", "input[name$='UnitName']", LabUnitsName, OpenDriver, "Fill Conventional Unit");
+        senKeys("cssselector", "input[name$='txtSIUnitName']", "SI Unit" + RandomString, OpenDriver, "Fill SI Unit");
+        clickOnSaveButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+    @Test(priority = 3, dependsOnMethods = "addLabUnits")
+    public void editLabUnits() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, OpenDriver, "Fill Name Search");
+        clickOnSearchButton(OpenDriver);
+        clickOnTheRowTable(OpenDriver);
+        clickOnUpdateButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+
+    }
+
+    @Test(priority = 4, dependsOnMethods = "addLabUnits")
+    public void deleteLabUnits() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, OpenDriver, "Fill Name Search");
+        clickOnSearchButton(OpenDriver);
+        Thread.sleep(3000);
+        click("cssselector", "input[name*='grdMeasurementUnitsItem']", OpenDriver, "Click on The checkBox To Delete");
+        clickOnDeleteButton(OpenDriver);
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
     }
 
     @AfterMethod

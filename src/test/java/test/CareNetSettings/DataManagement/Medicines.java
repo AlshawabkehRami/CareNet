@@ -1,15 +1,9 @@
 package test.CareNetSettings.DataManagement;
-
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
-
 import java.lang.reflect.Method;
 
 /**
@@ -43,7 +37,7 @@ public class Medicines extends BasePage {
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Medicines Link Page ");
-        click("cssselector", "a[id*='ibtnAdd']", OpenDriver, "Click on Add");
+        clickOnAddButton(OpenDriver);
         senKeys("cssselector", "input[id*='txtCode']", "Code" + RandomString, OpenDriver, "Fill the Code");
         senKeys("cssselector", "input[id$='txtTradeName']", TradeName, OpenDriver, "Fill the Trade Name");
         autoSuggest("a[id*='lbtnImgSearch']", "div[id*='dvSuggestions']", OpenDriver);
@@ -59,7 +53,7 @@ public class Medicines extends BasePage {
         senKeys("cssselector", "input[id*='txtStandardCode']", "Standard Code" + RandomString, OpenDriver, "Fill Standard Code");
         DDLByIndex("select[id*='ddlMedicineUnits']", 2, OpenDriver);
         Thread.sleep(3000);
-        click("cssselector", "input[id*='btnSave']", OpenDriver, "Click on Save Button");
+        clickOnSaveButton(OpenDriver);
         assertOperationDoneSuccessfully();
 
 
@@ -72,9 +66,9 @@ public class Medicines extends BasePage {
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Medicines Link Page ");
         senKeys("cssselector", "input[id$='txtTradeNameSearch']", TradeName, OpenDriver, "Search By Trade Name ");
-        click("cssselector", "input[id*='btnSearch']", OpenDriver, "Click on Search Button");
+        clickOnSearchButton(OpenDriver);
         clickOnTheRowTable(OpenDriver);
-        click("cssselector", "input[id*='btnUpdate']", OpenDriver, "Click on The Update Button");
+        clickOnUpdateButton(OpenDriver);
         assertOperationDoneSuccessfully();
 
     }
@@ -86,9 +80,9 @@ public class Medicines extends BasePage {
         navigateToDataManagmentLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Medicines Link Page ");
         senKeys("cssselector", "input[id$='txtTradeNameSearch']", TradeName, OpenDriver, "Search By Trade Name ");
-        click("cssselector", "input[id*='btnSearch']", OpenDriver, "Click on Search Button");
+        clickOnSearchButton(OpenDriver);
         click("cssselector", "input[name*='grdMedicinesItem']", OpenDriver, "Click on the CheckBox to delete");
-        click("cssselector", "a[id*='ibtnDelete']", OpenDriver, "Click on Delete Button");
+        clickOnDeleteButton(OpenDriver);
         acceptTheWebPageAlert(OpenDriver);
         assertOperationDoneSuccessfully();
 

@@ -7,7 +7,7 @@
     <test name="Demo Cycle">
 
         <classes>
-            <class name="test.CareNetSettings.DataManagement.ContainerTypes"/>
+            <class name="test.CareNetSettings.DataManagement.LabTests"/>
         </classes>
     </test>
 </suite>
