@@ -26,17 +26,55 @@ public class CheckList extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToCheckListPage() throws InterruptedException {
+    @Test(priority = 1)
+    public void navigateToCheckList() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on CheckList Page link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblCheckListSearch"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "CheckLists Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on CheckList Page link ");
+        assertByPageName("CheckLists");
+    }
+
+    String RandomString = generateString();
+    String ChecklistName = "ChecklistName" + RandomString;
+
+    @Test(priority = 2)
+    public void addCheckLists() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on CheckList Page link ");
+        clickOnAddButton(OpenDriver);
+        senKeys("cssselector", "input[id$='txtChecklistName']", ChecklistName, OpenDriver, "Fill Checklist Name");
+        DDLByIndex("select[id$='ddlSpecialty']", 1, OpenDriver);
+        clickOnSaveButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+
+    @Test(priority = 3, dependsOnMethods = "addCheckLists")
+    public void editCheckLists() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on CheckList Page link ");
+        senKeys("cssselector", "input[id$='txtDoctorChecklistName']", ChecklistName, OpenDriver, "Fill Checklist Name for search ");
+        clickOnSearchButton(OpenDriver);
+        clickOnTheRowTable(OpenDriver);
+        clickOnUpdateButton(OpenDriver);
+    }
+
+    @Test(priority = 4, dependsOnMethods = "addCheckLists")
+    public void deleteCheckLists() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on CheckList Page link ");
+        senKeys("cssselector", "input[id$='txtDoctorChecklistName']", ChecklistName, OpenDriver, "Fill Checklist Name for search ");
+        clickOnSearchButton(OpenDriver);
+        click("cssselector", "input[name$='grdCheckListItem']", OpenDriver, "Click on checkbox for Delete");
+        clickOnDeleteButton(OpenDriver);
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
     }
 
     @AfterMethod

@@ -1,11 +1,7 @@
 package test.CareNetSettings.DataManagement;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -26,16 +22,12 @@ public class MedicalFormAttribuets extends BasePage {
     }
 
     @Test
-    public void navigateToMedicalFormAttributesPage() throws InterruptedException {
+    public void navigateToMedicalFormAttributes() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Medical Form Attributes Page link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Medical Form Attributes Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Medical Form Attributes Page link ");
+        assertByPageName("Medical Form Attributes");
     }
 
     @AfterMethod

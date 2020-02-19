@@ -1,11 +1,7 @@
 package test.CareNetSettings.DataManagement;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -15,7 +11,6 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 12/4/2019 9:02 AM
  **/
-
 public class Specialties extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
@@ -26,27 +21,68 @@ public class Specialties extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToSpecialtiesPage() throws InterruptedException {
+
+    /*@Test(priority = 1)
+    public void navigateToSpecialties() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Specialties Page link ");
-
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblNameSearch"))).getText();
-        String ExpectedResult = "Name";
-        Assert.assertEquals(ActualResult, ExpectedResult, " Specialties Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Specialties Page link ");
+        assertByPageName("Specialties");
     }
 
-    @AfterMethod
+    String RandomString = generateString();
+    String SpecialtiesName = "SpecialtiesName" + RandomString;
+
+    @Test(priority = 2)
+    public void addSpecialties() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Specialties Page link ");
+        clickOnAddButton(OpenDriver);
+        senKeys("cssselector", "input[id$='txtName']", SpecialtiesName, OpenDriver, "Fill the Name ");
+        senKeys("cssselector", "input[id$='txtName2']", SpecialtiesName, OpenDriver, "Fill the Name2 ");
+        DDLByIndex("select[id$='ddlType']", 1, OpenDriver);
+        DDLByIndex("select[id$='ddlGender']", 2, OpenDriver);
+        clickOnSaveButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+
+    @Test(priority = 3, dependsOnMethods = "addSpecialties")
+    public void editSpecialties() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Specialties Page link ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", SpecialtiesName, OpenDriver, "Fill Name to Search");
+        clickOnSearchButton(OpenDriver);
+        clickOnTheRowTable(OpenDriver);
+        clickOnUpdateButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+*/
+    @Test
+    public void deleteSpecialties() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        navigateToDataManagmentLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Specialties Page link ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", "SpecialtiesName2fd3f", OpenDriver, "Fill Name to Search");
+        clickOnSearchButton(OpenDriver);
+        Thread.sleep(2000);
+        click("cssselector", "input[name$='gvSpecialtiesItem']", OpenDriver, "Click on the CheckBox For Delete");
+        click("cssselector", "a[id$='ibtnDeleteSpecialty']", OpenDriver, "Click on Delete Buttom");
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+
+ /*   @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
             screenShot(OpenDriver, result, method.getName());
         }
         OpenDriver.quit();
         Reporter.log("Closing The Browser");
-    }
-
+    }*/
 }
