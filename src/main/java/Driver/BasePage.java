@@ -222,6 +222,7 @@ public class BasePage {
         click("id", RoomsManagementLocator, driver, "Click on Data Management Locator");
     }
 
+
     public void NavigateToMedicalProvidersLink(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";

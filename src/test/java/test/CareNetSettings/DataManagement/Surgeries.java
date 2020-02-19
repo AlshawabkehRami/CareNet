@@ -33,6 +33,7 @@ public class Surgeries extends BasePage {
     String RandomString = generateString();
     String SurgeriesName = "SurgeriesName" + RandomString;
 
+
     @Test(priority = 2)
     public void addSurgeries() throws InterruptedException {
         navigateToUrl(OpenDriver);

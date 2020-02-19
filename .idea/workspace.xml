@@ -2,27 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteSpecialties_20200219141955.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteSpecialties_20200219142423.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToCheckListPage_20200219121859.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicalFormAttributesPage_20200219101826.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicalFormCodesPage_20200219103746.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToMedicalFormsPage_20200219093542.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToSpecialtiesPage_20200219140654.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToSurgeriesPage_20200219085453.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/CheckList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/CheckList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/DiscountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/DiscountManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ImportMedicines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ImportMedicines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryManagementUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryManagementUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LookupItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LookupItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MangeProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MangeProviders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormAttribuets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormAttribuets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormCodes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/SpecialtyServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/SpecialtyServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Surgeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Surgeries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/CheckList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/CheckList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormAttribuets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormAttribuets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormCodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormCodes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalForms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalForms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Specialties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Specialties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Surgeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Surgeries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582044463241</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Rami">
+      <created>1582126634836</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582126634836</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -554,10 +570,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1582044439515">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1582126882478">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044439515" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126882478" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581493971776" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
@@ -578,40 +594,40 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1582115509510">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1582126746940">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582115509510" />
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746940" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306344" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1582115509510">
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1582126746939">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582115509510" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746939" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1582115509510">
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1582126746938">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582115509510" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746938" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1582115509510">
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1582126746940">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582115509510" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746940" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
@@ -660,10 +676,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1582044479710">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1582126639891">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582044479710" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126639891" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001185696" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />

@@ -21,8 +21,7 @@ public class Specialties extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-
-    /*@Test(priority = 1)
+    @Test(priority = 1)
     public void navigateToSpecialties() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
@@ -61,7 +60,7 @@ public class Specialties extends BasePage {
         clickOnUpdateButton(OpenDriver);
         assertOperationDoneSuccessfully();
     }
-*/
+
     @Test
     public void deleteSpecialties() throws InterruptedException {
         navigateToUrl(OpenDriver);
@@ -77,12 +76,12 @@ public class Specialties extends BasePage {
         assertOperationDoneSuccessfully();
     }
 
- /*   @AfterMethod
+    @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
             screenShot(OpenDriver, result, method.getName());
         }
         OpenDriver.quit();
         Reporter.log("Closing The Browser");
-    }*/
+    }
 }

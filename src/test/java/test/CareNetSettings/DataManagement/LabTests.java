@@ -24,6 +24,7 @@ public class LabTests extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Lab Tests Link Page ");
         assertByPageName("Lab Tests");
     }
+
     String RandomString = generateString();
     String LabTestsName = "LabTestsName" + RandomString;
     @Test(priority = 2)

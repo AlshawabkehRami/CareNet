@@ -7,6 +7,7 @@ import org.testng.Reporter;
 import org.testng.annotations.*;
 import java.lang.reflect.Method;
 
+
 public class Symptoms extends BasePage {
     WebDriver driver;
     public static WebDriver OpenDriver;

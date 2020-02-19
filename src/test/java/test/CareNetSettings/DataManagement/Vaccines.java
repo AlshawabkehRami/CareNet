@@ -13,6 +13,7 @@ import java.lang.reflect.Method;
 
 public class Vaccines extends BasePage {
 
+
     WebDriver driver;
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl03_lblfontFrm";

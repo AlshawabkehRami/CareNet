@@ -14,6 +14,7 @@ public class BodySystem extends BasePage {
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl04_lblfontFrm";
 
+
     @BeforeMethod
     public void setUp() {
         OpenDriver = driverType(driver, "chrome");

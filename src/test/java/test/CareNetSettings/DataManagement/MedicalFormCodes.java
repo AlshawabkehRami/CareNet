@@ -33,6 +33,7 @@ public class MedicalFormCodes extends BasePage {
     String RandomString = generateString();
     String Name = "Name" + RandomString;
 
+
     @Test(priority = 2)
     public void addMedicalFormCodes() throws InterruptedException {
         navigateToUrl(OpenDriver);

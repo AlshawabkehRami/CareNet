@@ -49,6 +49,7 @@ public class Allergies extends BasePage {
 
     }
 
+
     @Test(priority = 3, dependsOnMethods = "addAllergies")
     public void editAllergies() throws InterruptedException {
         navigateToUrl(OpenDriver);

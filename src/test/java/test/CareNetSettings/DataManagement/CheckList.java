@@ -38,6 +38,7 @@ public class CheckList extends BasePage {
     String RandomString = generateString();
     String ChecklistName = "ChecklistName" + RandomString;
 
+
     @Test(priority = 2)
     public void addCheckLists() throws InterruptedException {
         navigateToUrl(OpenDriver);

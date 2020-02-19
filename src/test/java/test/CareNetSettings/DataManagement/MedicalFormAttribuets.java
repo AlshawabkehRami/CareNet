@@ -22,6 +22,7 @@ public class MedicalFormAttribuets extends BasePage {
     }
 
     @Test
+
     public void navigateToMedicalFormAttributes() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);

@@ -16,6 +16,7 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 12/4/2019 9:03 AM
  **/
 
+
 public class SpecialtyServices extends BasePage {
 
     WebDriver driver;

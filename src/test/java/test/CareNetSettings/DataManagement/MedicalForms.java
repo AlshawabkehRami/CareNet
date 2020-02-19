@@ -31,6 +31,7 @@ public class MedicalForms extends BasePage {
     String RandomString = generateString();
     String FormName = "FormName" + RandomString;
 
+
     @Test(priority = 2)
     public void addMedicalForms() throws InterruptedException {
         navigateToUrl(OpenDriver);

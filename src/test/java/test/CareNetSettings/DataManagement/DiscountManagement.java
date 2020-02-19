@@ -38,6 +38,7 @@ public class DiscountManagement extends BasePage {
         Assert.assertEquals(ActualResult, ExpectedResult);
     }
 
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
