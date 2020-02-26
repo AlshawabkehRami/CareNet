@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
+    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="Rami">
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addInventoryManagementUnits_20200220123153.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToDiscountManagementPage_20200220123532.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToImportMedicinesPage_20200220123637.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToInventoryManagementUnits_20200220122231.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToKnowledgeBase_20200220121515.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TakesScreenshot/navigateToNetworkProviders_20200220124238.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataManagement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataManagement.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Allergies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/BodySystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/CheckList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/CheckList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ClinicalExamination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ContainerTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/DiscountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/DiscountManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Diseases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ImportMedicines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/ImportMedicines.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryManagementUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryManagementUnits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabSampleTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LabUnits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LookupItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/LookupItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MangeProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MangeProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormAttribuets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormAttribuets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalFormCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServiceCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/MedicalServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Medicines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/SpecialtyServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/SpecialtyServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Surgeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Surgeries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Symptoms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Vaccines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/BranchSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/BranchSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/NetworkProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/NetworkProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/NonNetworkProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/NonNetworkProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/ProviderStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/ProviderStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/ScheduleSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/ScheduleSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabSampleTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabSampleTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabUnits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LabUnits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LookupItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/LookupItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MangeProviders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MangeProviders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormAttribuets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormAttribuets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormCodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalFormCodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalForms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalForms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServiceCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServiceCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/MedicalServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Medicines.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/Medicines.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/BranchSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/BranchSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/NetworkProviders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/NetworkProviders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/NonNetworkProviders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/NonNetworkProviders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/ProviderStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/ProviderStaff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/ScheduleSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/ScheduleSettings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,18 +82,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\test\java" />
-      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\test" />
-      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\global" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -93,8 +96,39 @@
       <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project" />
       <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\Driver" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\test\java" />
+      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\test" />
+      <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\global" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.Specialties">
+  <component name="RunManager" selected="TestNG.ProviderStaff">
+    <configuration name="BranchSettings" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Second_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.MedicalProviders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.MedicalProviders" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.MedicalProviders.BranchSettings" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" type="TestNG" nameIsGenerated="true">
       <module name="Second_Project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/HTMLReporter.xml" />
@@ -158,8 +192,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Second_Project" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Test.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Report" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" type="TestNG" nameIsGenerated="true">
       <module name="Second_Project" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/dataManagement.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -179,17 +236,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NonNetworkProviders" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="PATTERN" value="test.CareNetSettings.MedicalProviders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.CheckList" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.MedicalProviders" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.MedicalProviders.NonNetworkProviders" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -205,17 +262,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MedicalFormAttribuets" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProviderStaff" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="PATTERN" value="test.CareNetSettings.MedicalProviders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.MedicalFormAttribuets" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.MedicalProviders" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.MedicalProviders.ProviderStaff" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -231,69 +288,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MedicalFormCodes" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ScheduleSettings" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Second_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="PATTERN" value="test.CareNetSettings.MedicalProviders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.MedicalFormCodes" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MedicalForms" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Second_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.MedicalForms" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specialties" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Second_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.Specialties" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.MedicalProviders" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.MedicalProviders.ScheduleSettings" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -332,19 +337,19 @@
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMNew.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" />
-      <item itemvalue="TestNG.MedicalForms" />
-      <item itemvalue="TestNG.MedicalFormAttribuets" />
-      <item itemvalue="TestNG.MedicalFormCodes" />
-      <item itemvalue="TestNG.CheckList" />
-      <item itemvalue="TestNG.Specialties" />
+      <item itemvalue="TestNG.NonNetworkProviders" />
+      <item itemvalue="TestNG.BranchSettings" />
+      <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" />
+      <item itemvalue="TestNG.ScheduleSettings" />
+      <item itemvalue="TestNG.ProviderStaff" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Specialties" />
-        <item itemvalue="TestNG.CheckList" />
-        <item itemvalue="TestNG.MedicalFormCodes" />
-        <item itemvalue="TestNG.MedicalFormAttribuets" />
-        <item itemvalue="TestNG.MedicalForms" />
+        <item itemvalue="TestNG.ProviderStaff" />
+        <item itemvalue="TestNG.ScheduleSettings" />
+        <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" />
+        <item itemvalue="TestNG.BranchSettings" />
+        <item itemvalue="TestNG.NonNetworkProviders" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +495,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582126634836</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Rami">
+      <created>1582126914624</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582126914624</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Rami">
+      <created>1582126987766</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1582126987766</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -512,11 +531,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="372" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/NewTestRami.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580979517392" />
-    <state x="-1005" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" timestamp="1581003512501">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state x="392" y="0" width="596" height="728" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml" timestamp="1582705208495">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1005" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003512501" />
-    <state x="361" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580984837293" />
+    <state x="-974" y="0" width="596" height="728" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582193659379" />
+    <state x="392" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/Test.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705208495" />
+    <state x="361" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" timestamp="1582705218935">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1005" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582193626627" />
+    <state x="361" y="0" key="#C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705218935" />
     <state x="392" y="11" key="#Login" timestamp="1575379466714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -529,16 +553,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="164" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1575896584207" />
-    <state x="137" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581341541959">
+    <state x="137" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582705229061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581003493381" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581341541959" />
+    <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582193636273" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705229061" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575896347887" />
-    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581937045263">
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582194779165">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1581937045263" />
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582194779165" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581504695566" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1576403127683" />
     <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582036433288">
@@ -570,22 +594,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1582126911511">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1582706146066">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126911511" />
-    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581493971776" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126981903" />
+    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706146066" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="451" y="79" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1575896098366" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1580979332575">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1582616098498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-903" y="118" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1579791930331" />
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580979332575" />
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575896244533" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582616098498" />
     <state x="547" y="258" key="Github.ShareDialog" timestamp="1580919255871">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -594,44 +618,44 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1582126746940">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1582705864311">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746940" />
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582195830711" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
-    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306344" />
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705864311" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1582126746939">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1582705864311">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746939" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582195830710" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
-    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705864311" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1582126746938">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1582705864311">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746938" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582195830710" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
-    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306343" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705864311" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1582126746940">
-      <screen x="-1366" y="0" width="1366" height="728" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1582705864311">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126746940" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582195830711" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
-    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581518306344" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705864311" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405021" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1582099003032">
@@ -676,10 +700,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1582126917288">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1582127013199">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582126917288" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1582127013199" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581001185696" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />

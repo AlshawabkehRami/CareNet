@@ -4,8 +4,8 @@
 <suite name="CareNet Settings" verbose="1" >
     <test name="Data Management"   >
         <classes>
-         
-            <class name="test.CareNetSettings.DataManagement.Symptoms"></class>
+
+            <class name="test.CareNetSettings.DataManagement.KnowledgeBase"/>
 
         </classes>
     </test>

@@ -1,11 +1,7 @@
 package test.CareNetSettings.MedicalProviders;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -35,13 +31,8 @@ public class NetworkProviders extends BasePage {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Network Providers Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblTrvCode"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Code";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Network Providers Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Network Providers Page Link");
+        assertByPageName("Network Providers");
 
 
     }

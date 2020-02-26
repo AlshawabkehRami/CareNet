@@ -29,21 +29,32 @@ public class LookupItems extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-    public void navigateToLookupItemsPage() throws InterruptedException {
+     @Test(priority = 1)
+     public void navigateToLookupItemsPage() throws InterruptedException {
+         navigateToUrl(OpenDriver);
+         loginWithAdminUser(OpenDriver);
+         navigateToDataManagmentLink(OpenDriver);
+         click("id", PageLinkLocator, OpenDriver, "Click on Lookup Items Page Link");
+         assertByPageName("Lookup Items");
+
+     }
+    String RandomString = generateString();
+    String LookupItemName = "Lookup Item Name" + RandomString;
+
+    @Test(priority = 2)
+    public void addLookupItems() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Lookup Items Page Link");
-
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_ContentPlaceHolder1_lblSearchArea"))).getText();
-        String ExpectedResult = "Search";
-        Assert.assertEquals(ActualResult, ExpectedResult, " Lookup Items  Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Lookup Items Page Link");
+        clickOnAddButton(OpenDriver);
+        senKeys("cssselector", "input[id$='txtLookupItemName']", LookupItemName, OpenDriver, "Fill Lookup Item Name");
+        senKeys("cssselector", "input[id$='txtLookupItemName2']", LookupItemName, OpenDriver, "Fill Lookup Item Name2");
+        Thread.sleep(1000);
+        click("cssselector", "input[id$='btnSaveAndClose']", OpenDriver, "Click on Save Button");
+        assertOperationDoneSuccessfully();
 
     }
-
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

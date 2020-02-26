@@ -31,17 +31,14 @@ public class NonNetworkProviders extends BasePage {
     }
 
     @Test
-    public void navigateToNonNetworkProvidersPage() throws InterruptedException {
+    public void navigateToNonNetworkProviders() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Non-Network Providers Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Non-Network Providers";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Non-Network Providers  Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Non-Network Providers Page Link");
+        assertByPageName("Non-Network Providers");
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

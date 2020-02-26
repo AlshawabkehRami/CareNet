@@ -1,7 +1,6 @@
 package Driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,20 +12,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-
 public class BasePage {
-    private static final java.util.UUID UUID = null;
     public static WebDriverWait Wait;
     public static WebDriver driver;
     String Url = "http://webserver/CarenetApps/QA/4.3/MySql/GlobalLanding/Login/GUI/FrmLogin.aspx";
-
 
     public static WebDriver driverType(WebDriver driver, String browser) {
         browser = browser.toLowerCase();
@@ -462,7 +457,7 @@ public class BasePage {
 
     }
 
-    public static void acceptTheWebPageAlert(WebDriver driver) throws InterruptedException {
+    public static void acceptTheWebPageAlert(WebDriver driver){
 
         driver.switchTo().alert().accept();
         Reporter.log("Accept the WebPage Alert");

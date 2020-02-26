@@ -35,16 +35,12 @@ public class ProviderStaff extends BasePage {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on ProviderStaff Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Provider Staff";
-        Assert.assertEquals(ActualResult, ExpectedResult, "ProviderStaff Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on ProviderStaff Page Link");
+        assertByPageName("Provider Staff");
 
 
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
