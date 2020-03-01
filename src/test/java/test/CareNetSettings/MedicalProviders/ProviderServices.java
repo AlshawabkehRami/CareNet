@@ -1,11 +1,7 @@
 package test.CareNetSettings.MedicalProviders;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -17,7 +13,6 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 1/20/2020 6:10 PM
  **/
-
 public class ProviderServices extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
@@ -35,16 +30,12 @@ public class ProviderServices extends BasePage {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Provider Services Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Provider Services";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Provider Services Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Provider Services Page Link");
+        assertByPageName("Provider Services");
 
 
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

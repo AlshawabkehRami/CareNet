@@ -17,13 +17,10 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 1/21/2020 4:46 PM
  **/
-
 public class PriceLists extends BasePage {
-
     WebDriver driver;
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl01_lblfontFrm";
-
 
     @BeforeMethod
     public void setUp() {
@@ -31,21 +28,16 @@ public class PriceLists extends BasePage {
     }
 
     @Test
-
     public void navigateToPriceLists() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         navigateToAgreements(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on  Price Lists Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Price Lists";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Price Lists Page not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on  Price Lists Page Link");
+        assertByPageName("Price Lists");
 
 
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

@@ -34,7 +34,6 @@ public class NetworkProviders extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Network Providers Page Link");
         assertByPageName("Network Providers");
 
-
     }
 
     @AfterMethod

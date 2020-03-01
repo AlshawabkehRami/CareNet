@@ -22,25 +22,18 @@ public class ProviderStaff extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl04_lblfontFrm";
-
-
     @BeforeMethod
     public void setUp() {
         OpenDriver = driverType(driver, "chrome");
     }
-
     @Test
-
     public void navigateToProviderStaff() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToMedicalProvidersLink(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on ProviderStaff Page Link");
         assertByPageName("Provider Staff");
-
-
     }
-
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

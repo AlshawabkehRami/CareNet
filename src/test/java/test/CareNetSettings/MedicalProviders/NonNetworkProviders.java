@@ -39,6 +39,7 @@ public class NonNetworkProviders extends BasePage {
         assertByPageName("Non-Network Providers");
     }
 
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

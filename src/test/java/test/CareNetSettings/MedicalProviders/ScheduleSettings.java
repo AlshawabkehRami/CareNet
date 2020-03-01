@@ -17,12 +17,10 @@ public class ScheduleSettings extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
     String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl03_lblfontFrm";
-
     @BeforeMethod
     public void setUp() {
         OpenDriver = driverType(driver, "chrome");
     }
-
     @Test
     public void navigateToScheduleSettings() throws InterruptedException {
         navigateToUrl(OpenDriver);
@@ -31,7 +29,6 @@ public class ScheduleSettings extends BasePage {
         click("id", PageLinkLocator, OpenDriver, "Click on Schedule Settings Page Link");
         assertByPageName("Schedule Settings");
     }
-
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

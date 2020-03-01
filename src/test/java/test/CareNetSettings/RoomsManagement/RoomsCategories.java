@@ -1,17 +1,11 @@
 package test.CareNetSettings.RoomsManagement;
-
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.lang.reflect.Method;
 
 /**
@@ -29,22 +23,62 @@ public class RoomsCategories extends BasePage {
         OpenDriver = driverType(driver, "chrome");
     }
 
-    @Test
-
+    @Test(priority = 1)
     public void navigateToRoomsCategories() throws InterruptedException {
         navigateToUrl(OpenDriver);
         loginWithAdminUser(OpenDriver);
         NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Rooms Categories Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        System.out.print(ActualResult);
-        String ExpectedResult = "Rooms Categories";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Rooms CategoriesPage not opened Properly");
+        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
+        assertByPageName("Rooms Categories");
+    }
+
+    String RandomString = generateString();
+    String CategoryName = "Category Name" + RandomString;
+
+    @Test(priority = 2)
+    public void addRoomsCategories() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        NavigateToRoomsManagementLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
+        clickOnAddButton(OpenDriver);
+        senKeys("cssselector", "input[id$='txtRoomCategoryName']", CategoryName, OpenDriver, "Fill Category Name ");
+        senKeys("cssselector", "input[id$='txtRoomCategoryName2']", CategoryName, OpenDriver, "Fill Category Name2 ");
+        DDLByIndex("select[id$='ddlRoomType']", 1, OpenDriver);
+        senKeys("cssselector", "input[id$='txtRoomColor']", "Color", OpenDriver, "Fill Category Color ");
+        clickOnSaveButton(OpenDriver);
+        assertOperationDoneSuccessfully();
 
 
     }
+
+    @Test(priority = 3, dependsOnMethods = "addRoomsCategories")
+    public void editRoomsCategories() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        NavigateToRoomsManagementLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
+        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, OpenDriver, "Search By Category Name ");
+        clickOnSearchButton(OpenDriver);
+        clickOnTheRowTable(OpenDriver);
+        clickOnUpdateButton(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+
+    @Test(priority = 4, dependsOnMethods = "addRoomsCategories")
+    public void deleteRoomsCategories() throws InterruptedException {
+        navigateToUrl(OpenDriver);
+        loginWithAdminUser(OpenDriver);
+        NavigateToRoomsManagementLink(OpenDriver);
+        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
+        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, OpenDriver, "Search By Category Name ");
+        clickOnSearchButton(OpenDriver);
+        click("cssselector", "input[name$='grdSymptomsItem']", OpenDriver, "Click on the CheckBox for delete");
+        clickOnDeleteButton(OpenDriver);
+        acceptTheWebPageAlert(OpenDriver);
+        assertOperationDoneSuccessfully();
+    }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {

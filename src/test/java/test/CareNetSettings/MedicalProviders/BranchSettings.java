@@ -1,11 +1,7 @@
 package test.CareNetSettings.MedicalProviders;
-
 import Driver.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -17,7 +13,6 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 1/20/2020 6:10 PM
  **/
-
 public class BranchSettings extends BasePage {
     WebDriver driver;
     WebDriver OpenDriver;
