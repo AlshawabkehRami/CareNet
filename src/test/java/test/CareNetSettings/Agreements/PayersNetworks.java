@@ -14,38 +14,38 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/21/2020 4:45 PM
  **/
 public class PayersNetworks extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl00_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToPayersNetworks() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        agreementsLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on  Payers Networks Page Link");
+        URLnavigation(browser);
+        adminLogin(browser);
+        agreementsLinknavigation(browser);
+        click("id", PayersNetworksPageID, browser, "Click on  Payers Networks Page Link");
         assertByPageName("Payers Networks");
     }
+
     @Test(priority = 2)
     public void searchPayersNetworks() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        agreementsLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on  Payers Networks Page Link");
-        DDLByValue("ctl00$ContentPlaceHolder1$ddlCompanyTypeSearch", "All", OpenDriver);
-        clickOnSearchButton(OpenDriver);
+        URLnavigation(browser);
+        adminLogin(browser);
+        agreementsLinknavigation(browser);
+        click("id", PayersNetworksPageID, browser, "Click on  Payers Networks Page Link");
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlCompanyTypeSearch", "All", browser);
+        clickOnSearchButton(browser);
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

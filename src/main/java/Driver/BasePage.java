@@ -589,6 +589,12 @@ public class BasePage {
     public String RoomsCategoriesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl02_lblfontFrm";
     public String RoomsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl03_lblfontFrm";
     //**********************************************************************************************///
+    public String PayersNetworksPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl00_lblfontFrm";
+    public String PriceListsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl01_lblfontFrm";
+    public String PayersAgreementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl02_lblfontFrm";
+    public String ApprovalsSetupPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl03_lblfontFrm";
+    public String ExcludedServicesAndDiseasesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl04_lblfontFrm";
+    //**********************************************************************************************///
 
 
 }
