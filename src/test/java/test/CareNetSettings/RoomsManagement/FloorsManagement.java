@@ -14,21 +14,19 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/21/2020 4:18 PM
  **/
 public class FloorsManagement extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl04_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToFloorsManagement() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on FloorsManagement Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
         assertByPageName("Floors Management");
     }
 
@@ -37,52 +35,52 @@ public class FloorsManagement extends BasePage {
 
     @Test(priority = 2)
     public void addFloorsManagement() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on FloorsManagement Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtFloorName']", FloorsManagementName, OpenDriver, "Fill Name");
-        senKeys("cssselector", "input[id$='txtOrder']", RandomString, OpenDriver, "Fill Order");
-        DDLByIndex("select[id$='ddlBranches']", 1, OpenDriver);
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtFloorName']", FloorsManagementName, browser, "Fill Name");
+        senKeys("cssselector", "input[id$='txtOrder']", RandomString, browser, "Fill Order");
+        DDLByIndex("select[id$='ddlBranches']", 1, browser);
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3)
     public void editFloorsManagement() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on FloorsManagement Page Link");
-        senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, OpenDriver, "Search By Name");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
+        senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, browser, "Search By Name");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
     }
 
     @Test(priority = 4)
     public void deleteFloorsManagement() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on FloorsManagement Page Link");
-        senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, OpenDriver, "Search By Name");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdFloorsItem']", OpenDriver, "Click on the CheckBox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
+        senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, browser, "Search By Name");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdFloorsItem']", browser, "Click on the CheckBox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

@@ -12,30 +12,28 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 12/4/2019 9:10 AM
  **/
 public class KnowledgeBase extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl24_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test
     public void navigateToKnowledgeBase() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on KnowledgeBase page link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", KnowledgeBasePageID, browser, "Click on KnowledgeBase page link");
         assertByPageName("Knowlefdge Base");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 

@@ -12,21 +12,19 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 12/4/2019 8:43 AM
  **/
 public class Surgeries extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl15_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToSurgeriesPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Surgeries page link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
         assertByPageName("Surgeries");
     }
 
@@ -36,51 +34,51 @@ public class Surgeries extends BasePage {
 
     @Test(priority = 2)
     public void addSurgeries() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Surgeries page link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtSurgeryName']", SurgeriesName, OpenDriver, "Fill Surgery Name");
-        DDLByIndex("select[id$='ddlSurgerySpecialty']", 1, OpenDriver);
-        senKeys("cssselector", "input[id$='txtCode']", SurgeriesName, OpenDriver, "Fill Code");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtSurgeryName']", SurgeriesName, browser, "Fill Surgery Name");
+        DDLByIndex("select[id$='ddlSurgerySpecialty']", 1, browser);
+        senKeys("cssselector", "input[id$='txtCode']", SurgeriesName, browser, "Fill Code");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addSurgeries")
     public void editSurgeries() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Surgeries page link");
-        senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, OpenDriver, "Fill Surgery Name for search");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
+        senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, browser, "Fill Surgery Name for search");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addSurgeries")
     public void deleteSurgeries() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Surgeries page link");
-        senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, OpenDriver, "Fill Surgery Name for search");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdSurgeriesItem']", OpenDriver, "Click on the checkbox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
+        senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, browser, "Fill Surgery Name for search");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdSurgeriesItem']", browser, "Click on the checkbox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

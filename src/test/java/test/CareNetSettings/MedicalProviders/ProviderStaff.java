@@ -1,11 +1,7 @@
 package test.CareNetSettings.MedicalProviders;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,27 +15,28 @@ import java.lang.reflect.Method;
  **/
 
 public class ProviderStaff extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl04_lblfontFrm";
+    WebDriver browser;
+
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
+
     @Test
     public void navigateToProviderStaff() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on ProviderStaff Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", ProviderStaffPageID, browser, "Click on ProviderStaff Page Link");
         assertByPageName("Provider Staff");
     }
+
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

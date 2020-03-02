@@ -14,22 +14,20 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/20/2020 6:11 PM
  **/
 public class MachineType extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl07_lblfontFrm";
+    WebDriver browser;
 
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToMachineType() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Type Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineTypePageID, browser, "Click on Machine Type Page Link");
         assertByPageName("Machine Type");
     }
 
@@ -38,59 +36,59 @@ public class MachineType extends BasePage {
 
     @Test(priority = 2)
     public void addMachineType() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Type Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtMachineTypeName']", MachineTypeName, OpenDriver, "Fill Machine Type Name");
-        DDLByIndex("select[id$='ddlCommStandardType']", 1, OpenDriver);
-        DDLByIndex("select[id$='ddlFunctionalTypeDetails']", 1, OpenDriver);
-        senKeys("cssselector", "input[id$='txtOrderListTimeOut']", "1", OpenDriver, "Fill Order List Time Out");
-        senKeys("cssselector", "input[id$='txtOrderListMaxNo']", "20", OpenDriver, "Fill Order List Max No");
-        senKeys("cssselector", "textarea[id$='txtCommStanderdFormat']", "Communication Format", OpenDriver, "Fill Communication Format");
-        click("cssselector", "input[id$='chbCheckStatus']", OpenDriver, "click on Check Status ");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineTypePageID, browser, "Click on Machine Type Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtMachineTypeName']", MachineTypeName, browser, "Fill Machine Type Name");
+        DDLByIndex("select[id$='ddlCommStandardType']", 1, browser);
+        DDLByIndex("select[id$='ddlFunctionalTypeDetails']", 1, browser);
+        senKeys("cssselector", "input[id$='txtOrderListTimeOut']", "1", browser, "Fill Order List Time Out");
+        senKeys("cssselector", "input[id$='txtOrderListMaxNo']", "20", browser, "Fill Order List Max No");
+        senKeys("cssselector", "textarea[id$='txtCommStanderdFormat']", "Communication Format", browser, "Fill Communication Format");
+        click("cssselector", "input[id$='chbCheckStatus']", browser, "click on Check Status ");
        // senKeys("cssselector", "input[id$='txtBarcodeLength']", "1111", OpenDriver, "Enter Barcode Length");
-        DDLByIndex("select[id$='ddlConnectionType']", 1, OpenDriver);
-        DDLByIndex("select[id$='ddlBarcodeType']", 1, OpenDriver);
-        senKeys("cssselector", "textarea[id$='txtNotes']", "Notes", OpenDriver, "Fill the Notes");
-        clickOnSaveButton(OpenDriver);
+        DDLByIndex("select[id$='ddlConnectionType']", 1, browser);
+        DDLByIndex("select[id$='ddlBarcodeType']", 1, browser);
+        senKeys("cssselector", "textarea[id$='txtNotes']", "Notes", browser, "Fill the Notes");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addMachineType")
     public void editMachineType() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Type Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineTypeName, OpenDriver, "Search by Name");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineTypePageID, browser, "Click on Machine Type Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineTypeName, browser, "Search by Name");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addMachineType")
     public void deleteMachineType() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Type Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineTypeName, OpenDriver, "Search by Name");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdhMachineTypesItem']", OpenDriver, "Click on CheckBox for Delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineTypePageID, browser, "Click on Machine Type Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineTypeName, browser, "Search by Name");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdhMachineTypesItem']", browser, "Click on CheckBox for Delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

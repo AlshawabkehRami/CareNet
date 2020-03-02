@@ -13,22 +13,20 @@ import java.lang.reflect.Method;
  **/
 
 public class RoomsCategories extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl02_lblfontFrm";
+    WebDriver browser;
 
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToRoomsCategories() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
         assertByPageName("Rooms Categories");
     }
 
@@ -37,16 +35,16 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 2)
     public void addRoomsCategories() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtRoomCategoryName']", CategoryName, OpenDriver, "Fill Category Name ");
-        senKeys("cssselector", "input[id$='txtRoomCategoryName2']", CategoryName, OpenDriver, "Fill Category Name2 ");
-        DDLByIndex("select[id$='ddlRoomType']", 1, OpenDriver);
-        senKeys("cssselector", "input[id$='txtRoomColor']", "Color", OpenDriver, "Fill Category Color ");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtRoomCategoryName']", CategoryName, browser, "Fill Category Name ");
+        senKeys("cssselector", "input[id$='txtRoomCategoryName2']", CategoryName, browser, "Fill Category Name2 ");
+        DDLByIndex("select[id$='ddlRoomType']", 1, browser);
+        senKeys("cssselector", "input[id$='txtRoomColor']", "Color", browser, "Fill Category Color ");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -54,37 +52,37 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addRoomsCategories")
     public void editRoomsCategories() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
-        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, OpenDriver, "Search By Category Name ");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
+        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, browser, "Search By Category Name ");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addRoomsCategories")
     public void deleteRoomsCategories() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Rooms Categories Page Link");
-        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, OpenDriver, "Search By Category Name ");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdSymptomsItem']", OpenDriver, "Click on the CheckBox for delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
+        senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, browser, "Search By Category Name ");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdSymptomsItem']", browser, "Click on the CheckBox for delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

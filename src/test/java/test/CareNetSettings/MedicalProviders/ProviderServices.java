@@ -14,23 +14,21 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/20/2020 6:10 PM
  **/
 public class ProviderServices extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl06_lblfontFrm";
+    WebDriver browser;
 
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test
 
     public void navigateToProviderServices() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Provider Services Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", ProviderServicesPageID, browser, "Click on Provider Services Page Link");
         assertByPageName("Provider Services");
 
 
@@ -39,9 +37,9 @@ public class ProviderServices extends BasePage {
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

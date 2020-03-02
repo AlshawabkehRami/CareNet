@@ -10,26 +10,21 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 12/3/2019 4:23 PM
  **/
-
 public class Vaccines extends BasePage {
-
-
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl03_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
 
     }
 
     @Test(priority = 1)
     public void navigateToVaccinesPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
         assertByPageName("Vaccines");
 
     }
@@ -39,13 +34,13 @@ public class Vaccines extends BasePage {
 
     @Test(priority = 2)
     public void addVaccines() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id*='txtVaccineName']", VaccinesName, OpenDriver, "Fill Vaccine Name");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id*='txtVaccineName']", VaccinesName, browser, "Fill Vaccine Name");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -53,14 +48,14 @@ public class Vaccines extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addVaccines")
     public void editVaccines() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
-        senKeys("cssselector", "input[id*='txtName']", VaccinesName, OpenDriver, "Search By Vaccines Name " + VaccinesName);
-        clickOnShowAllButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
+        senKeys("cssselector", "input[id*='txtName']", VaccinesName, browser, "Search By Vaccines Name " + VaccinesName);
+        clickOnShowAllButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -69,15 +64,15 @@ public class Vaccines extends BasePage {
     @Test(priority = 4, dependsOnMethods = "addVaccines")
     public void deleteVaccines() throws InterruptedException {
 
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Vaccines Link Page");
-        senKeys("cssselector", "input[id*='txtName']", VaccinesName, OpenDriver, "Search By Vaccines Name " + VaccinesName);
-        clickOnShowAllButton(OpenDriver);
-        click("cssselector", "input[name*='grdVaccinesItem']", OpenDriver, "Click on checkBox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
+        senKeys("cssselector", "input[id*='txtName']", VaccinesName, browser, "Search By Vaccines Name " + VaccinesName);
+        clickOnShowAllButton(browser);
+        click("cssselector", "input[name*='grdVaccinesItem']", browser, "Click on checkBox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -86,10 +81,10 @@ public class Vaccines extends BasePage {
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
 
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 

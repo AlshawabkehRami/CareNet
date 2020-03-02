@@ -14,21 +14,19 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/21/2020 4:17 PM
  **/
 public class AssetTypes extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl00_lnkForms";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToAssetTypes() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on AssetTypes Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         assertByPageName("Asset Types");
     }
 
@@ -37,50 +35,50 @@ public class AssetTypes extends BasePage {
 
     @Test(priority = 2)
     public void addAssetTypes() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on AssetTypes Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         Thread.sleep(1000);
-        click("cssselector", "a[id$='ibtnAddItemType']", OpenDriver, "Click on Add Button");
-        senKeys("cssselector", "input[id$='txtItemTypeName']", AssetTypesName, OpenDriver, "Fill The Asset Type Name");
-        clickOnSaveButton(OpenDriver);
+        click("cssselector", "a[id$='ibtnAddItemType']", browser, "Click on Add Button");
+        senKeys("cssselector", "input[id$='txtItemTypeName']", AssetTypesName, browser, "Fill The Asset Type Name");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addAssetTypes")
     public void editAssetTypes() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on AssetTypes Page Link");
-        senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, OpenDriver, "Fill The Asset Type Name");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
+        senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, browser, "Fill The Asset Type Name");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addAssetTypes")
     public void deleteAssetTypes() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on AssetTypes Page Link");
-        senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, OpenDriver, "Fill The Asset Type Name");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='gvItemTypesItem']", OpenDriver, "Click on the checkBox for delete");
-        click("cssselector","a[id$='ibtnDeleteItemType']",OpenDriver,"Click on Delete Button");
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
+        senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, browser, "Fill The Asset Type Name");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='gvItemTypesItem']", browser, "Click on the checkBox for delete");
+        click("cssselector","a[id$='ibtnDeleteItemType']", browser,"Click on Delete Button");
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

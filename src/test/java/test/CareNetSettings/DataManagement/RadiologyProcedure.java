@@ -12,21 +12,19 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 12/3/2019 5:03 PM
  **/
 public class RadiologyProcedure extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl13_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Radiology Procedure Link Page");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         assertByPageName("Radiology Procedures");
     }
 
@@ -35,57 +33,57 @@ public class RadiologyProcedure extends BasePage {
 
     @Test(priority = 2)
     public void addRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Radiology Procedure Link Page");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtMedicalTestName']", RadiologyProcedureName, OpenDriver, "Fill Medical Test Name");
-        senKeys("cssselector", "input[id$='txtMedicalTestName2']", "Medical Test Name 2" + RandomString, OpenDriver, "Fill Medical Test Name2");
-        senKeys("cssselector", "input[id$='txtAlias']", "Alias" + RandomString, OpenDriver, "Fill Alias");
-        DDLByIndex("select[id$='ddlCategories']", 1, OpenDriver);
-        senKeys("cssselector", "input[id$='txtCode']", "Code" + RandomString, OpenDriver, "Fill Code ");
-        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Female", OpenDriver);
-        senKeys("cssselector", "textarea[id$='txtPreRequisites']", "Prerequisites" + RandomString, OpenDriver, "Fill Prerequisites");
-        senKeys("cssselector", "input[id$='txtTestTime']", "12", OpenDriver, "Fill Test Time");
-        senKeys("cssselector", "input[id$='txtStandardCode']", "Standard Code" + RandomString, OpenDriver, " Fill Standard Code");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtMedicalTestName']", RadiologyProcedureName, browser, "Fill Medical Test Name");
+        senKeys("cssselector", "input[id$='txtMedicalTestName2']", "Medical Test Name 2" + RandomString, browser, "Fill Medical Test Name2");
+        senKeys("cssselector", "input[id$='txtAlias']", "Alias" + RandomString, browser, "Fill Alias");
+        DDLByIndex("select[id$='ddlCategories']", 1, browser);
+        senKeys("cssselector", "input[id$='txtCode']", "Code" + RandomString, browser, "Fill Code ");
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Female", browser);
+        senKeys("cssselector", "textarea[id$='txtPreRequisites']", "Prerequisites" + RandomString, browser, "Fill Prerequisites");
+        senKeys("cssselector", "input[id$='txtTestTime']", "12", browser, "Fill Test Time");
+        senKeys("cssselector", "input[id$='txtStandardCode']", "Standard Code" + RandomString, browser, " Fill Standard Code");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addRadiologyProcedure")
     public void editRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Radiology Procedure Link Page");
-        senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, OpenDriver, "Fill search Name ");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
+        senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, browser, "Fill search Name ");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addRadiologyProcedure")
     public void deleteRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Radiology Procedure Link Page");
-        senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, OpenDriver, "Fill search Name ");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[id$='grdMedicalTestsItem']", OpenDriver, "Click on The Checkbox for delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
+        senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, browser, "Fill search Name ");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[id$='grdMedicalTestsItem']", browser, "Click on The Checkbox for delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 

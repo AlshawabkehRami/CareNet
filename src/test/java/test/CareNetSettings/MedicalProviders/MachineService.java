@@ -15,22 +15,19 @@ import java.lang.reflect.Method;
  **/
 
 public class MachineService extends BasePage {
-
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl09_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToMachineService() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Service Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
         assertByPageName("Machine Service");
     }
 
@@ -39,30 +36,30 @@ public class MachineService extends BasePage {
 
     @Test(priority = 2)
     public void addMachineService() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Service Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtCode']", RandomString, OpenDriver, "Fill The Code ");
-        senKeys("cssselector", "input[id$='txtName']", MachineServiceName, OpenDriver, "Fill The Name");
-        DDLByIndex("select[id$='ddlServiceTypeEntry']", 1, OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtCode']", RandomString, browser, "Fill The Code ");
+        senKeys("cssselector", "input[id$='txtName']", MachineServiceName, browser, "Fill The Name");
+        DDLByIndex("select[id$='ddlServiceTypeEntry']", 1, browser);
         Thread.sleep(2000);
-        senKeys("cssselector", "input[id$='txtStandardCode']", MachineServiceName, OpenDriver, "Fill the txtStandardCode");
-        clickOnSaveButton(OpenDriver);
+        senKeys("cssselector", "input[id$='txtStandardCode']", MachineServiceName, browser, "Fill the txtStandardCode");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addMachineService")
     public void editMachineService() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Service Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, OpenDriver, "FilltxtNameSearch");
-        click("cssselector", "input[id$='btnSerach']", OpenDriver, "Click on The Search Button");
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, browser, "FilltxtNameSearch");
+        click("cssselector", "input[id$='btnSerach']", browser, "Click on The Search Button");
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -70,23 +67,23 @@ public class MachineService extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMachineService")
     public void deleteMachineService() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Service Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, OpenDriver, "FilltxtNameSearch");
-        click("cssselector", "input[id$='btnSerach']", OpenDriver, "Click on The Search Button");
-        click("cssselector", "input[name$='gvServicesItem']", OpenDriver, "Click on the CheckBox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, browser, "FilltxtNameSearch");
+        click("cssselector", "input[id$='btnSerach']", browser, "Click on The Search Button");
+        click("cssselector", "input[name$='gvServicesItem']", browser, "Click on the CheckBox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

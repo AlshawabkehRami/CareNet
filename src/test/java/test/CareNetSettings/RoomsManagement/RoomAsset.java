@@ -1,11 +1,7 @@
 package test.CareNetSettings.RoomsManagement;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,23 +15,20 @@ import java.lang.reflect.Method;
  **/
 
 public class RoomAsset extends BasePage {
-
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl01_lblfontFrm";
+    WebDriver browser;
 
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToRoomAsset() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Room Asset Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
         assertByPageName("Room Asset");
     }
 
@@ -44,53 +37,53 @@ public class RoomAsset extends BasePage {
 
     @Test(priority = 2)
     public void addRoomAsset() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Room Asset Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtlblInventoryItemCode']", RandomString, OpenDriver, "Fill  Code");
-        senKeys("cssselector", "input[id$='txtNameDetails']", RoomAssetName, OpenDriver, "Fill Name");
-        senKeys("cssselector", "input[id$='txtName2Details']", RoomAssetName, OpenDriver, "Fill Name 2");
-        DDLByIndex("select[id$='ddlItemType']", 1, OpenDriver);
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtlblInventoryItemCode']", RandomString, browser, "Fill  Code");
+        senKeys("cssselector", "input[id$='txtNameDetails']", RoomAssetName, browser, "Fill Name");
+        senKeys("cssselector", "input[id$='txtName2Details']", RoomAssetName, browser, "Fill Name 2");
+        DDLByIndex("select[id$='ddlItemType']", 1, browser);
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addRoomAsset")
     public void editRoomAsset() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Room Asset Page Link");
-        senKeys("cssselector", "input[id$='txtName']", RoomAssetName, OpenDriver, "Search By Name");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
+        senKeys("cssselector", "input[id$='txtName']", RoomAssetName, browser, "Search By Name");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
     }
 
     @Test(priority = 4, dependsOnMethods = "addRoomAsset")
     public void deleteRoomAsset() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToRoomsManagementLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Room Asset Page Link");
-        senKeys("cssselector", "input[id$='txtName']", RoomAssetName, OpenDriver, "Search By Name");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdInventoryItemsItem']", OpenDriver, "Click on The CheckBox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToRoomsManagementLink(browser);
+        click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
+        senKeys("cssselector", "input[id$='txtName']", RoomAssetName, browser, "Search By Name");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdInventoryItemsItem']", browser, "Click on The CheckBox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

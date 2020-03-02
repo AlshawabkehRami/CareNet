@@ -9,6 +9,7 @@
     <test name="DataManagement">
         <packages>
             <package name="test.CareNetSettings.DataManagement"/>
+            <package name="test.CareNetSettings.MedicalProviders"/>
         </packages>
     </test>
 

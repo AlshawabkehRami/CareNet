@@ -14,80 +14,78 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 1/20/2020 6:11 PM
  **/
 public class MachineSetup extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl08_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToMachineSetup() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Setup Page Link");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
         assertByPageName("Machine Setup");
     }
 
     String RandomString = generateString();
-    String MachineSetupآName = "MachineSetupName" + RandomString;
+    String MachineSetupName = "MachineSetupName" + RandomString;
 
     @Test(priority = 2)
     public void addMachineSetup() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Setup Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtMachineSetupName']", MachineSetupآName, OpenDriver, "Fill Machine Setup Name");
-        DDLByIndex("select[id$='ddlMachineType']", 1, OpenDriver);
-        DDLByIndex("select[id$='ddlBranch']", 1, OpenDriver);
-        DDLByIndex("select[id$='ddlMachineStatus']", 1, OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtMachineSetupName']", MachineSetupName, browser, "Fill Machine Setup Name");
+        DDLByIndex("select[id$='ddlMachineType']", 1, browser);
+        DDLByIndex("select[id$='ddlBranch']", 1, browser);
+        DDLByIndex("select[id$='ddlMachineStatus']", 1, browser);
         Thread.sleep(2000);
-        DDLByIndex("select[id$='ddlRefProvider']", 1, OpenDriver);
-        click("cssselector", "input[id$='chbCanSend']", OpenDriver, "Check chbCanSend");
-        click("cssselector", "input[id$='chbCanReceive']", OpenDriver, "Check chbCanReceive");
-        click("cssselector", "input[id$='cbCheckStatus']", OpenDriver, "Check cbCheckStatus");
-        clickOnSaveButton(OpenDriver);
+        DDLByIndex("select[id$='ddlRefProvider']", 1, browser);
+        click("cssselector", "input[id$='chbCanSend']", browser, "Check chbCanSend");
+        click("cssselector", "input[id$='chbCanReceive']", browser, "Check chbCanReceive");
+        click("cssselector", "input[id$='cbCheckStatus']", browser, "Check cbCheckStatus");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 3, dependsOnMethods = "addMachineSetup")
     public void editMachineSetup() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Setup Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupآName, OpenDriver, "Fill Name to search");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupName, browser, "Fill Name to search");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addMachineSetup")
     public void deleteMachineSetup() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToMedicalProvidersLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Machine Setup Page Link");
-        senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupآName, OpenDriver, "Fill Name to search");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdhMachineSetupsItem']", OpenDriver, "Click on CheckBox to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        NavigateToMedicalProvidersLink(browser);
+        click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
+        senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupName, browser, "Fill Name to search");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdhMachineSetupsItem']", browser, "Click on CheckBox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

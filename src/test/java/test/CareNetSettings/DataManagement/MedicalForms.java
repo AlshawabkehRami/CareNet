@@ -10,21 +10,19 @@ import java.lang.reflect.Method;
  * Created By R.Alshawabkeh 12/4/2019 8:45 AM
  **/
 public class MedicalForms extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl16_lnkForms";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToMedicalForms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Medical Forms PageLink");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
         assertByPageName("Medical Forms");
     }
 
@@ -34,18 +32,18 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 2)
     public void addMedicalForms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Medical Forms PageLink");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id$='txtMedicalTestName']", FormName, OpenDriver, "Fill Form Name ");
-        senKeys("cssselector", "input[id$='txtMedicalTestName2']", "Form Name 2" + RandomString, OpenDriver, "Fill Form Name2 ");
-        senKeys("cssselector", "input[id$='txtCode']", "Code" + RandomString, OpenDriver, "Fill Code ");
-        DDLByIndex("select[id$='ddlMedicalTypeDetails']", 1, OpenDriver);
-        DDLByIndex("select[id$='ddlCategories']", 1, OpenDriver);
-        senKeys("cssselector", "input[id$='txtFormOrder']", RandomString, OpenDriver, "Fill Order ");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtMedicalTestName']", FormName, browser, "Fill Form Name ");
+        senKeys("cssselector", "input[id$='txtMedicalTestName2']", "Form Name 2" + RandomString, browser, "Fill Form Name2 ");
+        senKeys("cssselector", "input[id$='txtCode']", "Code" + RandomString, browser, "Fill Code ");
+        DDLByIndex("select[id$='ddlMedicalTypeDetails']", 1, browser);
+        DDLByIndex("select[id$='ddlCategories']", 1, browser);
+        senKeys("cssselector", "input[id$='txtFormOrder']", RandomString, browser, "Fill Order ");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -53,28 +51,28 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMedicalForms")
     public void editMedicalForms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Medical Forms PageLink");
-        senKeys("cssselector", "input[id$='txtNameSearch']", FormName, OpenDriver, "Fill  Form Name for search");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
+        senKeys("cssselector", "input[id$='txtNameSearch']", FormName, browser, "Fill  Form Name for search");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
     }
 
     @Test(priority = 4, dependsOnMethods = "addMedicalForms")
     public void deleteMedicalForms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Medical Forms PageLink");
-        senKeys("cssselector", "input[id$='txtNameSearch']", FormName, OpenDriver, "Fill  Form Name for search");
-        clickOnSearchButton(OpenDriver);
-        click("cssselector", "input[name$='grdMedicalTestsItem']", OpenDriver, "Click on the checkbox for Delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
+        senKeys("cssselector", "input[id$='txtNameSearch']", FormName, browser, "Fill  Form Name for search");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdMedicalTestsItem']", browser, "Click on the checkbox for Delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
 
     }
@@ -82,9 +80,9 @@ public class MedicalForms extends BasePage {
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 

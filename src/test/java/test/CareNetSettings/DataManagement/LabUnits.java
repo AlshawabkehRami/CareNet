@@ -12,21 +12,19 @@ import java.lang.reflect.Method;
 
 
 public class LabUnits extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl11_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test
     public void navigateToLabUnits() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
         assertByPageName("Lab Units");
     }
 
@@ -35,51 +33,51 @@ public class LabUnits extends BasePage {
 
     @Test(priority = 2)
     public void addLabUnits() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[name$='UnitName']", LabUnitsName, OpenDriver, "Fill Conventional Unit");
-        senKeys("cssselector", "input[name$='txtSIUnitName']", "SI Unit" + RandomString, OpenDriver, "Fill SI Unit");
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[name$='UnitName']", LabUnitsName, browser, "Fill Conventional Unit");
+        senKeys("cssselector", "input[name$='txtSIUnitName']", "SI Unit" + RandomString, browser, "Fill SI Unit");
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
     }
     @Test(priority = 3, dependsOnMethods = "addLabUnits")
     public void editLabUnits() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
-        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, OpenDriver, "Fill Name Search");
-        clickOnSearchButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, browser, "Fill Name Search");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
     }
 
     @Test(priority = 4, dependsOnMethods = "addLabUnits")
     public void deleteLabUnits() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Lab Units Link Page ");
-        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, OpenDriver, "Fill Name Search");
-        clickOnSearchButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
+        senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, browser, "Fill Name Search");
+        clickOnSearchButton(browser);
         Thread.sleep(3000);
-        click("cssselector", "input[name*='grdMeasurementUnitsItem']", OpenDriver, "Click on The checkBox To Delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        click("cssselector", "input[name*='grdMeasurementUnitsItem']", browser, "Click on The checkBox To Delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 

@@ -9,22 +9,20 @@ import java.lang.reflect.Method;
 
 
 public class Symptoms extends BasePage {
-    WebDriver driver;
-    public static WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl00_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp(Method method) {
-        OpenDriver = driverType(driver, "chrome");
+        browser=theBrowser();
     }
 
     @Test(priority = 1)
     public void navigateToSymptomsPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
-        Wait = new WebDriverWait(OpenDriver, 20);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
+        Wait = new WebDriverWait(browser, 20);
         assertByPageName("Symptoms");
 
     }
@@ -34,29 +32,29 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 2, dependsOnMethods = "navigateToSymptomsPage")
     public void addSymptoms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
-        clickOnAddButton(OpenDriver);
-        senKeys("cssselector", "input[id*='txtSymptomName']", SymptomName2, OpenDriver, "Fill Symptom Name");
-        DDLByValue("ctl00$ContentPlaceHolder1$ddlSymptomGroup", "Allergic", OpenDriver);
-        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Both", OpenDriver);
-        clickOnSaveButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id*='txtSymptomName']", SymptomName2, browser, "Fill Symptom Name");
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlSymptomGroup", "Allergic", browser);
+        DDLByValue("ctl00$ContentPlaceHolder1$ddlGender", "Both", browser);
+        clickOnSaveButton(browser);
         assertOperationDoneSuccessfully();
 
     }
 
     @Test(priority = 3, dependsOnMethods = "addSymptoms")
     public void editSymptoms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
-        senKeys("cssselector", "input[id*='txtName']", SymptomName2, OpenDriver, "Enter Symptom Name");
-        clickOnShowAllButton(OpenDriver);
-        clickOnTheRowTable(OpenDriver);
-        clickOnUpdateButton(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
+        senKeys("cssselector", "input[id*='txtName']", SymptomName2, browser, "Enter Symptom Name");
+        clickOnShowAllButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -64,15 +62,15 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addSymptoms")
     public void deleteSymptoms() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToDataManagmentLink(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver, "Click on Symptoms Page Link");
-        senKeys("cssselector", "input[id*='txtName']", SymptomName2, OpenDriver, "Enter Symptom Name");
-        click("cssselector", "input[id*='btnShowAll']", OpenDriver, "Click on Search Button");
-        click("cssselector", "input[name*='grdSymptomsItem']", OpenDriver, "Click on The checkbos to delete");
-        clickOnDeleteButton(OpenDriver);
-        acceptTheWebPageAlert(OpenDriver);
+        navigateToUrl(browser);
+        loginWithAdminUser(browser);
+        navigateToDataManagmentLink(browser);
+        click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
+        senKeys("cssselector", "input[id*='txtName']", SymptomName2, browser, "Enter Symptom Name");
+        click("cssselector", "input[id*='btnShowAll']", browser, "Click on Search Button");
+        click("cssselector", "input[name*='grdSymptomsItem']", browser, "Click on The checkbos to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
         assertOperationDoneSuccessfully();
 
 
@@ -81,10 +79,10 @@ public class Symptoms extends BasePage {
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
 
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 
