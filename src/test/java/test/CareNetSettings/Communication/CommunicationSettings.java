@@ -19,34 +19,29 @@ import java.lang.reflect.Method;
  **/
 
 public class CommunicationSettings extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl02_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+
+        browser = theBrowser();
     }
 
     @Test
     public void navigateToCommunicationSettingsPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        communicationLinkNavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Communication Settings  Page link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Communication Settings";
-        Assert.assertEquals(ActualResult, ExpectedResult, " Communication Settings  Page not opened Properly");
+        URLnavigation(browser);
+        adminLogin(browser);
+        communicationLinkNavigation(browser);
+        click("id", CommunicationSettingsPageID, browser, "Click on Communication Settings  Page link ");
+        assertByPageName("Communication Settings");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

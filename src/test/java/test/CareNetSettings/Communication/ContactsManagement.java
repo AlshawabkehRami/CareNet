@@ -19,34 +19,28 @@ import java.lang.reflect.Method;
  **/
 
 public class ContactsManagement extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl04_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test
     public void navigateToContactsManagementPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        communicationLinkNavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Contacts Management  Page link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Contacts Management";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Contacts Management Page not opened Properly");
+        URLnavigation(browser);
+        adminLogin(browser);
+        communicationLinkNavigation(browser);
+        click("id", ContactsManagementPageID, browser, "Click on Contacts Management  Page link ");
+        assertByPageName("Contacts Management");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

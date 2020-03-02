@@ -19,34 +19,29 @@ import java.lang.reflect.Method;
  **/
 
 public class FinancialProviderSettings extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_rptForms_ctl00_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
+
     }
 
     @Test
     public void navigateToFinancialProviderSettingsPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        integreationLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Financial Provider Settings Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Financial Provider Settings";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Financial Provider Settings Page not opened Properly");
+        URLnavigation(browser);
+        adminLogin(browser);
+        integreationLinknavigation(browser);
+        click("id", FinancialProviderSettingsPageID, browser, "Click on Financial Provider Settings Page  link ");
+        assertByPageName("Financial Provider Settings");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

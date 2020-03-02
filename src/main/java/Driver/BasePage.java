@@ -595,6 +595,16 @@ public class BasePage {
     public String ApprovalsSetupPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl03_lblfontFrm";
     public String ExcludedServicesAndDiseasesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_rptForms_ctl04_lblfontFrm";
     //**********************************************************************************************///
+    public String FinancialProviderSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_rptForms_ctl00_lblfontFrm";
+    //**********************************************************************************************///
+    public String MailboxPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl00_lblfontFrm";
+    public String AnnouncementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl05_lblfontFrm";
+    public String CommunicationSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl02_lblfontFrm";
+    public String ContactsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl04_lblfontFrm";
+    public String EventTemplatesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl01_lblfontFrm";
+    public String GroupsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl03_lblfontFrm";
+    public String MembersQuestionsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl06_lblfontFrm";
+    //**********************************************************************************************///
 
 
 }

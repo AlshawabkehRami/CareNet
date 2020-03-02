@@ -15,10 +15,11 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 
 /**
- * Created By R.Alshawabkeh 1/22/2020 2:12 PM
+ * Created By R.Alshawabkeh 1/22/2020 2:18 PM
  **/
 
-public class GroupsManagement extends BasePage {
+public class Announcement extends BasePage {
+
     WebDriver browser;
 
     @BeforeMethod
@@ -27,12 +28,12 @@ public class GroupsManagement extends BasePage {
     }
 
     @Test
-    public void navigateToGroupsManagementPage() throws InterruptedException {
+    public void navigateToAnnouncementpage() throws InterruptedException {
         URLnavigation(browser);
         adminLogin(browser);
         communicationLinkNavigation(browser);
-        click("id", GroupsManagementPageID, browser, "Click on Groups Management  Page link ");
-        assertByPageName("Groups Management");
+        click("id", AnnouncementPageID, browser, "Click on Announcement  Page link ");
+        assertByPageName("Announcementpage");
     }
 
     @AfterMethod
