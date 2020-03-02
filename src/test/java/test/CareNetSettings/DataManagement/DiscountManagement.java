@@ -22,9 +22,9 @@ public class DiscountManagement extends BasePage {
 
     @Test
     public void navigateToDiscountManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", DiscountManagementPageID, browser, "Navigate To Discount Management Page");
         assertByPageName("Discoun tManagement");
     }

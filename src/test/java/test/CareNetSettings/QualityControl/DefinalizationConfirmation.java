@@ -30,9 +30,9 @@ public class DefinalizationConfirmation extends BasePage {
 
     @Test
     public void navigateToDefinalizationConfirmationPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToQualityControlLink(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        qualityControlLinkNavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Definalization Confirmation Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

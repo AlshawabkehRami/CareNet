@@ -20,9 +20,9 @@ public class MedicalServices extends BasePage {
 
     @Test(priority = 1)
     public void navigateToMedicalServices() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalServicesPageID, browser, "Click on Medical Services link page");
         assertByPageName("Medical Services");
     }
@@ -32,9 +32,9 @@ public class MedicalServices extends BasePage {
 
     @Test(priority = 2)
     public void addMedicalServices() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalServicesPageID, browser, "Click on Medical Services link page");
         clickOnAddButton(browser);
         senKeys("id", "ctl00_ContentPlaceHolder1_txtCode", RandomString, browser, "Fill the Code ");
@@ -54,9 +54,9 @@ public class MedicalServices extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMedicalServices")
     public void editMedicalServices() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalServicesPageID, browser, "Click on Medical Services link page");
         senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, browser, "Searching for " + MedicalServicesName);
         click("cssselector", "input[id*='btnSerach']", browser, "Click on Search Button");
@@ -68,9 +68,9 @@ public class MedicalServices extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMedicalServices")
     public void deleteMedicalServices() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalServicesPageID, browser, "Click on Medical Services link page");
         senKeys("id", "ctl00_ContentPlaceHolder1_txtNameSearch", MedicalServicesName, browser, "Searching for :: " + MedicalServicesName);
         click("cssselector", "input[id*='btnSerach']", browser, "Click on Search Button");

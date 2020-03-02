@@ -21,9 +21,9 @@ public class MangeProviders extends BasePage {
 
     @Test
     public void navigateToMangeProvidersPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MangeProvidersPageID, browser, "Click on Mange Providers page link");
         assertByPageName("Manage Providers");
     }

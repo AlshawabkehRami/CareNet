@@ -21,9 +21,9 @@ public class InventoryManagementUnits extends BasePage {
 
     @Test(priority = 1)
     public void navigateToInventoryManagementUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", InventoryManagementUnitsPageID, browser, "Navigate To Inventory Management Units Page");
         assertByPageName("Inventory Measurement Units");
     }
@@ -33,9 +33,9 @@ public class InventoryManagementUnits extends BasePage {
 
     @Test(priority = 2)
     public void addInventoryManagementUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", InventoryManagementUnitsPageID, browser, "Navigate To Inventory Management Units Page");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtInventoryMeasurementUnitName']", InventoryManagementUnitsName, browser, "Fill InventoryManagementUnits Name ");
@@ -46,9 +46,9 @@ public class InventoryManagementUnits extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addInventoryManagementUnits")
     public void editInventoryManagementUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", InventoryManagementUnitsPageID, browser, "Navigate To Inventory Management Units Page");
         senKeys("cssselector", "input[id$='txtName']", InventoryManagementUnitsName, browser, "Fill Name For Search");
         clickOnSearchButton(browser);
@@ -60,9 +60,9 @@ public class InventoryManagementUnits extends BasePage {
     @Test(priority = 4, dependsOnMethods = "addInventoryManagementUnits")
     public void deleteInventoryManagementUnits() throws InterruptedException {
 
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", InventoryManagementUnitsPageID, browser, "Navigate To Inventory Management Units Page");
         senKeys("cssselector", "input[id$='txtName']", InventoryManagementUnitsName, browser, "Fill Name For Search");
         clickOnSearchButton(browser);

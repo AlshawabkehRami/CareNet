@@ -25,17 +25,17 @@ public class BranchSettings extends BasePage {
         @Test(priority = 1)
 
         public void navigateToBranchSettings() throws InterruptedException {
-            navigateToUrl(browser);
-            loginWithAdminUser(browser);
-            NavigateToMedicalProvidersLink(browser);
+            URLnavigation(browser);
+            adminLogin(browser);
+            medicalProvidersLinkNavigation(browser);
             click("id", BranchSettingsPageID, browser, "Click on Branch Settings Page Link");
             assertByPageName("Branch Settings");
         }
     @Test(priority = 2)
     public void checkAllOptionsInBranchSettings() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", BranchSettingsPageID, browser, "Click on Branch Settings Page Link");
         Thread.sleep(2000);
         if (!browser.findElement(By.cssSelector("input[id$='cbIsIdentityNoRequired']")).isSelected()) {

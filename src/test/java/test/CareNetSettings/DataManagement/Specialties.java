@@ -21,9 +21,9 @@ public class Specialties extends BasePage {
 
     @Test(priority = 1)
     public void navigateToSpecialties() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SpecialtiesPageID, browser, "Click on Specialties Page link ");
         assertByPageName("Specialties");
     }
@@ -33,9 +33,9 @@ public class Specialties extends BasePage {
 
     @Test(priority = 2)
     public void addSpecialties() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SpecialtiesPageID, browser, "Click on Specialties Page link ");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtName']", SpecialtiesName, browser, "Fill the Name ");
@@ -48,9 +48,9 @@ public class Specialties extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addSpecialties")
     public void editSpecialties() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SpecialtiesPageID, browser, "Click on Specialties Page link ");
         senKeys("cssselector", "input[id$='txtNameSearch']", SpecialtiesName, browser, "Fill Name to Search");
         clickOnSearchButton(browser);
@@ -61,9 +61,9 @@ public class Specialties extends BasePage {
 
     @Test
     public void deleteSpecialties() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SpecialtiesPageID, browser, "Click on Specialties Page link ");
         senKeys("cssselector", "input[id$='txtNameSearch']", "SpecialtiesName2fd3f", browser, "Fill Name to Search");
         clickOnSearchButton(browser);

@@ -21,9 +21,9 @@ public class LabUnits extends BasePage {
 
     @Test
     public void navigateToLabUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
         assertByPageName("Lab Units");
     }
@@ -33,9 +33,9 @@ public class LabUnits extends BasePage {
 
     @Test(priority = 2)
     public void addLabUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[name$='UnitName']", LabUnitsName, browser, "Fill Conventional Unit");
@@ -45,9 +45,9 @@ public class LabUnits extends BasePage {
     }
     @Test(priority = 3, dependsOnMethods = "addLabUnits")
     public void editLabUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
         senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, browser, "Fill Name Search");
         clickOnSearchButton(browser);
@@ -59,9 +59,9 @@ public class LabUnits extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addLabUnits")
     public void deleteLabUnits() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabUnitsPageID, browser, "Click on Lab Units Link Page ");
         senKeys("cssselector", "input[id$='txtNameSearch']", LabUnitsName, browser, "Fill Name Search");
         clickOnSearchButton(browser);

@@ -24,9 +24,9 @@ public class MachineService extends BasePage {
 
     @Test(priority = 1)
     public void navigateToMachineService() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
         assertByPageName("Machine Service");
     }
@@ -36,9 +36,9 @@ public class MachineService extends BasePage {
 
     @Test(priority = 2)
     public void addMachineService() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtCode']", RandomString, browser, "Fill The Code ");
@@ -52,9 +52,9 @@ public class MachineService extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMachineService")
     public void editMachineService() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, browser, "FilltxtNameSearch");
         click("cssselector", "input[id$='btnSerach']", browser, "Click on The Search Button");
@@ -67,9 +67,9 @@ public class MachineService extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMachineService")
     public void deleteMachineService() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineServicePageID, browser, "Click on Machine Service Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", MachineServiceName, browser, "FilltxtNameSearch");
         click("cssselector", "input[id$='btnSerach']", browser, "Click on The Search Button");

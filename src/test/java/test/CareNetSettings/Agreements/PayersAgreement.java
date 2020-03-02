@@ -33,9 +33,9 @@ public class PayersAgreement extends BasePage {
     @Test
 
     public void navigateToPayersAgreement() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Payers Agreement Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

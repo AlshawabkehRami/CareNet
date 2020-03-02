@@ -30,9 +30,9 @@ public class Authorizations extends BasePage {
 
     @Test
     public void navigateToAuthorizationsPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToInsuranceLink(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        insuranceLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Authorizations   Page  link ");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

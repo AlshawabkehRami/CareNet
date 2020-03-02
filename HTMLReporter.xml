@@ -9,8 +9,16 @@
     <test name="DataManagement">
         <packages>
             <package name="test.CareNetSettings.DataManagement"/>
+        </packages>
+    </test>
+    <test name="MedicalProviders">
+        <packages>
             <package name="test.CareNetSettings.MedicalProviders"/>
         </packages>
     </test>
-
+    <test name="RoomsManagement">
+        <packages>
+            <package name="test.CareNetSettings.RoomsManagement"/>
+        </packages>
+    </test>
 </suite>

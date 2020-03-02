@@ -23,8 +23,8 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 1)
     public void navigateToRoomsCategories() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
         assertByPageName("Rooms Categories");
@@ -35,8 +35,8 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 2)
     public void addRoomsCategories() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
         clickOnAddButton(browser);
@@ -52,8 +52,8 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addRoomsCategories")
     public void editRoomsCategories() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
         senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, browser, "Search By Category Name ");
@@ -65,8 +65,8 @@ public class RoomsCategories extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addRoomsCategories")
     public void deleteRoomsCategories() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsCategoriesPageID, browser, "Click on Rooms Categories Page Link");
         senKeys("cssselector", "input[id$='txtNameRomCategoryName']", CategoryName, browser, "Search By Category Name ");

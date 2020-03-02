@@ -33,9 +33,9 @@ public class ExcludedServicesAndDiseases extends BasePage {
     @Test
 
     public void navigateToExcludedServicesAndDiseases() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on  Excluded Services And Diseases Page Link");
         Wait = new WebDriverWait(OpenDriver, 20);
         String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated

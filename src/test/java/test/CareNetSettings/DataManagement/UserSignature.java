@@ -21,9 +21,9 @@ public class UserSignature extends BasePage {
 
     @Test(priority = 1)
     public void navigateToUserSignature() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", UserSignaturePageID, browser, "Click on User Signature Link Page ");
         assertByPageName("Users Signatures");
     }
@@ -32,9 +32,9 @@ public class UserSignature extends BasePage {
 
     @Test(priority = 2, dependsOnMethods = "navigateToUserSignature")
     public void addUserSignature() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", UserSignaturePageID, browser, "Click on User Signature Link Page ");
         clickOnAddButton(browser);
         Thread.sleep(2000);
@@ -47,9 +47,9 @@ public class UserSignature extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addUserSignature")
     public void deleteUserSignature() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", UserSignaturePageID, browser, "Click on User Signature Link Page ");
         autoSuggest("img[id*='sggEmployee_imgSearch']", "div[id*='dvSuggestions']", browser);
         clickOnSearchButton(browser);

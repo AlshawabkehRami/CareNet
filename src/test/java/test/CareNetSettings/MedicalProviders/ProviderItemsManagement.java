@@ -23,9 +23,9 @@ public class ProviderItemsManagement extends BasePage {
 
     @Test
     public void navigateToProviderItemsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", ProviderItemsManagementPageID, browser, "Click on Provider Items Management Page Link");
         assertByPageName("Provider Items Management");
     }

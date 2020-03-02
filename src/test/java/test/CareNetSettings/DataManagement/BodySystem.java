@@ -20,9 +20,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 1)
     public void navigateToBodySystem() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         assertByPageName("Body Systems");
     }
@@ -32,9 +32,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 2)
     public void addBodySystem() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         clickOnAddButton(browser);
         senKeys("id", "ctl00_ContentPlaceHolder1_txtBodySystemName", Name, browser, "Fill Body System Name");
@@ -45,9 +45,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addBodySystem")
     public void editBodySystem() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         senKeys("cssselector", "input[id*='txtBodySystemNameSearch']", Name, browser, "Search By Name" + Name);
         clickOnSearchButton(browser);
@@ -60,9 +60,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addBodySystem")
     public void addBodySystemPartList() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         senKeys("cssselector", "input[id*='txtBodySystemNameSearch']", Name, browser, "Search By Name" + Name);
         clickOnSearchButton(browser);
@@ -76,9 +76,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 5, dependsOnMethods = {"addBodySystem", "addBodySystemPartList"})
     public void deleteBodySystemPartList() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         senKeys("cssselector", "input[id*='txtBodySystemNameSearch']", Name, browser, "Search By Name" + Name);
         clickOnSearchButton(browser);
@@ -94,9 +94,9 @@ public class BodySystem extends BasePage {
 
     @Test(priority = 6, dependsOnMethods = "addBodySystem")
     public void deleteBodySystem() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", BodySystemPageID, browser, "Click on Body System link Page ");
         senKeys("cssselector", "input[id*='txtBodySystemNameSearch']", Name, browser, "Search By Name" + Name);
         clickOnSearchButton(browser);

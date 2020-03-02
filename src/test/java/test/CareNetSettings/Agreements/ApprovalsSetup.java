@@ -27,9 +27,9 @@ public class ApprovalsSetup extends BasePage {
     @Test
 
     public void navigateToApprovalsSetup() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on Approvals Setup Page Link");
         assertByPageName("Approvals Setup");
 

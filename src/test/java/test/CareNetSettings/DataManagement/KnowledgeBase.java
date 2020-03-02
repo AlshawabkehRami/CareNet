@@ -21,9 +21,9 @@ public class KnowledgeBase extends BasePage {
 
     @Test
     public void navigateToKnowledgeBase() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", KnowledgeBasePageID, browser, "Click on KnowledgeBase page link");
         assertByPageName("Knowlefdge Base");
     }

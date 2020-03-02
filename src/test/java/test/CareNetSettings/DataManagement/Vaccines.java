@@ -21,9 +21,9 @@ public class Vaccines extends BasePage {
 
     @Test(priority = 1)
     public void navigateToVaccinesPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
         assertByPageName("Vaccines");
 
@@ -34,9 +34,9 @@ public class Vaccines extends BasePage {
 
     @Test(priority = 2)
     public void addVaccines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id*='txtVaccineName']", VaccinesName, browser, "Fill Vaccine Name");
@@ -48,9 +48,9 @@ public class Vaccines extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addVaccines")
     public void editVaccines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
         senKeys("cssselector", "input[id*='txtName']", VaccinesName, browser, "Search By Vaccines Name " + VaccinesName);
         clickOnShowAllButton(browser);
@@ -64,9 +64,9 @@ public class Vaccines extends BasePage {
     @Test(priority = 4, dependsOnMethods = "addVaccines")
     public void deleteVaccines() throws InterruptedException {
 
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", VaccinesPageID, browser, "Click on Vaccines Link Page");
         senKeys("cssselector", "input[id*='txtName']", VaccinesName, browser, "Search By Vaccines Name " + VaccinesName);
         clickOnShowAllButton(browser);

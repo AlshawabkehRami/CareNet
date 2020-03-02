@@ -24,9 +24,9 @@ public class CheckList extends BasePage {
 
     @Test(priority = 1)
     public void navigateToCheckList() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", CheckListPageID, browser, "Click on CheckList Page link ");
         assertByPageName("CheckLists");
     }
@@ -37,9 +37,9 @@ public class CheckList extends BasePage {
 
     @Test(priority = 2)
     public void addCheckLists() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", CheckListPageID, browser, "Click on CheckList Page link ");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtChecklistName']", ChecklistName, browser, "Fill Checklist Name");
@@ -50,9 +50,9 @@ public class CheckList extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addCheckLists")
     public void editCheckLists() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", CheckListPageID, browser, "Click on CheckList Page link ");
         senKeys("cssselector", "input[id$='txtDoctorChecklistName']", ChecklistName, browser, "Fill Checklist Name for search ");
         clickOnSearchButton(browser);
@@ -62,9 +62,9 @@ public class CheckList extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addCheckLists")
     public void deleteCheckLists() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", CheckListPageID, browser, "Click on CheckList Page link ");
         senKeys("cssselector", "input[id$='txtDoctorChecklistName']", ChecklistName, browser, "Fill Checklist Name for search ");
         clickOnSearchButton(browser);

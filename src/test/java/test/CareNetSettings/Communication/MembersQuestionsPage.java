@@ -31,9 +31,9 @@ public class MembersQuestionsPage extends BasePage {
 
     @Test
     public void navigateToMembersQuestionsPage() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        NavigateToCommunicationLink(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        communicationLinkNavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver,"Click on Members Questions Page  link ");
 
         Wait = new WebDriverWait(OpenDriver, 20);

@@ -21,9 +21,9 @@ public class ScheduleSettings extends BasePage {
     }
     @Test
     public void navigateToScheduleSettings() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", ScheduleSettingsPageID, browser, "Click on Schedule Settings Page Link");
         assertByPageName("Schedule Settings");
     }

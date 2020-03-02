@@ -21,9 +21,9 @@ public class MedicalServiceCategory extends BasePage {
 
     @Test
     public void navigateToMedicalServiceCategory() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalServiceCategoryPageID, browser,"Click on Medical Service Category Page Link");
         assertByPageName("Medical Service Category");
     }

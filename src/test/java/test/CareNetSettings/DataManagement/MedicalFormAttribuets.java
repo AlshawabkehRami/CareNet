@@ -22,9 +22,9 @@ public class MedicalFormAttribuets extends BasePage {
     @Test
 
     public void navigateToMedicalFormAttributes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalFormAttribuetsPageID, browser, "Click on Medical Form Attributes Page link ");
         assertByPageName("Medical Form Attributes");
     }

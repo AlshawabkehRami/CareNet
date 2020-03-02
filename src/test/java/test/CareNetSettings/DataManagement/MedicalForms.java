@@ -19,9 +19,9 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 1)
     public void navigateToMedicalForms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
         assertByPageName("Medical Forms");
     }
@@ -32,9 +32,9 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 2)
     public void addMedicalForms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtMedicalTestName']", FormName, browser, "Fill Form Name ");
@@ -51,9 +51,9 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMedicalForms")
     public void editMedicalForms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
         senKeys("cssselector", "input[id$='txtNameSearch']", FormName, browser, "Fill  Form Name for search");
         clickOnSearchButton(browser);
@@ -64,9 +64,9 @@ public class MedicalForms extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMedicalForms")
     public void deleteMedicalForms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicalFormsPageID, browser, "Click on Medical Forms PageLink");
         senKeys("cssselector", "input[id$='txtNameSearch']", FormName, browser, "Fill  Form Name for search");
         clickOnSearchButton(browser);

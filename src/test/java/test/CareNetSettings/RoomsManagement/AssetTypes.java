@@ -23,8 +23,8 @@ public class AssetTypes extends BasePage {
 
     @Test(priority = 1)
     public void navigateToAssetTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         assertByPageName("Asset Types");
@@ -35,8 +35,8 @@ public class AssetTypes extends BasePage {
 
     @Test(priority = 2)
     public void addAssetTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         Thread.sleep(1000);
@@ -48,8 +48,8 @@ public class AssetTypes extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addAssetTypes")
     public void editAssetTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, browser, "Fill The Asset Type Name");
@@ -61,8 +61,8 @@ public class AssetTypes extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addAssetTypes")
     public void deleteAssetTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", AssetTypesPageID, browser, "Click on AssetTypes Page Link");
         senKeys("cssselector", "input[id$='txtItemTypeNameSearch']", AssetTypesName, browser, "Fill The Asset Type Name");

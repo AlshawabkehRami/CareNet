@@ -26,9 +26,9 @@ public class NetworkProviders extends BasePage {
     @Test
 
     public void navigateToNetworkProviders() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", NetworkProvidersPageID, browser, "Click on Network Providers Page Link");
         assertByPageName("Network Providers");
 

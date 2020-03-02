@@ -21,9 +21,9 @@ public class RadiologyProcedure extends BasePage {
 
     @Test(priority = 1)
     public void navigateToRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         assertByPageName("Radiology Procedures");
     }
@@ -33,9 +33,9 @@ public class RadiologyProcedure extends BasePage {
 
     @Test(priority = 2)
     public void addRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtMedicalTestName']", RadiologyProcedureName, browser, "Fill Medical Test Name");
@@ -53,9 +53,9 @@ public class RadiologyProcedure extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addRadiologyProcedure")
     public void editRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, browser, "Fill search Name ");
         clickOnSearchButton(browser);
@@ -66,9 +66,9 @@ public class RadiologyProcedure extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addRadiologyProcedure")
     public void deleteRadiologyProcedure() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         senKeys("cssselector", "input[id$='txtNameSearch']", RadiologyProcedureName, browser, "Fill search Name ");
         clickOnSearchButton(browser);

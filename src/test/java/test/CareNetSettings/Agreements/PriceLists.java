@@ -1,11 +1,7 @@
 package test.CareNetSettings.Agreements;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -29,9 +25,9 @@ public class PriceLists extends BasePage {
 
     @Test
     public void navigateToPriceLists() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on  Price Lists Page Link");
         assertByPageName("Price Lists");
 

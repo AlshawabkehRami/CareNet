@@ -18,9 +18,9 @@ public class ImportMedicines extends BasePage {
 
     @Test
     public void navigateToImportMedicines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ImportMedicinesPageID, browser, "Click on Import Medicines Page");
         assertByPageName("Import Medicines");
     }

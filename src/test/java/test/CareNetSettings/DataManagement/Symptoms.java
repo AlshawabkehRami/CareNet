@@ -18,9 +18,9 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 1)
     public void navigateToSymptomsPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
         Wait = new WebDriverWait(browser, 20);
         assertByPageName("Symptoms");
@@ -32,9 +32,9 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 2, dependsOnMethods = "navigateToSymptomsPage")
     public void addSymptoms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id*='txtSymptomName']", SymptomName2, browser, "Fill Symptom Name");
@@ -47,9 +47,9 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addSymptoms")
     public void editSymptoms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
         senKeys("cssselector", "input[id*='txtName']", SymptomName2, browser, "Enter Symptom Name");
         clickOnShowAllButton(browser);
@@ -62,9 +62,9 @@ public class Symptoms extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addSymptoms")
     public void deleteSymptoms() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SymptomsPageID, browser, "Click on Symptoms Page Link");
         senKeys("cssselector", "input[id*='txtName']", SymptomName2, browser, "Enter Symptom Name");
         click("cssselector", "input[id*='btnShowAll']", browser, "Click on Search Button");

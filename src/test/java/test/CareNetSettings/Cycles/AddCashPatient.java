@@ -33,8 +33,8 @@ public class AddCashPatient extends BasePage {
 
     @Test(priority = 1)
     public void registerNewPatient() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
         click("cssselector", "[id*=rptApplications_ctl04_lblCSS]", OpenDriver, "Click on CareNet Link");
         click("cssselector", "span[id*='ctl09_lblfontSys']", OpenDriver, "Click on Patient and Visits Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_rptModule_ctl00_lblfontMod", OpenDriver, "Click on Reception Link");
@@ -110,8 +110,8 @@ public class AddCashPatient extends BasePage {
     @Test(priority = 2,dependsOnMethods = "registerNewPatient")
     public void addNewVisitWithChargeMaster() throws InterruptedException {
 
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
         click("cssselector", "[id*=rptApplications_ctl04_lblCSS]", OpenDriver, "Click on CareNet Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_lblfontSys", OpenDriver, "Click on Patient and Visits Link");
         click("id", "rptApplications_ctl04_rptSystem_ctl09_rptModule_ctl00_lblfontMod", OpenDriver, "Click on Reception Link");

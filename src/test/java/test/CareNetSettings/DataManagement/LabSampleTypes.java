@@ -18,9 +18,9 @@ public class LabSampleTypes extends BasePage {
     }
     @Test(priority = 1)
     public void navigateToLabSampleTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabSampleTypesPageID, browser, "Click on Lab Sample Types link Page");
         assertByPageName("Lab Sample Types");
     }
@@ -28,9 +28,9 @@ public class LabSampleTypes extends BasePage {
     String SampleTypesName = "SampleTypesName" + RandomString;
     @Test(priority = 2)
     public void addLabSampleTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabSampleTypesPageID, browser, "Click on Lab Sample Types link Page");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtName']", SampleTypesName, browser, "Fill Name");
@@ -46,9 +46,9 @@ public class LabSampleTypes extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addLabSampleTypes")
     public void editLabSampleTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabSampleTypesPageID, browser, "Click on Lab Sample Types link Page");
         senKeys("cssselector", "input[id$='txtSampleTypeName']", SampleTypesName, browser, "Searching for Sample Types Name");
         clickOnSearchButton(browser);
@@ -61,9 +61,9 @@ public class LabSampleTypes extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addLabSampleTypes")
     public void deleteLabSampleTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LabSampleTypesPageID, browser, "Click on Lab Sample Types link Page");
         senKeys("cssselector", "input[id$='txtSampleTypeName']", SampleTypesName, browser, "Searching for Sample Types Name");
         clickOnSearchButton(browser);

@@ -23,8 +23,8 @@ public class FloorsManagement extends BasePage {
 
     @Test(priority = 1)
     public void navigateToFloorsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
         assertByPageName("Floors Management");
@@ -35,8 +35,8 @@ public class FloorsManagement extends BasePage {
 
     @Test(priority = 2)
     public void addFloorsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
         clickOnAddButton(browser);
@@ -49,8 +49,8 @@ public class FloorsManagement extends BasePage {
 
     @Test(priority = 3)
     public void editFloorsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
         senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, browser, "Search By Name");
@@ -63,8 +63,8 @@ public class FloorsManagement extends BasePage {
 
     @Test(priority = 4)
     public void deleteFloorsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", FloorsManagementPageID, browser, "Click on FloorsManagement Page Link");
         senKeys("cssselector", "input[id$='txtName']", FloorsManagementName, browser, "Search By Name");

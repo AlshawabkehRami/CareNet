@@ -25,17 +25,17 @@ public class PayersNetworks extends BasePage {
 
     @Test(priority = 1)
     public void navigateToPayersNetworks() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on  Payers Networks Page Link");
         assertByPageName("Payers Networks");
     }
     @Test(priority = 2)
     public void searchPayersNetworks() throws InterruptedException {
-        navigateToUrl(OpenDriver);
-        loginWithAdminUser(OpenDriver);
-        navigateToAgreements(OpenDriver);
+        URLnavigation(OpenDriver);
+        adminLogin(OpenDriver);
+        agreementsLinknavigation(OpenDriver);
         click("id", PageLinkLocator, OpenDriver, "Click on  Payers Networks Page Link");
         DDLByValue("ctl00$ContentPlaceHolder1$ddlCompanyTypeSearch", "All", OpenDriver);
         clickOnSearchButton(OpenDriver);

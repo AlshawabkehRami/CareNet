@@ -21,9 +21,9 @@ public class Surgeries extends BasePage {
 
     @Test(priority = 1)
     public void navigateToSurgeriesPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
         assertByPageName("Surgeries");
     }
@@ -34,9 +34,9 @@ public class Surgeries extends BasePage {
 
     @Test(priority = 2)
     public void addSurgeries() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtSurgeryName']", SurgeriesName, browser, "Fill Surgery Name");
@@ -48,9 +48,9 @@ public class Surgeries extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addSurgeries")
     public void editSurgeries() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
         senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, browser, "Fill Surgery Name for search");
         clickOnSearchButton(browser);
@@ -61,9 +61,9 @@ public class Surgeries extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addSurgeries")
     public void deleteSurgeries() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", SurgeriesPageID, browser, "Click on Surgeries page link");
         senKeys("cssselector", "input[id$='txtSearchSurgeryName']", SurgeriesName, browser, "Fill Surgery Name for search");
         clickOnSearchButton(browser);

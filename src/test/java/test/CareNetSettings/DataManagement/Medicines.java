@@ -21,9 +21,9 @@ public class Medicines extends BasePage {
 
     @Test(priority = 1)
     public void navigateToMedicinesPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicinesPageID, browser, "Click on Medicines Link Page ");
         assertByPageName("Medicines");
     }
@@ -33,9 +33,9 @@ public class Medicines extends BasePage {
 
     @Test(priority = 2)
     public void addMedicines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicinesPageID, browser, "Click on Medicines Link Page ");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id*='txtCode']", "Code" + RandomString, browser, "Fill the Code");
@@ -61,9 +61,9 @@ public class Medicines extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMedicines")
     public void editMedicines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicinesPageID, browser, "Click on Medicines Link Page ");
         senKeys("cssselector", "input[id$='txtTradeNameSearch']", TradeName, browser, "Search By Trade Name ");
         clickOnSearchButton(browser);
@@ -75,9 +75,9 @@ public class Medicines extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMedicines")
     public void deleteMedicines() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", MedicinesPageID, browser, "Click on Medicines Link Page ");
         senKeys("cssselector", "input[id$='txtTradeNameSearch']", TradeName, browser, "Search By Trade Name ");
         clickOnSearchButton(browser);

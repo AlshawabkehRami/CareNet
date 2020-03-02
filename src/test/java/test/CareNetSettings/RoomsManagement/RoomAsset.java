@@ -25,8 +25,8 @@ public class RoomAsset extends BasePage {
 
     @Test(priority = 1)
     public void navigateToRoomAsset() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
         assertByPageName("Room Asset");
@@ -37,8 +37,8 @@ public class RoomAsset extends BasePage {
 
     @Test(priority = 2)
     public void addRoomAsset() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
         clickOnAddButton(browser);
@@ -52,8 +52,8 @@ public class RoomAsset extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addRoomAsset")
     public void editRoomAsset() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
         senKeys("cssselector", "input[id$='txtName']", RoomAssetName, browser, "Search By Name");
@@ -66,8 +66,8 @@ public class RoomAsset extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addRoomAsset")
     public void deleteRoomAsset() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomAssetPageID, browser, "Click on Room Asset Page Link");
         senKeys("cssselector", "input[id$='txtName']", RoomAssetName, browser, "Search By Name");

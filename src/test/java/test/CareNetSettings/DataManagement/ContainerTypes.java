@@ -18,9 +18,9 @@ public class ContainerTypes extends BasePage {
     }
     @Test(priority = 1)
     public void navigateToContainerTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ContainerTypesPageID, browser, "Click on Container Types Page Link");
         assertByPageName("Container Types");
 
@@ -29,9 +29,9 @@ public class ContainerTypes extends BasePage {
     String ContainerTypeName = "Container Type Name" + RandomString;
     @Test(priority = 2, dependsOnMethods = "navigateToContainerTypes")
     public void addContainerTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ContainerTypesPageID, browser, "Click on Container Types Page Link");
         clickOnSearchButton(browser);
         clickOnAddButton(browser);
@@ -41,9 +41,9 @@ public class ContainerTypes extends BasePage {
     }
     @Test(priority = 3, dependsOnMethods = "addContainerTypes")
     public void editContainerTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ContainerTypesPageID, browser, "Click on Container Types Page Link");
         senKeys("cssselector", "input[id$='txtName']", ContainerTypeName, browser, "Fill Search Field With :: " + ContainerTypeName);
         clickOnSearchButton(browser);
@@ -53,9 +53,9 @@ public class ContainerTypes extends BasePage {
     }
     @Test(priority = 4, dependsOnMethods = "addContainerTypes")
     public void deleteContainerTypes() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ContainerTypesPageID, browser, "Click on Container Types Page Link");
         senKeys("cssselector", "input[id$='txtName']", ContainerTypeName, browser, "Fill Search Field With :: " + ContainerTypeName);
         clickOnSearchButton(browser);

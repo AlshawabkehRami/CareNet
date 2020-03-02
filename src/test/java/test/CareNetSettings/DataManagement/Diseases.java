@@ -19,9 +19,9 @@ public class Diseases extends BasePage {
     }
     @Test(priority = 1)
     public void navigateToDiseasesPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", DiseasesPageID, browser, "Click on Diseases page link");
         assertByPageName("Diseases");
     }
@@ -31,9 +31,9 @@ public class Diseases extends BasePage {
 
     @Test(priority = 2)
     public void addDiseases() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", DiseasesPageID, browser, "Click on Diseases page link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id*='txtDiseaseName']", DiseasesName, browser, "Fill Disease Name");
@@ -50,9 +50,9 @@ public class Diseases extends BasePage {
     }
     @Test(priority = 3, dependsOnMethods = "addDiseases")
     public void editDiseases() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", DiseasesPageID, browser, "Click on Diseases page link");
         senKeys("cssselector", "input[id*='txtNameSearch']", DiseasesName, browser, "Search for the name of the disease" + DiseasesName);
         clickOnSearchButton(browser);
@@ -64,9 +64,9 @@ public class Diseases extends BasePage {
     @Test(priority = 4, dependsOnMethods = "addDiseases")
     public void deletDiseases() throws InterruptedException {
 
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", DiseasesPageID, browser, "Click on Diseases page link");
         senKeys("cssselector", "input[id*='txtNameSearch']", DiseasesName, browser, "Search for the name of the disease" + DiseasesName);
         clickOnSearchButton(browser);

@@ -24,9 +24,9 @@ public class LookupItems extends BasePage {
 
      @Test(priority = 1)
      public void navigateToLookupItemsPage() throws InterruptedException {
-         navigateToUrl(browser);
-         loginWithAdminUser(browser);
-         navigateToDataManagmentLink(browser);
+         URLnavigation(browser);
+         adminLogin(browser);
+         dataManagementLinkNavigation(browser);
          click("id", LookupItemsPageID, browser, "Click on Lookup Items Page Link");
          assertByPageName("Lookup Items");
 
@@ -36,9 +36,9 @@ public class LookupItems extends BasePage {
 
     @Test(priority = 2)
     public void addLookupItems() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", LookupItemsPageID, browser, "Click on Lookup Items Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtLookupItemName']", LookupItemName, browser, "Fill Lookup Item Name");

@@ -23,9 +23,9 @@ public class MachineSetup extends BasePage {
 
     @Test(priority = 1)
     public void navigateToMachineSetup() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
         assertByPageName("Machine Setup");
     }
@@ -35,9 +35,9 @@ public class MachineSetup extends BasePage {
 
     @Test(priority = 2)
     public void addMachineSetup() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtMachineSetupName']", MachineSetupName, browser, "Fill Machine Setup Name");
@@ -55,9 +55,9 @@ public class MachineSetup extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addMachineSetup")
     public void editMachineSetup() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupName, browser, "Fill Name to search");
         clickOnSearchButton(browser);
@@ -68,9 +68,9 @@ public class MachineSetup extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addMachineSetup")
     public void deleteMachineSetup() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        NavigateToMedicalProvidersLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        medicalProvidersLinkNavigation(browser);
         click("id", MachineSetupPageID, browser, "Click on Machine Setup Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", MachineSetupName, browser, "Fill Name to search");
         clickOnSearchButton(browser);

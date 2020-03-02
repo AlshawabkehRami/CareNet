@@ -18,9 +18,9 @@ public class ClinicalExamination extends BasePage {
     }
     @Test(priority = 1)
     public void navigateToClinicalExamination() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ClinicalExaminationPageID, browser, "Click on Clinical Examination Page Link");
         assertByPageName("Clinical Examinations");
     }
@@ -28,9 +28,9 @@ public class ClinicalExamination extends BasePage {
     String ClinicalExaminationName = "ClinicalExaminationName" + RandomString;
     @Test(priority = 2)
     public void addClinicalExamination() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ClinicalExaminationPageID, browser, "Click on Clinical Examination Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtMedicalTestName']", ClinicalExaminationName, browser, "Fill Medical Test Name");
@@ -48,9 +48,9 @@ public class ClinicalExamination extends BasePage {
     }
     @Test(priority = 3, dependsOnMethods = "addClinicalExamination")
     public void editClinicalExamination() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ClinicalExaminationPageID, browser, "Click on Clinical Examination Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", ClinicalExaminationName, browser, "Fill Name To Search");
         clickOnSearchButton(browser);
@@ -60,9 +60,9 @@ public class ClinicalExamination extends BasePage {
     }
     @Test(priority = 4, dependsOnMethods = "addClinicalExamination")
     public void deleteClinicalExamination() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", ClinicalExaminationPageID, browser, "Click on Clinical Examination Page Link");
         senKeys("cssselector", "input[id$='txtNameSearch']", ClinicalExaminationName, browser, "Fill Name To Search");
         clickOnSearchButton(browser);

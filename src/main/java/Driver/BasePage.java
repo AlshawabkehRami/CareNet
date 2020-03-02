@@ -147,14 +147,14 @@ public class BasePage {
     }
 
 
-    public void navigateToUrl(WebDriver driver) {
+    public void URLnavigation(WebDriver driver) {
 
         driver.get(Url);
         Reporter.log("Navigate To The Url");
 
     }
 
-    public void loginWithAdminUser(WebDriver driver) throws InterruptedException {
+    public void adminLogin(WebDriver driver) throws InterruptedException {
 
         click("id", "txtUserName", driver, "Click on the user name Field");
         senKeys("id", "txtUserName", "admin", driver, "Enter User Name ");
@@ -164,7 +164,7 @@ public class BasePage {
         click("id", "btnLogin", driver, "Click on Login Button");
     }
 
-    public void navigateToDataManagmentLink(WebDriver driver) {
+    public void dataManagementLinkNavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
@@ -173,7 +173,7 @@ public class BasePage {
         click("id", DataManagmentLocator, driver, "Click on Data Management's Link");
     }
 
-    public void NavigateToCommunicationLink(WebDriver driver) {
+    public void communicationLinkNavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String CommunicationLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_lblfontMod";
@@ -182,7 +182,7 @@ public class BasePage {
         click("id", CommunicationLinkLocator, driver, "Click on Data Management Locator");
     }
 
-    public void NavigateToIntegrationSettingsLink(WebDriver driver) {
+    public void integreationLinknavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String IntegrationSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_lblfontMod";
@@ -191,7 +191,7 @@ public class BasePage {
         click("id", IntegrationSettingsLocator, driver, "Click on Data Management Locator");
     }
 
-    public void NavigateToQualityControlLink(WebDriver driver) {
+    public void qualityControlLinkNavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String QualityControlLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_lblfontMod";
@@ -200,7 +200,7 @@ public class BasePage {
         click("id", QualityControlLocator, driver, "Click on Data Management Locator");
     }
 
-    public void NavigateToInsuranceLink(WebDriver driver) {
+    public void insuranceLinknavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String InsurancelLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_lblfontMod";
@@ -219,7 +219,7 @@ public class BasePage {
     }
 
 
-    public void NavigateToMedicalProvidersLink(WebDriver driver) {
+    public void medicalProvidersLinkNavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String MedicalProvidersLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_lblfontMod";
@@ -228,7 +228,7 @@ public class BasePage {
         click("id", MedicalProvidersLocator, driver, "Click on Medical Providers Locator");
     }
 
-    public void navigateToAgreements(WebDriver driver) {
+    public void agreementsLinknavigation(WebDriver driver) {
         String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
         String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String AgreementsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_lblfontMod";
@@ -549,47 +549,46 @@ public class BasePage {
     public String ClinicalExaminationPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl14_lblfontFrm";
     public String ContainerTypesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl10_lblfontFrm";
     public String DiscountManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl26_lblfontFrm";
-    public  String DiseasesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl01_lblfontFrm";
-    public  String ImportMedicinesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl27_lblfontFrm";
-    public   String InventoryManagementUnitsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl25_lblfontFrm";
-    public  String KnowledgeBasePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl24_lblfontFrm";
+    public String DiseasesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl01_lblfontFrm";
+    public String ImportMedicinesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl27_lblfontFrm";
+    public String InventoryManagementUnitsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl25_lblfontFrm";
+    public String KnowledgeBasePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl24_lblfontFrm";
     public String LabSampleTypesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl09_lblfontFrm";
-    public  String LabTestsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl12_lblfontFrm";
-    public   String LabUnitsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl11_lblfontFrm";
-    public   String LookupItemsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl22_lblfontFrm";
-    public  String MangeProvidersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl23_lblfontFrm";
+    public String LabTestsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl12_lblfontFrm";
+    public String LabUnitsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl11_lblfontFrm";
+    public String LookupItemsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl22_lblfontFrm";
+    public String MangeProvidersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl23_lblfontFrm";
     public String MedicalFormAttribuetsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl17_lblfontFrm";
     public String MedicalFormCodesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl18_lblfontFrm";
-    public  String MedicalFormsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl16_lnkForms";
+    public String MedicalFormsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl16_lnkForms";
     public String MedicalServiceCategoryPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl05_lblfontFrm";
     public String MedicalServicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl06_lblfontFrm";
     public String MedicinesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl07_lblfontFrm";
-    public  String RadiologyProcedurePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl13_lblfontFrm";
-    public   String SpecialtiesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl20_lblfontFrm";
-    public   String SpecialtyServicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl21_lblfontFrm";
-    public  String SurgeriesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl15_lblfontFrm";
-    public  String UserSignaturePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl08_lblfontFrm";
-    public  String SymptomsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl00_lblfontFrm";
-    public  String VaccinesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl03_lblfontFrm";
+    public String RadiologyProcedurePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl13_lblfontFrm";
+    public String SpecialtiesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl20_lblfontFrm";
+    public String SpecialtyServicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl21_lblfontFrm";
+    public String SurgeriesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl15_lblfontFrm";
+    public String UserSignaturePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl08_lblfontFrm";
+    public String SymptomsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl00_lblfontFrm";
+    public String VaccinesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_rptForms_ctl03_lblfontFrm";
     //**********************************************************************************************///
-    public  String BranchSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl02_lblfontFrm";
-    public  String MachineServicePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl09_lblfontFrm";
-    public   String MachineSetupPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl08_lblfontFrm";
-    public  String MachineTypePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl07_lblfontFrm";
+    public String BranchSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl02_lblfontFrm";
+    public String MachineServicePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl09_lblfontFrm";
+    public String MachineSetupPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl08_lblfontFrm";
+    public String MachineTypePageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl07_lblfontFrm";
     public String NetworkProvidersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl00_lblfontFrm";
     public String NonNetworkProvidersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl01_lblfontFrm";
     public String ProviderItemsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl10_lblfontFrm";
     public String ProviderServicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl06_lblfontFrm";
     public String ProviderStaffPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl04_lblfontFrm";
-    public  String ScheduleSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl03_lblfontFrm";
+    public String ScheduleSettingsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_rptForms_ctl03_lblfontFrm";
     //**********************************************************************************************///
     public String AssetTypesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl00_lnkForms";
-    public  String FloorsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl04_lblfontFrm";
-    public  String RoomAssetPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl01_lblfontFrm";
-    public  String RoomsCategoriesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl02_lblfontFrm";
+    public String FloorsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl04_lblfontFrm";
+    public String RoomAssetPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl01_lblfontFrm";
+    public String RoomsCategoriesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl02_lblfontFrm";
     public String RoomsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_rptForms_ctl03_lblfontFrm";
     //**********************************************************************************************///
-
 
 
 }

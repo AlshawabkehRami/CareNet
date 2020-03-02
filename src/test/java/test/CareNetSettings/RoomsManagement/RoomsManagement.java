@@ -23,8 +23,8 @@ public class RoomsManagement extends BasePage {
 
     @Test(priority = 1)
     public void navigateToRoomsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsManagementPageID, browser, "Click on Rooms Management Page Link");
         assertByPageName("Rooms Management");
@@ -35,8 +35,8 @@ public class RoomsManagement extends BasePage {
 
     @Test(priority = 2)
     public void addRoomsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsManagementPageID, browser, "Click on Rooms Management Page Link");
         click("cssselector", "a[id$='ibtnAddRoom']", browser, "Click on the Add button");
@@ -58,8 +58,8 @@ public class RoomsManagement extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addRoomsManagement")
     public void editRoomsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsManagementPageID, browser, "Click on Rooms Management Page Link");
         senKeys("cssselector", "input[id$='txtRoomNameSearch']", RoomsManagementName, browser, "search By Name");
@@ -71,8 +71,8 @@ public class RoomsManagement extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addRoomsManagement")
     public void deleteRoomsManagement() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
         NavigateToRoomsManagementLink(browser);
         click("id", RoomsManagementPageID, browser, "Click on Rooms Management Page Link");
         senKeys("cssselector", "input[id$='txtRoomNameSearch']", RoomsManagementName, browser, "search By Name");

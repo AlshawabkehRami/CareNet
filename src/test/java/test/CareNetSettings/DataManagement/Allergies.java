@@ -22,9 +22,9 @@ public class Allergies extends BasePage {
 
     @Test(priority = 1)
     public void navigateToAllergiesPage() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", AllergiesPageID, browser, "Click on Allergies Page Link");
         assertByPageName("Allergies");
     }
@@ -33,9 +33,9 @@ public class Allergies extends BasePage {
 
     @Test(priority = 2)
     public void addAllergies() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", AllergiesPageID, browser, "Click on Allergies Page Link");
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id*='txtAllergyName']", AllergiesName, browser, "Fill ");
@@ -48,9 +48,9 @@ public class Allergies extends BasePage {
 
     @Test(priority = 3, dependsOnMethods = "addAllergies")
     public void editAllergies() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", AllergiesPageID, browser, "Click on Allergies Page Link");
         senKeys("cssselector", "input[id*='txtName']", AllergiesName, browser, "Fill Search field with");
         clickOnShowAllButton(browser);
@@ -63,9 +63,9 @@ public class Allergies extends BasePage {
 
     @Test(priority = 4, dependsOnMethods = "addAllergies")
     public void deleteAllergies() throws InterruptedException {
-        navigateToUrl(browser);
-        loginWithAdminUser(browser);
-        navigateToDataManagmentLink(browser);
+        URLnavigation(browser);
+        adminLogin(browser);
+        dataManagementLinkNavigation(browser);
         click("id", AllergiesPageID, browser, "Click on Allergies Page Link");
         senKeys("cssselector", "input[id*='txtName']", AllergiesName, browser, "Fill Search field with");
         clickOnShowAllButton(browser);
