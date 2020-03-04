@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcementpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/CommunicationSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/CommunicationSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/ContactsManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/ContactsManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/EventTemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/EventTemplates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/GroupsManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/GroupsManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Mailbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Mailbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/MembersQuestionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/MembersQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/IntegrationSettings/FinancialProviderSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/IntegrationSettings/FinancialProviderSettings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583164211502</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Rami">
+      <created>1583165618666</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1583165618666</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Rami">
+      <created>1583165742997</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1583165742997</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -607,10 +612,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583165712293">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583165740809">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583165712293" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583165740809" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706146066" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
@@ -713,10 +718,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583165621861">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583165745723">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583165621861" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583165745723" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706170888" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />
