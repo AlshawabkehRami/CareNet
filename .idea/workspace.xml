@@ -1,36 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="Rami">
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/addMachineSetup_20200308164743.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TakesScreenshot/deleteSpecialties_20200308165942.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTMLReporter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLReporter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMachineSetup_20200308164743.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteSpecialties_20200308165942.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/MachineSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/MedicalProviders/MachineSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Authorizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Authorizations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsAuditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsAuditing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsSubmission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsSubmission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ExpiredInsuranceCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ExpiredInsuranceCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceAgreement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceAgreement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceClaimAuditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceClaimAuditing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceCompanyProviderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceCompanyProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Payers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Payers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/PreAuthServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/PreAuthServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/RemittanceAdvices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/RemittanceAdvices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ResubmissionLeftDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ResubmissionLeftDays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/DefinalizationConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/DefinalizationConfirmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LabQCResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LabQCResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LotsNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LotsNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/teststst.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/ApprovalsSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/ApprovalsSetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/ExcludedServicesAndDiseases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/ExcludedServicesAndDiseases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PayersAgreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PayersAgreement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PayersNetworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PayersNetworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PriceLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Agreements/PriceLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/Announcementpage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/CommunicationSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/CommunicationSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/ContactsManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/ContactsManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/EventTemplates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/EventTemplates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/GroupsManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/GroupsManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/Mailbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/Mailbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Communication/MembersQuestionsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/IntegrationSettings/FinancialProviderSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/IntegrationSettings/FinancialProviderSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/MachineSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/MedicalProviders/MachineSetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/AssetTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/AssetTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/FloorsManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/FloorsManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomAsset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomAsset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomsCategories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomsCategories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomsManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/RoomsManagement/RoomsManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Authorizations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Authorizations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimRules.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimRules.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsAuditing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsAuditing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsFileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsProcessing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsSubmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsSubmission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ExpiredInsuranceCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ExpiredInsuranceCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceAgreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceAgreement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceClaimAuditing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceClaimAuditing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceCompanyProviderPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Payers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Payers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/PreAuthServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/PreAuthServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/RemittanceAdvices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/RemittanceAdvices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ResubmissionLeftDays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ResubmissionLeftDays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LabQCResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LabQCResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LotsNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LotsNumbers.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,86 +112,7 @@
       <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\global" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Announcement">
-    <configuration name="Announcement" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CareNet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.Communication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.Communication" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Communication.Announcement" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Announcement.addAnnouncement" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CareNet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.Communication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.Communication" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Communication.Announcement" />
-      <option name="METHOD_NAME" value="addAnnouncement" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BranchSettings" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CareNet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.MedicalProviders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.MedicalProviders" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.MedicalProviders.BranchSettings" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml">
     <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml" type="TestNG" nameIsGenerated="true">
       <module name="CareNet" />
       <useClassPathOnly />
@@ -280,17 +219,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specialties" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InsuranceCompanyProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CareNet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.Specialties" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.InsuranceCompanyProvider" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -306,17 +245,95 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Vaccines" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LabQCResults" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CareNet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="PATTERN" value="test.CareNetSettings.QualityControl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.Vaccines" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.QualityControl" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.QualityControl.LabQCResults" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LotsNumbers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CareNet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.QualityControl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.QualityControl" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.QualityControl.LotsNumbers" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatementOfAccountPerCompany" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CareNet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.StatementOfAccountPerCompany" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatementOfAccountReport" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CareNet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.StatementOfAccountReport" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -356,19 +373,19 @@
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml" />
-      <item itemvalue="TestNG.BranchSettings" />
-      <item itemvalue="TestNG.Vaccines" />
-      <item itemvalue="TestNG.Specialties" />
-      <item itemvalue="TestNG.Announcement.addAnnouncement" />
-      <item itemvalue="TestNG.Announcement" />
+      <item itemvalue="TestNG.InsuranceCompanyProvider" />
+      <item itemvalue="TestNG.StatementOfAccountPerCompany" />
+      <item itemvalue="TestNG.StatementOfAccountReport" />
+      <item itemvalue="TestNG.LabQCResults" />
+      <item itemvalue="TestNG.LotsNumbers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Announcement" />
-        <item itemvalue="TestNG.Announcement.addAnnouncement" />
-        <item itemvalue="TestNG.Specialties" />
-        <item itemvalue="TestNG.Vaccines" />
-        <item itemvalue="TestNG.BranchSettings" />
+        <item itemvalue="TestNG.LotsNumbers" />
+        <item itemvalue="TestNG.LabQCResults" />
+        <item itemvalue="TestNG.StatementOfAccountReport" />
+        <item itemvalue="TestNG.StatementOfAccountPerCompany" />
+        <item itemvalue="TestNG.InsuranceCompanyProvider" />
       </list>
     </recent_temporary>
   </component>
@@ -565,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583165742997</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Rami">
+      <created>1583738395344</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1583738395344</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -668,10 +692,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583738367925">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583773822898">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738367925" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773822898" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706146066" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
@@ -692,40 +716,40 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583738329734">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583773790023">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738329734" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644768" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583738329734">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583773790023">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738329734" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644767" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583738329734">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583773790022">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738329734" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790022" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644767" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583738329734">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583773790023">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738329734" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
@@ -774,10 +798,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583165745723">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583738997782">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583165745723" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738997782" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706170888" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />

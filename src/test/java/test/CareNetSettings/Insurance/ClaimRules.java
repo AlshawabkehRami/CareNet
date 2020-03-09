@@ -19,34 +19,28 @@ import java.lang.reflect.Method;
  **/
 
 public class ClaimRules extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl10_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test
-    public void navigateToClaimRulesPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        insuranceLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Claim Rules   Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Claim Rules";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Claim Rules  Page not opened Properly");
+    public void navigateToClaimRules() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        insuranceLinknavigation(browser);
+        click("id", ClaimRulesPageID, browser, "Click on Claim Rules   Page  link ");
+        assertByPageName("Claim Rules");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

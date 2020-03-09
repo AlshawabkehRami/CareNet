@@ -601,6 +601,29 @@ public class BasePage {
     public String MembersQuestionsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl06_lblfontFrm";
     //**********************************************************************************************///
 
+    public String InsuranceAgreementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl00_lblfontFrm";
+    public String RemittanceAdvicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl01_lblfontFrm";
+    public String ClaimsAuditingPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl02_lblfontFrm";
+    public String ClaimsSubmissionPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl03_lblfontFrm";
+    public String ClaimsProcessingPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl04_lblfontFrm";
+    public String PreAuthServicesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl05_lblfontFrm";
+    public String ClaimsStatisticsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl06_lblfontFrm";
+    public String AuthorizationsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl07_lblfontFrm";
+    public String ExpiredInsuranceCardsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl08_lblfontFrm";
+    public String InsuranceClaimAuditingPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl09_lblfontFrm";
+    public String ClaimRulesPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl10_lblfontFrm";
+    public String ResubmissionLeftDaysPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl11_lblfontFrm";
+    public String ClaimsFileManagerPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl12_lblfontFrm";
+    public String PayersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl13_lblfontFrm";
+    public String InsuranceCompanyProviderPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl14_lblfontFrm";
+    public String StatementOfAccountPerCompanyPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl16_lblfontFrm";
+    public String StatementOfAccountReportPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl15_lblfontFrm";
+    //**********************************************************************************************///
+
+    public String LabQCResultsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_rptForms_ctl00_lblfontFrm";
+    public String LotsNumbersPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_rptForms_ctl01_lblfontFrm";
+    public String DefinalizationConfirmationPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_rptForms_ctl02_lblfontFrm";
+
 
 }
 

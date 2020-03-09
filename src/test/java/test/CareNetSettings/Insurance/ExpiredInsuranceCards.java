@@ -19,34 +19,28 @@ import java.lang.reflect.Method;
  **/
 
 public class ExpiredInsuranceCards extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl08_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test
-    public void navigateToExpiredInsuranceCardsPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        insuranceLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Expired Insurance Cards   Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Expired Insurance Cards";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Expired Insurance Cards  Page not opened Properly");
+    public void navigateToExpiredInsuranceCards() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        insuranceLinknavigation(browser);
+        click("id", ExpiredInsuranceCardsPageID, browser, "Click on Expired Insurance Cards   Page  link ");
+        assertByPageName("Expired Insurance Cards");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

@@ -36,4 +36,14 @@
             <package name="test.CareNetSettings.Communication"/>
         </packages>
     </test>
+    <test name="Insurance">
+        <packages>
+            <package name="test.CareNetSettings.Insurance"/>
+        </packages>
+    </test>
+    <test name="QualityControl">
+        <packages>
+            <package name="test.CareNetSettings.QualityControl"/>
+        </packages>
+    </test>
 </suite>

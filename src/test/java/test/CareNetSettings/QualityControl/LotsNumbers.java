@@ -1,11 +1,7 @@
 package test.CareNetSettings.QualityControl;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,34 +15,73 @@ import java.lang.reflect.Method;
  **/
 
 public class LotsNumbers extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_rptForms_ctl01_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
-    @Test
-    public void navigateToLotsNumbersPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        qualityControlLinkNavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Lots Numbers Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Lots Numbers";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Lots Numbers Page not opened Properly");
+    @Test(priority = 1)
+    public void navigateToLotsNumbers() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        qualityControlLinkNavigation(browser);
+        click("id", LotsNumbersPageID, browser, "Click on Lots Numbers Page  link ");
+        assertByPageName("Lots Numbers");
+    }
+
+    String RandomString = generateString();
+    String LotsNumbersName = "LotsNumbersName" + RandomString;
+
+    @Test(priority = 2)
+    public void addLotsNumbers() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        qualityControlLinkNavigation(browser);
+        click("id", LotsNumbersPageID, browser, "Click on Lots Numbers Page  link ");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtLotsNumbers']", LotsNumbersName, browser, "Fill lots Numbers");
+        DDLByIndex("select[id$='ddlQcRangeType']", 1, browser);
+        clickOnSaveButton(browser);
+        assertOperationDoneSuccessfully();
+
+    }
+
+    @Test(priority = 3, dependsOnMethods = "addLotsNumbers")
+    public void editLotsNumbers() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        qualityControlLinkNavigation(browser);
+        click("id", LotsNumbersPageID, browser, "Click on Lots Numbers Page  link ");
+        senKeys("cssselector", "input[id$='txtLotsNumberSearch']", LotsNumbersName, browser, "Search By LotsNumbersName");
+        clickOnSearchButton(browser);
+        clickOnTheRowTable(browser);
+        clickOnUpdateButton(browser);
+        assertOperationDoneSuccessfully();
+    }
+
+    @Test(priority = 4, dependsOnMethods = "addLotsNumbers")
+    public void deleteLotsNumbers() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        qualityControlLinkNavigation(browser);
+        click("id", LotsNumbersPageID, browser, "Click on Lots Numbers Page  link ");
+        senKeys("cssselector", "input[id$='txtLotsNumberSearch']", LotsNumbersName, browser, "Search By LotsNumbersName");
+        clickOnSearchButton(browser);
+        click("cssselector", "input[name$='grdLotsNumberItem']", browser, "Click on the checkbox to delete");
+        clickOnDeleteButton(browser);
+        acceptTheWebPageAlert(browser);
+        assertOperationDoneSuccessfully();
+
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

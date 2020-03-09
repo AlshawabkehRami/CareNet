@@ -1,11 +1,7 @@
 package test.CareNetSettings.Insurance;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,34 +15,26 @@ import java.lang.reflect.Method;
  **/
 
 public class ClaimsSubmission extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl03_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
-
     @Test
     public void navigateToClaimsSubmissionPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        insuranceLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Claims Submission  Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Claims Submission";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Claims Submission Page not opened Properly");
+        URLnavigation(browser);
+        adminLogin(browser);
+        insuranceLinknavigation(browser);
+        click("id", ClaimsSubmissionPageID, browser, "Click on Claims Submission  Page  link ");
+        assertByPageName("Claims Submission");
     }
-
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

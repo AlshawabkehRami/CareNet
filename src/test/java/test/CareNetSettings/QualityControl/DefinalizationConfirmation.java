@@ -1,11 +1,7 @@
 package test.CareNetSettings.QualityControl;
 
 import Driver.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,34 +15,28 @@ import java.lang.reflect.Method;
  **/
 
 public class DefinalizationConfirmation extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_rptForms_ctl02_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test
     public void navigateToDefinalizationConfirmationPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        qualityControlLinkNavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Definalization Confirmation Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Definalization Confirmation";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Definalization Confirmation Page not opened Properly");
+        URLnavigation(browser);
+        adminLogin(browser);
+        qualityControlLinkNavigation(browser);
+        click("id", DefinalizationConfirmationPageID, browser, "Click on Definalization Confirmation Page  link ");
+        assertByPageName("Definalization Confirmation");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }

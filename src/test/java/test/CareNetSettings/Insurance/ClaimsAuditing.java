@@ -19,34 +19,28 @@ import java.lang.reflect.Method;
  **/
 
 public class ClaimsAuditing extends BasePage {
-    WebDriver driver;
-    WebDriver OpenDriver;
-    String PageLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_rptForms_ctl02_lblfontFrm";
+    WebDriver browser;
 
     @BeforeMethod
     public void setUp() {
-        OpenDriver = driverType(driver, "chrome");
+        browser = theBrowser();
     }
 
     @Test
-    public void navigateToClaimsAuditingPage() throws InterruptedException {
-        URLnavigation(OpenDriver);
-        adminLogin(OpenDriver);
-        insuranceLinknavigation(OpenDriver);
-        click("id", PageLinkLocator, OpenDriver,"Click on Claims Auditing  Page  link ");
-        Wait = new WebDriverWait(OpenDriver, 20);
-        String ActualResult = Wait.until(ExpectedConditions.visibilityOfElementLocated
-                (By.id("ctl00_lblPageName"))).getText();
-        String ExpectedResult = "Claims Auditing";
-        Assert.assertEquals(ActualResult, ExpectedResult, "Claims Auditing   Page not opened Properly");
+    public void navigateToClaimsAuditing() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        insuranceLinknavigation(browser);
+        click("id", ClaimsAuditingPageID, browser, "Click on Claims Auditing  Page  link ");
+        assertByPageName("Claims Auditing");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
-            screenShot(OpenDriver, result, method.getName());
+            screenShot(browser, result, method.getName());
         }
-        OpenDriver.quit();
+        browser.quit();
         Reporter.log("Closing The Browser");
     }
 }
