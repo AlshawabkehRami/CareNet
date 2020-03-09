@@ -27,8 +27,8 @@ public class Announcement extends BasePage {
         browser = theBrowser();
     }
 
-    @Test
-    public void navigateToAnnouncementpage() throws InterruptedException {
+    @Test(priority = 1)
+    public void navigateToAnnouncement() throws InterruptedException {
         URLnavigation(browser);
         adminLogin(browser);
         communicationLinkNavigation(browser);
@@ -36,12 +36,33 @@ public class Announcement extends BasePage {
         assertByPageName("Announcementpage");
     }
 
-    @AfterMethod
+    @Test(priority = 2)
+    public void addAnnouncement() throws InterruptedException {
+        URLnavigation(browser);
+        adminLogin(browser);
+        communicationLinkNavigation(browser);
+        click("id", AnnouncementPageID, browser, "Click on Announcement  Page link ");
+        clickOnAddButton(browser);
+        senKeys("cssselector", "input[id$='txtAnnouncementTitle']", "Title", browser, "Fill the title ");
+        TodayDate("img[id$='AnnouncementDate_imgFrom']", "div[id$='AnnouncementDate_ext_today']", browser);
+        senKeys("cssselector", "input[id$='tbTime']", "10", browser, "Fill the Time ");
+        senKeys("cssselector", "input[id$='txtAnnouncementName']", "Announcement", browser, "Fill the Announcement ");
+        clickOnSaveButton(browser);
+        assertOperationDoneSuccessfully();
+
+    }
+
+/*    @Test(priority = 3, dependsOnMethods = "addAnnouncement")
+
+    public void editAnnouncement() {
+    }
+
+ *//*   @AfterMethod
     public void tearDown(ITestResult result, Method method) {
         if (!result.isSuccess()) {
             screenShot(browser, result, method.getName());
         }
         browser.quit();
         Reporter.log("Closing The Browser");
-    }
+    }*/
 }

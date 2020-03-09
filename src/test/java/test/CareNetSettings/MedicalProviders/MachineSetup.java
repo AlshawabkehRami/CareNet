@@ -18,7 +18,7 @@ public class MachineSetup extends BasePage {
 
     @BeforeMethod
     public void setUp() {
-        browser=theBrowser();
+        browser = theBrowser();
     }
 
     @Test(priority = 1)
@@ -42,10 +42,13 @@ public class MachineSetup extends BasePage {
         clickOnAddButton(browser);
         senKeys("cssselector", "input[id$='txtMachineSetupName']", MachineSetupName, browser, "Fill Machine Setup Name");
         DDLByIndex("select[id$='ddlMachineType']", 1, browser);
+        Thread.sleep(1000);
         DDLByIndex("select[id$='ddlBranch']", 1, browser);
+        Thread.sleep(1000);
         DDLByIndex("select[id$='ddlMachineStatus']", 1, browser);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         DDLByIndex("select[id$='ddlRefProvider']", 1, browser);
+        Thread.sleep(1000);
         click("cssselector", "input[id$='chbCanSend']", browser, "Check chbCanSend");
         click("cssselector", "input[id$='chbCanReceive']", browser, "Check chbCanReceive");
         click("cssselector", "input[id$='cbCheckStatus']", browser, "Check cbCheckStatus");

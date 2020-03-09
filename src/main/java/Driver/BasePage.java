@@ -159,23 +159,30 @@ public class BasePage {
         click("id", "txtUserName", driver, "Click on the user name Field");
         senKeys("id", "txtUserName", "admin", driver, "Enter User Name ");
         click("id", "txtPassword", driver, "Click on The Password Field ");
-        Thread.sleep(2000);
-        senKeys("id", "txtPassword", "369963", driver, "Enter Password");
-        click("id", "btnLogin", driver, "Click on Login Button");
+        Thread.sleep(3000);
+        try {
+            senKeys("id", "txtPassword", "369963", driver, "Enter Password");
+            click("id", "btnLogin", driver, "Click on Login Button");
+        } catch (Exception e) {
+            Thread.sleep(2000);
+            senKeys("id", "txtPassword", "369963", driver, "Enter Password");
+            click("id", "btnLogin", driver, "Click on Login Button");
+        }
+
     }
 
-    public void dataManagementLinkNavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
-        String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
+    String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
+    String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
+    String DataManagmentLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl00_lnkModule";
+
+    public void dataManagementLinkNavigation(WebDriver driver) throws InterruptedException {
+        Thread.sleep(1000);
         click("id", ESKACareNetLocator, driver, "Click on CareNet Link");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings");
         click("id", DataManagmentLocator, driver, "Click on Data Management's Link");
     }
 
     public void communicationLinkNavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String CommunicationLinkLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -183,8 +190,6 @@ public class BasePage {
     }
 
     public void integreationLinknavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String IntegrationSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl04_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -192,8 +197,6 @@ public class BasePage {
     }
 
     public void qualityControlLinkNavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String QualityControlLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl07_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -201,8 +204,6 @@ public class BasePage {
     }
 
     public void insuranceLinknavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String InsurancelLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl06_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -210,8 +211,6 @@ public class BasePage {
     }
 
     public void NavigateToRoomsManagementLink(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String RoomsManagementLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl02_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -220,8 +219,6 @@ public class BasePage {
 
 
     public void medicalProvidersLinkNavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String MedicalProvidersLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl01_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -229,8 +226,6 @@ public class BasePage {
     }
 
     public void agreementsLinknavigation(WebDriver driver) {
-        String ESKACareNetLocator = "rptApplications_ctl04_lblCSS";
-        String CareNetSettingsLocator = "rptApplications_ctl04_rptSystem_ctl00_lblfontSys";
         String AgreementsLocator = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl03_lblfontMod";
         click("id", ESKACareNetLocator, driver, "Click on ESKA CareNet Locator");
         click("id", CareNetSettingsLocator, driver, "Click on CareNet Settings Locator");
@@ -605,8 +600,6 @@ public class BasePage {
     public String GroupsManagementPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl03_lblfontFrm";
     public String MembersQuestionsPageID = "rptApplications_ctl04_rptSystem_ctl00_rptModule_ctl05_rptForms_ctl06_lblfontFrm";
     //**********************************************************************************************///
-
-
 
 
 }

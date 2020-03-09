@@ -16,7 +16,7 @@ public class Specialties extends BasePage {
 
     @BeforeMethod
     public void setUp() {
-        browser=theBrowser();
+        browser = theBrowser();
     }
 
     @Test(priority = 1)
@@ -59,7 +59,7 @@ public class Specialties extends BasePage {
         assertOperationDoneSuccessfully();
     }
 
-    @Test
+    @Test(priority = 4, dependsOnMethods = "addSpecialties")
     public void deleteSpecialties() throws InterruptedException {
         URLnavigation(browser);
         adminLogin(browser);
