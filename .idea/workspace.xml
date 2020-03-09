@@ -3,52 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTMLReporter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLReporter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/addMachineSetup_20200308164743.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TakesScreenshot/deleteSpecialties_20200308165942.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Communication/Announcement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Authorizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Authorizations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsAuditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsAuditing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsSubmission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ClaimsSubmission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ExpiredInsuranceCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ExpiredInsuranceCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceAgreement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceAgreement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceClaimAuditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceClaimAuditing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceCompanyProviderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/InsuranceCompanyProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Payers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/Payers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/PreAuthServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/PreAuthServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/RemittanceAdvices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/RemittanceAdvices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ResubmissionLeftDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/ResubmissionLeftDays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/Insurance/StatementOfAccountReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/DefinalizationConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/DefinalizationConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LabQCResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LabQCResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LotsNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/QualityControl/LotsNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/teststst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Driver/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Authorizations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Authorizations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimRules.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimRules.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsAuditing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsAuditing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsFileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsProcessing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsProcessing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsStatistics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsSubmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ClaimsSubmission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ExpiredInsuranceCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ExpiredInsuranceCards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceAgreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceAgreement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceClaimAuditing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceClaimAuditing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/InsuranceCompanyProviderPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Payers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/Payers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/PreAuthServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/PreAuthServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/RemittanceAdvices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/RemittanceAdvices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ResubmissionLeftDays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/ResubmissionLeftDays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountPerCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/Insurance/StatementOfAccountReport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LabQCResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LabQCResults.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LotsNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/QualityControl/LotsNumbers.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -589,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583738395344</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Rami">
+      <created>1583773827931</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1583773827931</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -798,10 +759,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583738997782">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583773831939">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583738997782" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773831939" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706170888" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />
