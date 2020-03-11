@@ -28,7 +28,7 @@ public class UserSignature extends BasePage {
         assertByPageName("Users Signatures");
     }
 
-    String ImagePath = "C:\\Users\\r.alshawabkeh\\IdeaProjects\\Second_Project\\testIamge.png";
+    String ImagePath = "C:\\Users\\r.alshawabkeh\\IdeaProjects\\CareNet\\testIamge.png";
 
     @Test(priority = 2, dependsOnMethods = "navigateToUserSignature")
     public void addUserSignature() throws InterruptedException {

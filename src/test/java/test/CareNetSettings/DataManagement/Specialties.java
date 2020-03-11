@@ -65,9 +65,9 @@ public class Specialties extends BasePage {
         adminLogin(browser);
         dataManagementLinkNavigation(browser);
         click("id", SpecialtiesPageID, browser, "Click on Specialties Page link ");
-        senKeys("cssselector", "input[id$='txtNameSearch']", "SpecialtiesName2fd3f", browser, "Fill Name to Search");
+        senKeys("cssselector", "input[id$='txtNameSearch']", SpecialtiesName, browser, "Fill Name to Search");
         clickOnSearchButton(browser);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         click("cssselector", "input[name$='gvSpecialtiesItem']", browser, "Click on the CheckBox For Delete");
         click("cssselector", "a[id$='ibtnDeleteSpecialty']", browser, "Click on Delete Buttom");
         acceptTheWebPageAlert(browser);

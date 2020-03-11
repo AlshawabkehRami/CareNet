@@ -27,9 +27,8 @@ public class RadiologyProcedure extends BasePage {
         click("id", RadiologyProcedurePageID, browser, "Click on Radiology Procedure Link Page");
         assertByPageName("Radiology Procedures");
     }
-
     String RandomString = generateString();
-    String RadiologyProcedureName = "Medical Test Name" + RandomString;
+    String RadiologyProcedureName = "RadName" + RandomString;
 
     @Test(priority = 2)
     public void addRadiologyProcedure() throws InterruptedException {

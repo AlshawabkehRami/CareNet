@@ -25,7 +25,7 @@ public class KnowledgeBase extends BasePage {
         adminLogin(browser);
         dataManagementLinkNavigation(browser);
         click("id", KnowledgeBasePageID, browser, "Click on KnowledgeBase page link");
-        assertByPageName("Knowlefdge Base");
+        assertByPageName("Knowledge Base");
     }
 
     @AfterMethod

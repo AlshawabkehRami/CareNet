@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 /**
  * Created By R.Alshawabkeh 12/4/2019 9:12 AM
  **/
-public class InventoryManagementUnits extends BasePage {
+public class InventoryMeasurementUnits extends BasePage {
     WebDriver browser;
 
     @BeforeMethod
@@ -20,7 +20,7 @@ public class InventoryManagementUnits extends BasePage {
     }
 
     @Test(priority = 1)
-    public void navigateToInventoryManagementUnits() throws InterruptedException {
+    public void navigateToInventoryMeasurementUnits() throws InterruptedException {
         URLnavigation(browser);
         adminLogin(browser);
         dataManagementLinkNavigation(browser);

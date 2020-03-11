@@ -2,7 +2,244 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9c5f11-5ca2-4c42-af7f-cfdefb43db05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Agreements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Agreements.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Communication.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Communication.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/DataManagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/DataManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Insurance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/Insurance.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/IntegrationSettings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/IntegrationSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/MedicalProviders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/MedicalProviders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/QualityControl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/QualityControl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/RoomsManagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/RoomsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/CareNet Settings/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Default Suite/CareNet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Default Suite/CareNet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Default Suite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/bullet_point.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/collapseall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/failed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/reportng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/reportng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/sorttable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test1_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test2_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test3_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test4_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test5_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test6_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test7_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suite1_test8_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/html/suites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/jquery-1.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Agreements.ApprovalsSetup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Agreements.ExcludedServicesAndDiseases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Agreements.PayersAgreement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Agreements.PayersNetworks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Agreements.PriceLists.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.Announcement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.CommunicationSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.ContactsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.EventTemplates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.GroupsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.Mailbox.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Communication.MembersQuestions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Allergies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.BodySystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.CheckList.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.ClinicalExamination.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.ContainerTypes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.DiscountManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Diseases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.ImportMedicines.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.InventoryManagementUnits.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.KnowledgeBase.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.LabSampleTypes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.LabTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.LabUnits.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.LookupItems.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MangeProviders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MedicalFormAttribuets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MedicalFormCodes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MedicalForms.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MedicalServiceCategory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.MedicalServices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Medicines.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.RadiologyProcedure.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Specialties.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.SpecialtyServices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Surgeries.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Symptoms.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.UserSignature.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.DataManagement.Vaccines.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.Authorizations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimRules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimsAuditing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimsFileManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimsProcessing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimsStatistics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ClaimsSubmission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ExpiredInsuranceCards.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.InsuranceAgreement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.InsuranceClaimAuditing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.InsuranceCompanyProvider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.Payers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.PreAuthServices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.RemittanceAdvices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.ResubmissionLeftDays.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.StatementOfAccountPerCompany.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.Insurance.StatementOfAccountReport.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.IntegrationSettings.FinancialProviderSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.BranchSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.MachineService.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.MachineSetup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.MachineType.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.NetworkProviders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.NonNetworkProviders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.ProviderItemsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.ProviderServices.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.ProviderStaff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.MedicalProviders.ScheduleSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.QualityControl.DefinalizationConfirmation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.QualityControl.LabQCResults.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.QualityControl.LotsNumbers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.RoomsManagement.AssetTypes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.RoomsManagement.FloorsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.RoomsManagement.RoomAsset.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.RoomsManagement.RoomsCategories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/junitreports/TEST-test.CareNetSettings.RoomsManagement.RoomsManagement.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/navigator-bullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/Agreements.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/Communication.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/DataManagement.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/Insurance.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/IntegrationSettings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/MedicalProviders.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/QualityControl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/RoomsManagement.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/CareNet Settings/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/CareNet.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/Default Suite/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/passed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/skipped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/testng-reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/testng-reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/testng-results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/testng.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Agreements.ApprovalsSetup_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Agreements.ExcludedServicesAndDiseases_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Agreements.PayersAgreement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Agreements.PayersNetworks_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Agreements.PriceLists_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.Announcement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.CommunicationSettings_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.ContactsManagement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.EventTemplates_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.GroupsManagement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.Mailbox_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Communication.MembersQuestions_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Allergies_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.BodySystem_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.CheckList_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.ClinicalExamination_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.ContainerTypes_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.DiscountManagement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Diseases_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.ImportMedicines_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.InventoryManagementUnits_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.KnowledgeBase_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.LabSampleTypes_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.LabTests_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.LabUnits_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.LookupItems_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MangeProviders_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MedicalFormAttribuets_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MedicalFormCodes_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MedicalForms_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MedicalServiceCategory_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.MedicalServices_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Medicines_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.RadiologyProcedure_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Specialties_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.SpecialtyServices_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Surgeries_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Symptoms_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.UserSignature_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.DataManagement.Vaccines_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.Authorizations_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimRules_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimsAuditing_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimsFileManager_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimsProcessing_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimsStatistics_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ClaimsSubmission_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ExpiredInsuranceCards_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.InsuranceAgreement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.InsuranceClaimAuditing_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.InsuranceCompanyProvider_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.Payers_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.PreAuthServices_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.RemittanceAdvices_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.ResubmissionLeftDays_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.StatementOfAccountPerCompany_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.Insurance.StatementOfAccountReport_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.IntegrationSettings.FinancialProviderSettings_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.BranchSettings_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.MachineService_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.MachineSetup_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.MachineType_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.NetworkProviders_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.NonNetworkProviders_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.ProviderItemsManagement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.ProviderServices_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.ProviderStaff_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.MedicalProviders.ScheduleSettings_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.QualityControl.DefinalizationConfirmation_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.QualityControl.LabQCResults_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.QualityControl.LotsNumbers_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.RoomsManagement.AssetTypes_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.RoomsManagement.FloorsManagement_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.RoomsManagement.RoomAsset_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.RoomsManagement.RoomsCategories_results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/xml/test.CareNetSettings.RoomsManagement.RoomsManagement_results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryManagementUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/InventoryMeasurementUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/KnowledgeBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/RadiologyProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/Specialties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CareNetSettings/DataManagement/UserSignature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/RadiologyProcedure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/CareNetSettings/DataManagement/RadiologyProcedure.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +303,7 @@
       <recent name="C:\Users\r.alshawabkeh\IdeaProjects\Second_Project\src\main\java\global" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml">
+  <component name="RunManager" selected="TestNG.RoomAsset">
     <configuration name="C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml" type="TestNG" nameIsGenerated="true">
       <module name="CareNet" />
       <useClassPathOnly />
@@ -173,58 +410,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsuranceCompanyProvider" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CareNet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.InsuranceCompanyProvider" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LabQCResults" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CareNet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.QualityControl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.QualityControl" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.QualityControl.LabQCResults" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LotsNumbers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CareNet" />
       <extension name="coverage">
@@ -251,17 +436,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatementOfAccountPerCompany" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RadiologyProcedure" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CareNet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
+          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.StatementOfAccountPerCompany" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.RadiologyProcedure" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -277,17 +462,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatementOfAccountReport" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomAsset" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CareNet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.CareNetSettings.Insurance.*" />
+          <option name="PATTERN" value="test.CareNetSettings.RoomsManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.CareNetSettings.Insurance" />
-      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.Insurance.StatementOfAccountReport" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.RoomsManagement" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.RoomsManagement.RoomAsset" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specialties" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CareNet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.Specialties" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="/surefire-reports" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSignature" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CareNet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.CareNetSettings.DataManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.CareNetSettings.DataManagement" />
+      <option name="MAIN_CLASS_NAME" value="test.CareNetSettings.DataManagement.UserSignature" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -327,19 +564,19 @@
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/dataManagement.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/Second_Project/HTMLReporter.xml" />
       <item itemvalue="TestNG.C:/Users/r.alshawabkeh/IdeaProjects/CareNet/HTMLReporter.xml" />
-      <item itemvalue="TestNG.InsuranceCompanyProvider" />
-      <item itemvalue="TestNG.StatementOfAccountPerCompany" />
-      <item itemvalue="TestNG.StatementOfAccountReport" />
-      <item itemvalue="TestNG.LabQCResults" />
       <item itemvalue="TestNG.LotsNumbers" />
+      <item itemvalue="TestNG.RadiologyProcedure" />
+      <item itemvalue="TestNG.Specialties" />
+      <item itemvalue="TestNG.UserSignature" />
+      <item itemvalue="TestNG.RoomAsset" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RoomAsset" />
+        <item itemvalue="TestNG.UserSignature" />
+        <item itemvalue="TestNG.Specialties" />
+        <item itemvalue="TestNG.RadiologyProcedure" />
         <item itemvalue="TestNG.LotsNumbers" />
-        <item itemvalue="TestNG.LabQCResults" />
-        <item itemvalue="TestNG.StatementOfAccountReport" />
-        <item itemvalue="TestNG.StatementOfAccountPerCompany" />
-        <item itemvalue="TestNG.InsuranceCompanyProvider" />
       </list>
     </recent_temporary>
   </component>
@@ -550,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583773827931</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Rami">
+      <created>1583774297877</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1583774297877</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,10 +861,10 @@
     <state x="-1229" y="18" width="1092" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583664591989" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582705229061" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575896347887" />
-    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583678237756">
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583937928934">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583678237756" />
+    <state x="-1274" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583937928934" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1581504695566" />
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1576403127683" />
     <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582036433288">
@@ -653,10 +897,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576162585008" />
-    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583773822898">
+    <state x="-1052" y="0" key="CommitChangelistDialog2" timestamp="1583938996670">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773822898" />
+    <state x="-1052" y="0" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583938996670" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706146066" />
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581498853381" />
     <state x="451" y="79" key="DetectedRootsChooserDialog" timestamp="1575896098366">
@@ -677,71 +921,71 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="70" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580919289384" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583773790023">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583938335014">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583938335014" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644768" />
     <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405022" />
     <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583773790023">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583938335014">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583938335014" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644767" />
     <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583773790022">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583938335014">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790022" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583938335014" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644767" />
     <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405020" />
     <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583773790023">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583938335014">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773790023" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583938335014" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1580293423038" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1581434215617" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1579440369955" />
     <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1583047644767" />
     <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.768@1366.0.1366.768" timestamp="1579701405021" />
     <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581498866603" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1583139601496">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1583937670757">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583139601496" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583937670757" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965866" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115734" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1583139601495">
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1583937670757">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583139601495" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583937670757" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115733" />
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1583139601495">
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1583937670757">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583139601495" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583937670757" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115733" />
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1583139601496">
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1583937670757">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583139601496" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583937670757" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1580369965865" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1580379115734" />
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1576137168297" />
@@ -759,10 +1003,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1576501266914" />
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583773831939">
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2" timestamp="1583774305983">
       <screen x="-1366" y="0" width="1366" height="728" />
     </state>
-    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583773831939" />
+    <state x="-1091" y="98" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1366.728@-1366.0.1366.728" timestamp="1583774305983" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1582706170888" />
     <state x="502" y="191" width="361" height="367" key="export.test.results" timestamp="1575534322624">
       <screen x="0" y="0" width="1366" height="728" />
